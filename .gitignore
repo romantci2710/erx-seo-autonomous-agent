@@ -1,0 +1,18 @@
+# Secrets & Local Env
+.env
+*.pem
+*.key
+
+# Python Bytecode & Virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+
+# Runtime Logs & Temp Files
+logs/*.log
+*.tmp
+pm_assets/*.js
+pm_assets/*.json

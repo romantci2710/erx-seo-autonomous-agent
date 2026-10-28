@@ -1,0 +1,15 @@
+[Unit]
+Description=ERX Autonomous 24/7 SEO Daemon (MUSE Server Agent)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/erx-seo-autonomous-agent
+EnvironmentFile=-/opt/erx-seo-autonomous-agent/.env
+ExecStart=/usr/bin/python3 /opt/erx-seo-autonomous-agent/muse_seo_daemon.py --mode daemon --daily-time 07:00 --watch-interval 900
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target

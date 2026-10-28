@@ -1,0 +1,270 @@
+{
+  "injections": [
+    {
+      "generated_at": "2026-10-28T22:38:03.336902+07:00",
+      "platform_id": "project-management",
+      "platform_domain": "project-management.erx.vn",
+      "target_url": "https://project-management.erx.vn/so-do-gantt-online",
+      "keyword": "sơ đồ gantt online",
+      "intent": "Transactional / Tool",
+      "priority_score": 100,
+      "coverage_status": "UNCOVERED_HIGH_OPPORTUNITY",
+      "target_outrank_words": 7223,
+      "competitors_analyzed": "1office.vn, sheet.com.vn, itgtechnology.vn",
+      "competitor_h2_benchmarks": [
+        "Tóm tắt nhanh",
+        "Giới thiệu",
+        "1. Phần mềm quản lý dự án là gì và khi nào doanh nghiệp cần dùng?",
+        "Top 10 phần mềm quản lý dự án xây dựng hiệu quả nhất"
+      ],
+      "recommended_title": "Sơ đồ gantt online Thực Chiến & Tự Động Hoá AI | ERX",
+      "recommended_meta_description": "Hướng dẫn và công cụ sơ đồ gantt online trên project-management.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễn phí từ...",
+      "recommended_meta_keywords": "sơ đồ gantt online, phần mềm quản lý dự án, quản lý dự án xây dựng, lập tiến độ dự án",
+      "faq_jsonld": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Làm thế nào để áp dụng sơ đồ gantt online hiệu quả nhất trong doanh nghiệp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Để triển khai sơ đồ gantt online đạt hiệu quả cao, bạn nên kết hợp quy trình chuẩn hoá dữ liệu đầu vào với công cụ tự động hoá trực tuyến trên project-management.erx.vn giúp tiết kiệm 70-80% thời gian xử lý thủ công."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Giải pháp sơ đồ gantt online tại project-management.erx.vn có ưu điểm gì vượt trội?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Khác với các bài viết lý thuyết tĩnh, project-management.erx.vn cung cấp biểu mẫu tương tác trực tiếp, bảng đối chiếu thông số kỹ thuật và AI hỗ trợ phân tích ngay trên trình duyệt."
+            }
+          }
+        ]
+      },
+      "pillar_html_snippet": "<section class=\"erx-seo-keyword-module\" data-keyword=\"sơ đồ gantt online\">\n  <h2>Sơ đồ gantt online: Giải pháp &amp; Quy trình Chuẩn Thực Chiến</h2>\n  <p>Hướng dẫn và công cụ sơ đồ gantt online trên project-management.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễn phí từ...</p>\n  <div class=\"table-wrap\">\n    <table>\n      <thead>\n        <tr>\n          <th>Tiêu chí đánh giá (Sơ đồ gantt online)</th>\n          <th>Phương pháp Thủ công / Truyền thống</th>\n          <th>Giải pháp Tự động hoá trên project-management.erx.vn</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td><strong>Tốc độ triển khai &amp; Xử lý</strong></td>\n          <td>Mất nhiều giờ chỉnh sửa thủ công, dễ sai sót</td>\n          <td>Tự động hoá tức thì bằng AI &amp; thuật toán chuẩn hoá (tiết kiệm 80% thời gian)</td>\n        </tr>\n        <tr>\n          <td><strong>Độ chính xác &amp; Cấu trúc dữ liệu</strong></td>\n          <td>Phụ thuộc kinh nghiệm cá nhân, thiếu đồng nhất</td>\n          <td>Chuẩn hoá 100% theo tiêu chuẩn doanh nghiệp B2B &amp; PMBOK/ISO</td>\n        </tr>\n        <tr>\n          <td><strong>Khả năng xuất bản &amp; Tích hợp</strong></td>\n          <td>Rời rạc giữa nhiều file tĩnh</td>\n          <td>Liên thông trực tiếp với hệ sinh thái ERX Việt Nam (project-management.erx.vn)</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</section>"
+    },
+    {
+      "generated_at": "2026-10-28T22:38:15.589784+07:00",
+      "platform_id": "doc-translate",
+      "platform_domain": "doc-translate.erx.vn",
+      "target_url": "https://doc-translate.erx.vn/huong-dan-dich-pdf-bang-ai",
+      "keyword": "công cụ dịch pdf chuyên ngành",
+      "intent": "Transactional / Tool",
+      "priority_score": 100,
+      "coverage_status": "UNCOVERED_HIGH_OPPORTUNITY",
+      "target_outrank_words": 1893,
+      "competitors_analyzed": "smallpdf.com, ilovepdf.com, supawork.ai",
+      "competitor_h2_benchmarks": [
+        "Dịch PDF trực tuyến miễn phí",
+        "Cách dịch tệp PDF trực tuyến miễn phí",
+        "Phá vỡ rào cản ngôn ngữ của PDF",
+        "Chuyển đổi tài liệu PDF thành các ngôn ngữ khác bằng AI mà vẫn giữ được định dạng gốc. Nhanh chóng, chính xác, lý tưởng cho tài liệu kinh doanh, giáo dục hoặc du lịch.",
+        "Trình Dịch PDF AI Miễn Phí – Không Cần Đăng Ký",
+        "Công cụ Dịch thuật Học giả AI"
+      ],
+      "recommended_title": "Công cụ dịch pdf chuyên ngành Thực Chiến & Tự Động Hoá AI | ERX",
+      "recommended_meta_description": "Hướng dẫn và công cụ công cụ dịch pdf chuyên ngành trên doc-translate.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễn...",
+      "recommended_meta_keywords": "công cụ dịch pdf chuyên ngành, dịch file pdf giữ nguyên định dạng, dịch tài liệu khoa học công thức toán, dịch sách pdf song ngữ bằng ai",
+      "faq_jsonld": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Làm thế nào để áp dụng công cụ dịch pdf chuyên ngành hiệu quả nhất trong doanh nghiệp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Để triển khai công cụ dịch pdf chuyên ngành đạt hiệu quả cao, bạn nên kết hợp quy trình chuẩn hoá dữ liệu đầu vào với công cụ tự động hoá trực tuyến trên doc-translate.erx.vn giúp tiết kiệm 70-80% thời gian xử lý thủ công."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Giải pháp công cụ dịch pdf chuyên ngành tại doc-translate.erx.vn có ưu điểm gì vượt trội?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Khác với các bài viết lý thuyết tĩnh, doc-translate.erx.vn cung cấp biểu mẫu tương tác trực tiếp, bảng đối chiếu thông số kỹ thuật và AI hỗ trợ phân tích ngay trên trình duyệt."
+            }
+          }
+        ]
+      },
+      "pillar_html_snippet": "<section class=\"erx-seo-keyword-module\" data-keyword=\"công cụ dịch pdf chuyên ngành\">\n  <h2>Công cụ dịch pdf chuyên ngành: Giải pháp &amp; Quy trình Chuẩn Thực Chiến</h2>\n  <p>Hướng dẫn và công cụ công cụ dịch pdf chuyên ngành trên doc-translate.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễn...</p>\n  <div class=\"table-wrap\">\n    <table>\n      <thead>\n        <tr>\n          <th>Tiêu chí đánh giá (Công cụ dịch pdf chuyên ngành)</th>\n          <th>Phương pháp Thủ công / Truyền thống</th>\n          <th>Giải pháp Tự động hoá trên doc-translate.erx.vn</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td><strong>Tốc độ triển khai &amp; Xử lý</strong></td>\n          <td>Mất nhiều giờ chỉnh sửa thủ công, dễ sai sót</td>\n          <td>Tự động hoá tức thì bằng AI &amp; thuật toán chuẩn hoá (tiết kiệm 80% thời gian)</td>\n        </tr>\n        <tr>\n          <td><strong>Độ chính xác &amp; Cấu trúc dữ liệu</strong></td>\n          <td>Phụ thuộc kinh nghiệm cá nhân, thiếu đồng nhất</td>\n          <td>Chuẩn hoá 100% theo tiêu chuẩn doanh nghiệp B2B &amp; PMBOK/ISO</td>\n        </tr>\n        <tr>\n          <td><strong>Khả năng xuất bản &amp; Tích hợp</strong></td>\n          <td>Rời rạc giữa nhiều file tĩnh</td>\n          <td>Liên thông trực tiếp với hệ sinh thái ERX Việt Nam (doc-translate.erx.vn)</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</section>"
+    },
+    {
+      "generated_at": "2026-10-28T22:38:31.557641+07:00",
+      "platform_id": "doc-builder",
+      "platform_domain": "doc-builder.erx.vn",
+      "target_url": "https://doc-builder.erx.vn/tao-bao-cao-chuyen-nghiep",
+      "keyword": "tạo báo cáo chuyên nghiệp bằng ai",
+      "intent": "Transactional / Tool",
+      "priority_score": 91,
+      "coverage_status": "PARTIAL_H2_ONLY",
+      "target_outrank_words": 4631,
+      "competitors_analyzed": "1office.vn, luathoangan.vn, gvlawyers.com.vn",
+      "competitor_h2_benchmarks": [
+        "I. Phần mềm quản lý hợp đồng là gì?",
+        "II. Tại sao doanh nghiệp cần sử dụng phần mềm quản lý hợp đồng",
+        "III. Top 7+ phần mềm quản lý hợp đồng hiệu quả hiện nay",
+        "Hợp đồng thương mại là gì? Mẫu hợp đồng và các rủi ro pháp lý",
+        "Kinh nghiệm rà soát hợp đồng thương mại và kiểm soát rủi ro pháp lý"
+      ],
+      "recommended_title": "Tạo báo cáo chuyên nghiệp bằng ai Chuẩn Thực Chiến | ERX",
+      "recommended_meta_description": "Hướng dẫn và công cụ tạo báo cáo chuyên nghiệp bằng ai trên doc-builder.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễ...",
+      "recommended_meta_keywords": "tạo báo cáo chuyên nghiệp bằng ai, soạn thảo hợp đồng bằng ai, rà soát rủi ro hợp đồng pháp lý, kiểm tra thể thức văn bản nghị định 30",
+      "faq_jsonld": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Làm thế nào để áp dụng tạo báo cáo chuyên nghiệp bằng ai hiệu quả nhất trong doanh nghiệp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Để triển khai tạo báo cáo chuyên nghiệp bằng ai đạt hiệu quả cao, bạn nên kết hợp quy trình chuẩn hoá dữ liệu đầu vào với công cụ tự động hoá trực tuyến trên doc-builder.erx.vn giúp tiết kiệm 70-80% thời gian xử lý thủ công."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Giải pháp tạo báo cáo chuyên nghiệp bằng ai tại doc-builder.erx.vn có ưu điểm gì vượt trội?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Khác với các bài viết lý thuyết tĩnh, doc-builder.erx.vn cung cấp biểu mẫu tương tác trực tiếp, bảng đối chiếu thông số kỹ thuật và AI hỗ trợ phân tích ngay trên trình duyệt."
+            }
+          }
+        ]
+      },
+      "pillar_html_snippet": "<section class=\"erx-seo-keyword-module\" data-keyword=\"tạo báo cáo chuyên nghiệp bằng ai\">\n  <h2>Tạo báo cáo chuyên nghiệp bằng ai: Giải pháp &amp; Quy trình Chuẩn Thực Chiến</h2>\n  <p>Hướng dẫn và công cụ tạo báo cáo chuyên nghiệp bằng ai trên doc-builder.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễ...</p>\n  <div class=\"table-wrap\">\n    <table>\n      <thead>\n        <tr>\n          <th>Tiêu chí đánh giá (Tạo báo cáo chuyên nghiệp bằng ai)</th>\n          <th>Phương pháp Thủ công / Truyền thống</th>\n          <th>Giải pháp Tự động hoá trên doc-builder.erx.vn</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td><strong>Tốc độ triển khai &amp; Xử lý</strong></td>\n          <td>Mất nhiều giờ chỉnh sửa thủ công, dễ sai sót</td>\n          <td>Tự động hoá tức thì bằng AI &amp; thuật toán chuẩn hoá (tiết kiệm 80% thời gian)</td>\n        </tr>\n        <tr>\n          <td><strong>Độ chính xác &amp; Cấu trúc dữ liệu</strong></td>\n          <td>Phụ thuộc kinh nghiệm cá nhân, thiếu đồng nhất</td>\n          <td>Chuẩn hoá 100% theo tiêu chuẩn doanh nghiệp B2B &amp; PMBOK/ISO</td>\n        </tr>\n        <tr>\n          <td><strong>Khả năng xuất bản &amp; Tích hợp</strong></td>\n          <td>Rời rạc giữa nhiều file tĩnh</td>\n          <td>Liên thông trực tiếp với hệ sinh thái ERX Việt Nam (doc-builder.erx.vn)</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</section>"
+    },
+    {
+      "generated_at": "2026-10-28T22:38:42.226123+07:00",
+      "platform_id": "community",
+      "platform_domain": "community.erx.vn",
+      "target_url": "https://community.erx.vn/forum",
+      "keyword": "phân tích chi phí mua hàng spend analysis",
+      "intent": "Commercial Investigation",
+      "priority_score": 95,
+      "coverage_status": "UNCOVERED_HIGH_OPPORTUNITY",
+      "target_outrank_words": 1687,
+      "competitors_analyzed": "vilas.edu.vn, pace.edu.vn, 1office.vn",
+      "competitor_h2_benchmarks": [
+        "Supply Chain Management là gì? Toàn tập về Quản trị chuỗi cung ứng",
+        "Procurement là gì? Quy trình mua hàng và đánh giá nhà cung cấp",
+        "Bộ tiêu chí đánh giá nhà cung cấp chuẩn kèm mẫu Excel"
+      ],
+      "recommended_title": "Phân tích chi phí mua hàng spend analysis Chuẩn Thực Chiến | ERX",
+      "recommended_meta_description": "Hướng dẫn và công cụ phân tích chi phí mua hàng spend analysis trên community.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng...",
+      "recommended_meta_keywords": "phân tích chi phí mua hàng spend analysis, quản trị chuỗi cung ứng supply chain, quy trình mua hàng procurement, tiêu chí đánh giá nhà cung cấp",
+      "faq_jsonld": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Làm thế nào để áp dụng phân tích chi phí mua hàng spend analysis hiệu quả nhất trong doanh nghiệp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Để triển khai phân tích chi phí mua hàng spend analysis đạt hiệu quả cao, bạn nên kết hợp quy trình chuẩn hoá dữ liệu đầu vào với công cụ tự động hoá trực tuyến trên community.erx.vn giúp tiết kiệm 70-80% thời gian xử lý thủ công."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Giải pháp phân tích chi phí mua hàng spend analysis tại community.erx.vn có ưu điểm gì vượt trội?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Khác với các bài viết lý thuyết tĩnh, community.erx.vn cung cấp biểu mẫu tương tác trực tiếp, bảng đối chiếu thông số kỹ thuật và AI hỗ trợ phân tích ngay trên trình duyệt."
+            }
+          }
+        ]
+      },
+      "pillar_html_snippet": "<section class=\"erx-seo-keyword-module\" data-keyword=\"phân tích chi phí mua hàng spend analysis\">\n  <h2>Phân tích chi phí mua hàng spend analysis: Giải pháp &amp; Quy trình Chuẩn Thực Chiến</h2>\n  <p>Hướng dẫn và công cụ phân tích chi phí mua hàng spend analysis trên community.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng...</p>\n  <div class=\"table-wrap\">\n    <table>\n      <thead>\n        <tr>\n          <th>Tiêu chí đánh giá (Phân tích chi phí mua hàng spend analysis)</th>\n          <th>Phương pháp Thủ công / Truyền thống</th>\n          <th>Giải pháp Tự động hoá trên community.erx.vn</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td><strong>Tốc độ triển khai &amp; Xử lý</strong></td>\n          <td>Mất nhiều giờ chỉnh sửa thủ công, dễ sai sót</td>\n          <td>Tự động hoá tức thì bằng AI &amp; thuật toán chuẩn hoá (tiết kiệm 80% thời gian)</td>\n        </tr>\n        <tr>\n          <td><strong>Độ chính xác &amp; Cấu trúc dữ liệu</strong></td>\n          <td>Phụ thuộc kinh nghiệm cá nhân, thiếu đồng nhất</td>\n          <td>Chuẩn hoá 100% theo tiêu chuẩn doanh nghiệp B2B &amp; PMBOK/ISO</td>\n        </tr>\n        <tr>\n          <td><strong>Khả năng xuất bản &amp; Tích hợp</strong></td>\n          <td>Rời rạc giữa nhiều file tĩnh</td>\n          <td>Liên thông trực tiếp với hệ sinh thái ERX Việt Nam (community.erx.vn)</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</section>"
+    },
+    {
+      "generated_at": "2026-10-28T22:38:54.954487+07:00",
+      "platform_id": "erx-main",
+      "platform_domain": "erx.vn",
+      "target_url": "https://erx.vn/",
+      "keyword": "khóa học mua hàng thực chiến procurement",
+      "intent": "Commercial Investigation",
+      "priority_score": 95,
+      "coverage_status": "UNCOVERED_HIGH_OPPORTUNITY",
+      "target_outrank_words": 1687,
+      "competitors_analyzed": "datapot.edu.vn, gitiho.com, base.vn",
+      "competitor_h2_benchmarks": [
+        "Hướng dẫn phân tích Pareto (80/20) trong Power BI bằng DAX",
+        "Tổng hợp các hàm mảng động mới nhất trong Excel 365",
+        "So sánh quản lý dự án bằng Excel và phần mềm chuyên dụng"
+      ],
+      "recommended_title": "Khóa học mua hàng thực chiến procurement Chuẩn Thực Chiến | ERX",
+      "recommended_meta_description": "Hướng dẫn và công cụ khóa học mua hàng thực chiến procurement trên erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễn phí...",
+      "recommended_meta_keywords": "khóa học mua hàng thực chiến procurement, các hàm excel 365 mảng động, phân tích dữ liệu power bi dax, truy vấn sql trong excel, tự động hóa báo cáo excel vba",
+      "faq_jsonld": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Làm thế nào để áp dụng khóa học mua hàng thực chiến procurement hiệu quả nhất trong doanh nghiệp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Để triển khai khóa học mua hàng thực chiến procurement đạt hiệu quả cao, bạn nên kết hợp quy trình chuẩn hoá dữ liệu đầu vào với công cụ tự động hoá trực tuyến trên erx.vn giúp tiết kiệm 70-80% thời gian xử lý thủ công."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Giải pháp khóa học mua hàng thực chiến procurement tại erx.vn có ưu điểm gì vượt trội?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Khác với các bài viết lý thuyết tĩnh, erx.vn cung cấp biểu mẫu tương tác trực tiếp, bảng đối chiếu thông số kỹ thuật và AI hỗ trợ phân tích ngay trên trình duyệt."
+            }
+          }
+        ]
+      },
+      "pillar_html_snippet": "<section class=\"erx-seo-keyword-module\" data-keyword=\"khóa học mua hàng thực chiến procurement\">\n  <h2>Khóa học mua hàng thực chiến procurement: Giải pháp &amp; Quy trình Chuẩn Thực Chiến</h2>\n  <p>Hướng dẫn và công cụ khóa học mua hàng thực chiến procurement trên erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễn phí...</p>\n  <div class=\"table-wrap\">\n    <table>\n      <thead>\n        <tr>\n          <th>Tiêu chí đánh giá (Khóa học mua hàng thực chiến procurement)</th>\n          <th>Phương pháp Thủ công / Truyền thống</th>\n          <th>Giải pháp Tự động hoá trên erx.vn</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td><strong>Tốc độ triển khai &amp; Xử lý</strong></td>\n          <td>Mất nhiều giờ chỉnh sửa thủ công, dễ sai sót</td>\n          <td>Tự động hoá tức thì bằng AI &amp; thuật toán chuẩn hoá (tiết kiệm 80% thời gian)</td>\n        </tr>\n        <tr>\n          <td><strong>Độ chính xác &amp; Cấu trúc dữ liệu</strong></td>\n          <td>Phụ thuộc kinh nghiệm cá nhân, thiếu đồng nhất</td>\n          <td>Chuẩn hoá 100% theo tiêu chuẩn doanh nghiệp B2B &amp; PMBOK/ISO</td>\n        </tr>\n        <tr>\n          <td><strong>Khả năng xuất bản &amp; Tích hợp</strong></td>\n          <td>Rời rạc giữa nhiều file tĩnh</td>\n          <td>Liên thông trực tiếp với hệ sinh thái ERX Việt Nam (erx.vn)</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</section>"
+    },
+    {
+      "generated_at": "2026-10-28T22:39:07.961836+07:00",
+      "platform_id": "khoahoc",
+      "platform_domain": "khoahoc.erx.vn",
+      "target_url": "https://khoahoc.erx.vn/",
+      "keyword": "khóa học phân tích dữ liệu chuỗi cung ứng",
+      "intent": "Commercial Investigation",
+      "priority_score": 85,
+      "coverage_status": "UNCOVERED_HIGH_OPPORTUNITY",
+      "target_outrank_words": 3142,
+      "competitors_analyzed": "vilas.edu.vn, datapot.edu.vn",
+      "competitor_h2_benchmarks": [
+        "Procurement Management",
+        "Chuyên gia đào tạo",
+        "Tại sao nên chọn học tại Datapot",
+        " 100+ doanh nghiệp tin tưởng",
+        " 10.000+ học viên phản hồi tích cực"
+      ],
+      "recommended_title": "Khóa học phân tích dữ liệu chuỗi cung ứng Chuẩn Thực Chiến | ERX",
+      "recommended_meta_description": "Hướng dẫn và công cụ khóa học phân tích dữ liệu chuỗi cung ứng trên khoahoc.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI...",
+      "recommended_meta_keywords": "khóa học phân tích dữ liệu chuỗi cung ứng, khóa học excel 365 nâng cao cho doanh nghiệp, đào tạo mua hàng thực chiến hands on procurement",
+      "faq_jsonld": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Làm thế nào để áp dụng khóa học phân tích dữ liệu chuỗi cung ứng hiệu quả nhất trong doanh nghiệp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Để triển khai khóa học phân tích dữ liệu chuỗi cung ứng đạt hiệu quả cao, bạn nên kết hợp quy trình chuẩn hoá dữ liệu đầu vào với công cụ tự động hoá trực tuyến trên khoahoc.erx.vn giúp tiết kiệm 70-80% thời gian xử lý thủ công."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Giải pháp khóa học phân tích dữ liệu chuỗi cung ứng tại khoahoc.erx.vn có ưu điểm gì vượt trội?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Khác với các bài viết lý thuyết tĩnh, khoahoc.erx.vn cung cấp biểu mẫu tương tác trực tiếp, bảng đối chiếu thông số kỹ thuật và AI hỗ trợ phân tích ngay trên trình duyệt."
+            }
+          }
+        ]
+      },
+      "pillar_html_snippet": "<section class=\"erx-seo-keyword-module\" data-keyword=\"khóa học phân tích dữ liệu chuỗi cung ứng\">\n  <h2>Khóa học phân tích dữ liệu chuỗi cung ứng: Giải pháp &amp; Quy trình Chuẩn Thực Chiến</h2>\n  <p>Hướng dẫn và công cụ khóa học phân tích dữ liệu chuỗi cung ứng trên khoahoc.erx.vn: chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI...</p>\n  <div class=\"table-wrap\">\n    <table>\n      <thead>\n        <tr>\n          <th>Tiêu chí đánh giá (Khóa học phân tích dữ liệu chuỗi cung ứng)</th>\n          <th>Phương pháp Thủ công / Truyền thống</th>\n          <th>Giải pháp Tự động hoá trên khoahoc.erx.vn</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td><strong>Tốc độ triển khai &amp; Xử lý</strong></td>\n          <td>Mất nhiều giờ chỉnh sửa thủ công, dễ sai sót</td>\n          <td>Tự động hoá tức thì bằng AI &amp; thuật toán chuẩn hoá (tiết kiệm 80% thời gian)</td>\n        </tr>\n        <tr>\n          <td><strong>Độ chính xác &amp; Cấu trúc dữ liệu</strong></td>\n          <td>Phụ thuộc kinh nghiệm cá nhân, thiếu đồng nhất</td>\n          <td>Chuẩn hoá 100% theo tiêu chuẩn doanh nghiệp B2B &amp; PMBOK/ISO</td>\n        </tr>\n        <tr>\n          <td><strong>Khả năng xuất bản &amp; Tích hợp</strong></td>\n          <td>Rời rạc giữa nhiều file tĩnh</td>\n          <td>Liên thông trực tiếp với hệ sinh thái ERX Việt Nam (khoahoc.erx.vn)</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</section>"
+    }
+  ]
+}

@@ -1,0 +1,1351 @@
+{
+  "last_watch_run": "2026-10-28T22:35:50.674371+07:00",
+  "url_registry": {
+    "https://project-management.erx.vn/": {
+      "platform_id": "project-management",
+      "title": "Phần mềm Quản lý Dự án & Tiến độ Gantt AI Chuẩn PMBOK | ERX",
+      "meta_description": "Phần mềm quản lý dự án trực tuyến tích hợp AI của ERX Việt Nam: lập WBS, vẽ sơ đồ Gantt, tự động tính đường găng CPM, chỉ số EVM, RACI và 13 tài liệu PMBOK.",
+      "canonical": "https://project-management.erx.vn/",
+      "word_count": 379,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f814d642b0d425f1",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/phan-mem-quan-ly-du-an": {
+      "platform_id": "project-management",
+      "title": "Phần mềm Quản lý Dự án Trực tuyến & Lập Kế hoạch AI | ERX",
+      "meta_description": "Phần mềm quản lý dự án trực tuyến tích hợp AI của ERX: lập cấu trúc WBS, vẽ sơ đồ Gantt, tính đường găng CPM, kiểm soát chi phí EVM và 13 tài liệu PMBOK 8.",
+      "canonical": "https://project-management.erx.vn/phan-mem-quan-ly-du-an",
+      "word_count": 1274,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "dc84be7a7678a2bf",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/so-do-gantt-online": {
+      "platform_id": "project-management",
+      "title": "Phần mềm Quản lý Dự án & Tiến độ Gantt AI Chuẩn PMBOK | ERX",
+      "meta_description": "Phần mềm quản lý dự án trực tuyến tích hợp AI của ERX Việt Nam: lập WBS, vẽ sơ đồ Gantt, tự động tính đường găng CPM, chỉ số EVM, RACI và 13 tài liệu PMBOK.",
+      "canonical": "https://project-management.erx.vn/",
+      "word_count": 379,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f814d642b0d425f1",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/quan-ly-du-an-xay-dung": {
+      "platform_id": "project-management",
+      "title": "Phần mềm Quản lý Dự án & Tiến độ Gantt AI Chuẩn PMBOK | ERX",
+      "meta_description": "Phần mềm quản lý dự án trực tuyến tích hợp AI của ERX Việt Nam: lập WBS, vẽ sơ đồ Gantt, tự động tính đường găng CPM, chỉ số EVM, RACI và 13 tài liệu PMBOK.",
+      "canonical": "https://project-management.erx.vn/",
+      "word_count": 379,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f814d642b0d425f1",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/huong-dan": {
+      "platform_id": "project-management",
+      "title": "Phần mềm Quản lý Dự án & Tiến độ Gantt AI Chuẩn PMBOK | ERX",
+      "meta_description": "Phần mềm quản lý dự án trực tuyến tích hợp AI của ERX Việt Nam: lập WBS, vẽ sơ đồ Gantt, tự động tính đường găng CPM, chỉ số EVM, RACI và 13 tài liệu PMBOK.",
+      "canonical": "https://project-management.erx.vn/",
+      "word_count": 379,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f814d642b0d425f1",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/so-do-gantt-cpm": {
+      "platform_id": "project-management",
+      "title": "Công cụ Vẽ Sơ đồ Gantt & Tính Đường găng CPM Tự động | ERX",
+      "meta_description": "Hướng dẫn và công cụ vẽ sơ đồ Gantt trực tuyến, tự động tính đường găng CPM (ES, EF, LS, LF, Total Float) và kiểm soát tiến độ dự án chuẩn xác từ ERX.",
+      "canonical": "https://project-management.erx.vn/so-do-gantt-cpm",
+      "word_count": 991,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "9aa12109799481fe",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/quan-ly-chi-phi-evm": {
+      "platform_id": "project-management",
+      "title": "Quản lý Chi phí Dự án EVM: PV, EV, AC, SPI, CPI & S-Curve | ERX",
+      "meta_description": "Kiểm soát ngân sách và tiến độ dự án bằng phương pháp Giá trị Thu được EVM (Earned Value Management): công thức PV, EV, AC, SPI, CPI, EAC và đồ thị S-Curve.",
+      "canonical": "https://project-management.erx.vn/quan-ly-chi-phi-evm",
+      "word_count": 916,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "3dece0f169b4066b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/tai-lieu-pmbok-8": {
+      "platform_id": "project-management",
+      "title": "13 Biểu mẫu Tài liệu Quản lý Dự án Chuẩn PMI PMBOK® 8 | ERX",
+      "meta_description": "Trọn bộ 13 biểu mẫu tài liệu quản lý dự án chuẩn PMI PMBOK 8 tích hợp sẵn trên phần mềm ERX: Project Charter, WBS, RACI, Risk Register, Change Log & Lessons.",
+      "canonical": "https://project-management.erx.vn/tai-lieu-pmbok-8",
+      "word_count": 916,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "2a6bbc561cd3ebad",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/so-sanh-ms-project-excel": {
+      "platform_id": "project-management",
+      "title": "So sánh Phần mềm Quản lý Dự án ERX với Excel & MS Project",
+      "meta_description": "Bảng so sánh chi tiết phần mềm quản lý dự án trực tuyến ERX với Microsoft Excel và Microsoft Project về tính năng Gantt, đường găng CPM, EVM, AI và chi phí.",
+      "canonical": "https://project-management.erx.vn/so-sanh-ms-project-excel",
+      "word_count": 773,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "008a5f5e47c45d5d",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://project-management.erx.vn/cau-hoi-thuong-gap": {
+      "platform_id": "project-management",
+      "title": "Câu hỏi Thường gặp về Quản lý Dự án & Phần mềm Gantt AI | ERX",
+      "meta_description": "Giải đáp các câu hỏi thường gặp về phương pháp quản lý dự án hiện đại, cách lập WBS, vẽ sơ đồ Gantt, tính đường găng CPM, chỉ số EVM và sử dụng phần mềm ERX.",
+      "canonical": "https://project-management.erx.vn/cau-hoi-thuong-gap",
+      "word_count": 903,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "e042eb11fa210621",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:13.345597+07:00"
+    },
+    "https://doc-translate.erx.vn/": {
+      "platform_id": "doc-translate",
+      "title": "ERX Translate — Dịch Tài liệu PDF, Word, Excel AI Giữ Định dạng",
+      "meta_description": "ERX Translate — Công cụ dịch tài liệu PDF, Word, Excel, PowerPoint bằng AI giữ nguyên định dạng bảng biểu, công thức toán học LaTeX và bố cục gốc.",
+      "canonical": "https://doc-translate.erx.vn/",
+      "word_count": 440,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "736fd7d5b12dd5e4",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/dich-pdf-giu-nguyen-dinh-dang": {
+      "platform_id": "doc-translate",
+      "title": "Dịch File PDF Giữ Nguyên Định Dạng Sang Tiếng Việt Bằng AI | ERX",
+      "meta_description": "Công cụ dịch file PDF giữ nguyên định dạng sang tiếng Việt miễn phí bằng AI. Bảo toàn 100% bảng biểu, bố cục 2 cột, hình ảnh và công thức toán học LaTeX.",
+      "canonical": "https://doc-translate.erx.vn/dich-pdf-giu-nguyen-dinh-dang",
+      "word_count": 1155,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f19f8bd790ee7d29",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/dich-tai-lieu-khoa-hoc-cong-thuc-toan": {
+      "platform_id": "doc-translate",
+      "title": "Dịch Tài Liệu Khoa Học & Công Thức Toán PDF (LaTeX) Bằng AI | ERX",
+      "meta_description": "Giải pháp dịch tài liệu khoa học, bài báo IEEE, arXiv, Springer và sách PDF chứa công thức toán học LaTeX sang tiếng Việt giữ nguyên ký hiệu, ma trận.",
+      "canonical": "https://doc-translate.erx.vn/dich-tai-lieu-khoa-hoc-cong-thuc-toan",
+      "word_count": 792,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "6d687287ca3f8aac",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/huong-dan-dich-pdf-bang-ai": {
+      "platform_id": "doc-translate",
+      "title": "Dịch Sách PDF Song Ngữ Bằng AI & Hướng Dẫn Dịch Tài Liệu Chuẩn",
+      "meta_description": "Hướng dẫn dịch sách PDF song ngữ Anh - Việt đối chiếu từng trang bằng AI trên ERX Translate. Tùy chỉnh Glossary chuyên ngành, xuất file Mono và Dual PDF.",
+      "canonical": "https://doc-translate.erx.vn/huong-dan-dich-pdf-bang-ai",
+      "word_count": 605,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "5a4b994d2a9067bd",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/faq": {
+      "platform_id": "doc-translate",
+      "title": "Câu hỏi Thường gặp (FAQ) về ERX Translate — Dịch PDF & Office AI",
+      "meta_description": "Giải đáp chi tiết các câu hỏi thường gặp về ERX Translate: định dạng hỗ trợ (PDF, DOCX, XLSX, PPTX), bảo toàn công thức LaTeX, từ điển thuật ngữ và bảo mật.",
+      "canonical": "https://doc-translate.erx.vn/faq",
+      "word_count": 414,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "ed4e2320346a5a8f",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/about": {
+      "platform_id": "doc-translate",
+      "title": "Giới thiệu ERX Translate — Công nghệ Dịch Tài liệu Kỹ thuật bằng AI",
+      "meta_description": "Tìm hiểu về ERX Translate — Giải pháp dịch thuật tài liệu PDF, Word, Excel và bài báo khoa học bằng AI giữ nguyên bố cục thuộc hệ sinh thái ERX Việt Nam.",
+      "canonical": "https://doc-translate.erx.vn/about",
+      "word_count": 375,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "8ea640b03452a0ad",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/pricing": {
+      "platform_id": "doc-translate",
+      "title": "Bảng giá & Gói dịch vụ ERX Translate — Dịch Tài liệu AI Doanh nghiệp",
+      "meta_description": "Khám phá các gói dịch vụ ERX Translate linh hoạt từ trải nghiệm miễn phí đến gói VIP và Doanh nghiệp hỗ trợ dịch tài liệu PDF, Word, Excel số lượng lớn.",
+      "canonical": "https://doc-translate.erx.vn/pricing",
+      "word_count": 260,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "07b14feb2c13e6cb",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/contact": {
+      "platform_id": "doc-translate",
+      "title": "Liên hệ Hỗ trợ & Tư vấn Giải pháp Dịch Tài liệu AI | ERX Translate",
+      "meta_description": "Liên hệ đội ngũ ERX Việt Nam để được hỗ trợ kỹ thuật, cấp quyền tài khoản trải nghiệm hoặc tư vấn triển khai ERX Translate cho doanh nghiệp và tổ chức.",
+      "canonical": "https://doc-translate.erx.vn/contact",
+      "word_count": 196,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "5307edbdbfdffc2d",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/terms": {
+      "platform_id": "doc-translate",
+      "title": "Điều khoản Sử dụng Dịch vụ Dịch Tài liệu bằng AI | ERX Translate",
+      "meta_description": "Quy định và điều khoản sử dụng dịch vụ dịch tài liệu kỹ thuật tự động bằng AI trên nền tảng ERX Translate (doc-translate.erx.vn) của ERX Việt Nam.",
+      "canonical": "https://doc-translate.erx.vn/terms",
+      "word_count": 236,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "6189f965d9d8b83b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-translate.erx.vn/privacy": {
+      "platform_id": "doc-translate",
+      "title": "Chính sách Bảo mật & An toàn Dữ liệu Tài liệu | ERX Translate",
+      "meta_description": "Chính sách bảo mật thông tin cá nhân và cam kết an toàn dữ liệu đối với các tài liệu PDF, Word, Excel được tải lên và dịch trên nền tảng ERX Translate.",
+      "canonical": "https://doc-translate.erx.vn/privacy",
+      "word_count": 247,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "9fcfb8b4312df55e",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:16.270422+07:00"
+    },
+    "https://doc-builder.erx.vn/": {
+      "platform_id": "doc-builder",
+      "title": "ERX Doc Builder — Tạo Tài liệu Kỹ thuật, SOP & Audit Quy trình AI",
+      "meta_description": "ERX Doc Builder — Nền tảng khởi tạo tài liệu kỹ thuật, SOP, báo cáo kiến trúc và Audit quy trình tự động bằng AI, sơ đồ Mermaid/Draw.io SVG, công thức KaTeX và xuất PDF/DOCX.",
+      "canonical": "https://doc-builder.erx.vn/",
+      "word_count": 1061,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "83cfd2c6896c780b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/soan-thao-hop-dong-bang-ai": {
+      "platform_id": "doc-builder",
+      "title": "Soạn Thảo Hợp Đồng Bằng AI & Mẫu Hợp Đồng Thương Mại Chuẩn | ERX",
+      "meta_description": "Công cụ soạn thảo hợp đồng bằng AI chuẩn Bộ luật Dân sự & Luật Thương mại Việt Nam. Tạo hợp đồng mua bán, dịch vụ, NDA, SLA tự động kèm sơ đồ luồng RACI.",
+      "canonical": "https://doc-builder.erx.vn/soan-thao-hop-dong-bang-ai",
+      "word_count": 799,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "45e9ce684f5cb9bd",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/tao-bao-cao-chuyen-nghiep": {
+      "platform_id": "doc-builder",
+      "title": "Tạo Báo Cáo Chuyên Nghiệp & Tài Liệu Kỹ Thuật Tự Động Bằng AI | ERX",
+      "meta_description": "Phần mềm tạo báo cáo chuyên nghiệp, quy trình SOP và tài liệu kỹ thuật tự động bằng Multi-Agent AI. Nhúng sơ đồ Mermaid, Draw.io SVG và xuất PDF/Word chuẩn.",
+      "canonical": "https://doc-builder.erx.vn/tao-bao-cao-chuyen-nghiep",
+      "word_count": 558,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "d913a748f68d9866",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/kiem-toan-van-ban-phap-ly": {
+      "platform_id": "doc-builder",
+      "title": "Rà Soát Rủi Ro Hợp Đồng Pháp Lý & Kiểm Toán Quy Trình Bằng AI | ERX",
+      "meta_description": "Giải pháp rà soát rủi ro hợp đồng pháp lý và kiểm toán chéo văn bản doanh nghiệp bằng AI. Phát hiện điều khoản bất lợi, xung đột SLA/RACI và gợi ý sửa đổi.",
+      "canonical": "https://doc-builder.erx.vn/kiem-toan-van-ban-phap-ly",
+      "word_count": 582,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "39d4c2f46ecf2093",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/templates": {
+      "platform_id": "doc-builder",
+      "title": "ERX Doc Builder — Tạo Tài liệu Kỹ thuật, SOP & Audit Quy trình AI",
+      "meta_description": "ERX Doc Builder — Nền tảng khởi tạo tài liệu kỹ thuật, SOP, báo cáo kiến trúc và Audit quy trình tự động bằng AI, sơ đồ Mermaid/Draw.io SVG, công thức KaTeX và xuất PDF/DOCX.",
+      "canonical": "https://doc-builder.erx.vn/",
+      "word_count": 1061,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "83cfd2c6896c780b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/guide": {
+      "platform_id": "doc-builder",
+      "title": "ERX Doc Builder — Tạo Tài liệu Kỹ thuật, SOP & Audit Quy trình AI",
+      "meta_description": "ERX Doc Builder — Nền tảng khởi tạo tài liệu kỹ thuật, SOP, báo cáo kiến trúc và Audit quy trình tự động bằng AI, sơ đồ Mermaid/Draw.io SVG, công thức KaTeX và xuất PDF/DOCX.",
+      "canonical": "https://doc-builder.erx.vn/",
+      "word_count": 1061,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "83cfd2c6896c780b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/tinh-nang": {
+      "platform_id": "doc-builder",
+      "title": "Tính năng ERX Doc Builder — Tạo Tài liệu AI, Sơ đồ Mermaid & Draw.io",
+      "meta_description": "Khám phá hệ thống Multi-Agent AI của ERX Doc Builder: tự động tạo tài liệu kỹ thuật, SOP, vẽ sơ đồ Mermaid và Draw.io SVG, công thức KaTeX và xuất PDF/DOCX.",
+      "canonical": "https://doc-builder.erx.vn/tinh-nang",
+      "word_count": 670,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "8ee4c709dcf1bf65",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/audit-quy-trinh": {
+      "platform_id": "doc-builder",
+      "title": "AI Process Audit — Kiểm toán & Đối chiếu Chéo Quy trình SOP | ERX",
+      "meta_description": "Công cụ AI Process Audit trên ERX Doc Builder: kiểm tra nhất quán nội tại 1 quy trình hoặc đối chiếu chéo bộ quy trình SOP, chuẩn hóa thuật ngữ và xuất ZIP.",
+      "canonical": "https://doc-builder.erx.vn/audit-quy-trinh",
+      "word_count": 642,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "6c92090d7a41e6dd",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/thu-vien-mau": {
+      "platform_id": "doc-builder",
+      "title": "Thư viện 12 Mẫu Tài liệu Chuẩn: SOP, Kiến trúc, API & Spec | ERX",
+      "meta_description": "Danh mục 12 mẫu tài liệu chuẩn (Templates) trên ERX Doc Builder: Quy trình SOP, Kiến trúc hệ thống, API Doc, Technical Spec, Blueprint, User Guide và Báo cáo.",
+      "canonical": "https://doc-builder.erx.vn/thu-vien-mau",
+      "word_count": 664,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "01ee6b81aab0ebd6",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/huong-dan": {
+      "platform_id": "doc-builder",
+      "title": "Hướng dẫn Sử dụng ERX Doc Builder: Tạo Tài liệu AI & Xuất PDF/DOCX",
+      "meta_description": "Hướng dẫn chi tiết cách sử dụng ERX Doc Builder: cấu hình AI Provider, tạo tài liệu chuyên sâu, chỉnh sửa sơ đồ Draw.io/Mermaid và xuất file PDF, Word (.docx).",
+      "canonical": "https://doc-builder.erx.vn/huong-dan",
+      "word_count": 680,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "cdaff7ddb3085765",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://doc-builder.erx.vn/cau-hoi-thuong-gap": {
+      "platform_id": "doc-builder",
+      "title": "Câu hỏi thường gặp (FAQ) về ERX Doc Builder — Tạo Tài liệu & Audit AI",
+      "meta_description": "Giải đáp các câu hỏi thường gặp về ERX Doc Builder: bảo mật tài liệu doanh nghiệp, hỗ trợ định dạng PDF/DOCX, vẽ sơ đồ Draw.io/Mermaid và kiểm toán SOP.",
+      "canonical": "https://doc-builder.erx.vn/cau-hoi-thuong-gap",
+      "word_count": 673,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "909c48f4133959d4",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:19.467642+07:00"
+    },
+    "https://community.erx.vn/forum": {
+      "platform_id": "community",
+      "title": "Diễn đàn Chuỗi cung ứng & Logistics — Supply Chain Community",
+      "meta_description": "Khám phá các chuyên mục thảo luận chuyên sâu về Quản trị Chuỗi cung ứng (SCM), Mua hàng (Procurement), Kho vận, Logistics, Xuất nhập khẩu và Phân tích dữ liệu tại Việt Nam.",
+      "canonical": "https://community.erx.vn/forum/",
+      "word_count": 342,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f4cd9f7f557c1ecd",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/": {
+      "platform_id": "community",
+      "title": "Supply Chain Community — Cộng đồng Chuỗi cung ứng ERX",
+      "meta_description": "Cộng đồng chuyên nghiệp ngành chuỗi cung ứng (ERX) — diễn đàn chuyên môn, tuyển dụng, đào tạo trực tuyến (LMS), kết nối nhà cung cấp và trợ lý AI.",
+      "canonical": "https://community.erx.vn/",
+      "word_count": 16,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "3c9790b44f16feb0",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/": {
+      "platform_id": "community",
+      "title": "Diễn đàn Chuỗi cung ứng & Logistics — Supply Chain Community",
+      "meta_description": "Khám phá các chuyên mục thảo luận chuyên sâu về Quản trị Chuỗi cung ứng (SCM), Mua hàng (Procurement), Kho vận, Logistics, Xuất nhập khẩu và Phân tích dữ liệu tại Việt Nam.",
+      "canonical": "https://community.erx.vn/forum/",
+      "word_count": 342,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f4cd9f7f557c1ecd",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/tuyen-dung/": {
+      "platform_id": "community",
+      "title": "Tuyển dụng Chuỗi cung ứng & Logistics — Supply Chain Community",
+      "meta_description": "Cổng thông tin tuyển dụng chuyên ngành Chuỗi cung ứng (Supply Chain), Mua hàng (Procurement), Kế hoạch (S&OP/Demand Planning), Kho vận, Logistics và Xuất nhập khẩu từ các doanh nghiệp xác thực KYB.",
+      "canonical": "https://community.erx.vn/tuyen-dung/",
+      "word_count": 430,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "cb87755f010d1dc1",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/khoa-hoc/": {
+      "platform_id": "community",
+      "title": "Khoá học Chuỗi cung ứng & Phân tích dữ liệu — Supply Chain Community",
+      "meta_description": "Danh mục các khoá học thực chiến về Quản trị Chuỗi cung ứng (SCM), Mua hàng (Procurement), Kho vận, Logistics, Chứng chỉ CSCM và Phân tích dữ liệu (Excel 365, Power BI, Python, AI).",
+      "canonical": "https://community.erx.vn/khoa-hoc/",
+      "word_count": 256,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b167377af7f1abbc",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/antigravity-25": {
+      "platform_id": "community",
+      "title": "Antigravity IDE & Agentic Workflows Thực chiến — Diễn đàn AI ERX",
+      "meta_description": "Cộng đồng thực hành Antigravity IDE tại Việt Nam: xây dựng Skills, kết nối MCP Server, tự động hoá kiểm toán email Outlook, xử lý OCR PDF và cào dữ liệu web.",
+      "canonical": "https://community.erx.vn/forum/antigravity-25",
+      "word_count": 382,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "516a1650519ce7f6",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/muse_ai-30": {
+      "platform_id": "community",
+      "title": "Muse AI (Meta): Hướng dẫn Đăng ký & Trải nghiệm Thực tế — Diễn đàn ERX",
+      "meta_description": "Tổng hợp hướng dẫn cách tạo tài khoản Muse AI (muse.ai/join của Meta), đánh giá tính năng, xử lý lỗi đăng nhập và ứng dụng Muse AI trong công việc thực tế.",
+      "canonical": "https://community.erx.vn/forum/muse_ai-30",
+      "word_count": 284,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "093553138ac0bc6b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/review_ai-29": {
+      "platform_id": "community",
+      "title": "Đánh giá Công cụ AI Thực tế (Review AI Tools) — Diễn đàn SCM ERX",
+      "meta_description": "Đánh giá khách quan, so sánh chi phí và hướng dẫn trải nghiệm các công cụ AI mới nhất (Muse AI của Meta, Claude, ChatGPT, Copilot) phục vụ công việc.",
+      "canonical": "https://community.erx.vn/forum/review_ai-29",
+      "word_count": 314,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "9485ef77a24dd642",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/html_dashboard-27": {
+      "platform_id": "community",
+      "title": "Thiết kế Báo cáo HTML Dashboard Tương tác — Diễn đàn Data & AI ERX",
+      "meta_description": "Hướng dẫn xây dựng HTML Dashboard tương tác độc lập (Self-contained HTML Report) với ECharts, Tabulator, Power BI và Vibe Coding cho báo cáo doanh nghiệp.",
+      "canonical": "https://community.erx.vn/forum/html_dashboard-27",
+      "word_count": 235,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "c0b22e72b06a9c31",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/datastorytelling-26": {
+      "platform_id": "community",
+      "title": "Kể chuyện bằng Dữ liệu (Data Storytelling) — Diễn đàn Phân tích ERX",
+      "meta_description": "Nghệ thuật Kể chuyện bằng Dữ liệu (Data Storytelling): tư duy thiết kế biểu đồ, cấu trúc báo cáo quản trị McKinsey/BCG và truyền tải thông điệp hành động.",
+      "canonical": "https://community.erx.vn/forum/datastorytelling-26",
+      "word_count": 302,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f94cb697ff53a728",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/entertainment-24": {
+      "platform_id": "community",
+      "title": "Góc Sáng tạo, Giải trí & Đời sống Công nghệ (Entertainment) — ERX",
+      "meta_description": "Không gian giao lưu, chia sẻ dự án cá nhân sáng tạo, phần mềm nghe nhạc Hi-Fi, sở thích công nghệ và kết nối các thành viên Cộng đồng Chuỗi cung ứng ERX.",
+      "canonical": "https://community.erx.vn/forum/entertainment-24",
+      "word_count": 240,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "0206dc4016d2a626",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/ai-10": {
+      "platform_id": "community",
+      "title": "Trí tuệ Nhân tạo Ứng dụng (AI & Agents) — Diễn đàn Công nghệ ERX",
+      "meta_description": "Diễn đàn Trí tuệ Nhân tạo (AI) ứng dụng cho Doanh nghiệp & Chuỗi cung ứng: AI Agents, Microsoft Copilot, Claude, Gemini, Vibe Coding và tự động hoá quy trình.",
+      "canonical": "https://community.erx.vn/forum/ai-10",
+      "word_count": 1378,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "5eb797a4ce8db546",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/hotnews-28": {
+      "platform_id": "community",
+      "title": "Tin tức Công nghệ AI & Chuỗi cung ứng Toàn cầu (Hot News) — ERX",
+      "meta_description": "Cập nhật nhanh các tin tức nóng (Hot News) và báo cáo chiến lược toàn cầu về Trí tuệ Nhân tạo (OpenAI, Anthropic Claude, Microsoft, Google, Meta) và Supply Chain.",
+      "canonical": "https://community.erx.vn/forum/hotnews-28",
+      "word_count": 460,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b5e5b2a4e98e8dfa",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/vibe_coding-18": {
+      "platform_id": "community",
+      "title": "Vibe Coding & Phát triển Ứng dụng bằng Ngôn ngữ Tự nhiên — ERX",
+      "meta_description": "Khám phá phương pháp Vibe Coding: xây dựng phần mềm, công cụ tự động hoá, dashboard tương tác bằng ngôn ngữ tự nhiên cùng AI Coding Agents và quy tắc bảo mật.",
+      "canonical": "https://community.erx.vn/forum/vibe_coding-18",
+      "word_count": 377,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "59f601d723120003",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/foundation-20": {
+      "platform_id": "community",
+      "title": "Kiến thức Nền tảng về AI, LLM & Agentic Architecture — Diễn đàn ERX",
+      "meta_description": "Nền tảng cốt lõi về Trí tuệ Nhân tạo (AI Foundation): kiến trúc mô hình ngôn ngữ lớn LLM, RAG, Context Engineering, Memory, Tool Calling và giao thức MCP.",
+      "canonical": "https://community.erx.vn/forum/foundation-20",
+      "word_count": 710,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f0b67d3d4dbb0f35",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/github_repo-19": {
+      "platform_id": "community",
+      "title": "Hot GitHub Repos & Mã nguồn mở AI / Supply Chain — Diễn đàn ERX",
+      "meta_description": "Tuyển tập các kho mã nguồn mở nổi bật (Hot GitHub Repositories) về AI Agents, Skills, MCP Servers, tự động hoá văn phòng và tối ưu hoá Chuỗi cung ứng.",
+      "canonical": "https://community.erx.vn/forum/github_repo-19",
+      "word_count": 245,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b9aa3b3c1c62f4c7",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/ai_for_works-11": {
+      "platform_id": "community",
+      "title": "Ứng dụng AI trong Công việc & Văn phòng (AI for Works) — Diễn đàn ERX",
+      "meta_description": "Tổng hợp kinh nghiệm ứng dụng AI vào công việc hàng ngày (AI for Works): tự động hoá Excel, PowerPoint, Outlook, báo cáo quản trị với Copilot, Claude, Gemini.",
+      "canonical": "https://community.erx.vn/forum/ai_for_works-11",
+      "word_count": 1342,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "1564240f4fd4b6e0",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/microsoft-13": {
+      "platform_id": "community",
+      "title": "Hệ sinh thái Microsoft 365, Power Platform & AI — Diễn đàn SCM ERX",
+      "meta_description": "Cộng đồng ứng dụng hệ sinh thái Microsoft trong doanh nghiệp: Microsoft 365 Copilot, Copilot Studio, Power BI, Power Automate, Excel 365 và Microsoft Project.",
+      "canonical": "https://community.erx.vn/forum/microsoft-13",
+      "word_count": 1119,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "7f602a5b996d9e79",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/copilot-14": {
+      "platform_id": "community",
+      "title": "Microsoft 365 Copilot: Kỹ năng Prompt & Tự động hoá — Diễn đàn ERX",
+      "meta_description": "Chia sẻ kinh nghiệm sử dụng Microsoft 365 Copilot trên Excel, Word, PowerPoint, Outlook, Teams: thiết lập Copilot Memory, Skills và tự động hoá báo cáo.",
+      "canonical": "https://community.erx.vn/forum/copilot-14",
+      "word_count": 782,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "fd00a91974fc186b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/microsoft_studio-17": {
+      "platform_id": "community",
+      "title": "Microsoft Copilot Studio & Thiết kế AI Agent — Diễn đàn Công nghệ ERX",
+      "meta_description": "Hướng dẫn xây dựng AI Agent chuyên biệt với Microsoft Copilot Studio: kết nối dữ liệu nội bộ, tự động hoá quy trình HR, Mua hàng, IT Helpdesk cho doanh nghiệp.",
+      "canonical": "https://community.erx.vn/forum/microsoft_studio-17",
+      "word_count": 375,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "eca933f8895d82f0",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/forum/google-15": {
+      "platform_id": "community",
+      "title": "Hệ sinh thái Google AI, Gemini & Antigravity IDE — Diễn đàn ERX",
+      "meta_description": "Thảo luận về các công cụ AI của Google dành cho doanh nghiệp và lập trình viên: Google Gemini, NotebookLM, Google Workspace AI và môi trường Antigravity IDE.",
+      "canonical": "https://community.erx.vn/forum/google-15",
+      "word_count": 394,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "3ed9b7c52f5dbe4c",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/tuyen-dung/pmc-specialist-senior-specialist-material-control-3": {
+      "platform_id": "community",
+      "title": "PMC Specialist/ Senior Specialist (Material… — Tuyển dụng SCM",
+      "meta_description": "CÔNG TY TNHH ERX VIỆT NAM tuyển dụng vị trí PMC Specialist/ Senior Specialist (Material Control) tại TP. Hồ Chí Minh. Plan, purchase and control material…",
+      "canonical": "https://community.erx.vn/tuyen-dung/pmc-specialist-senior-specialist-material-control-3",
+      "word_count": 371,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "53281c1438debdc1",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/khoa-hoc/procurement-manager-2": {
+      "platform_id": "community",
+      "title": "Khoá học Procurement Manager — Đào tạo Chuỗi cung ứng ERX",
+      "meta_description": "Khoá học Procurement Manager: Trưởng phòng mua hàng. Gồm 9 bài học tương tác ngành Quản trị Chuỗi cung ứng, Mua hàng & Phân tích dữ liệu trên LMS Supply Chain…",
+      "canonical": "https://community.erx.vn/khoa-hoc/procurement-manager-2",
+      "word_count": 249,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "c5ab4321bb3b6044",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/doanh-nghiep/7": {
+      "platform_id": "community",
+      "title": "Achilles Company — Hồ sơ Doanh nghiệp & Đối tác SCM ERX",
+      "meta_description": "Achilles Company (No. 23B, Cau Do 2, Ha Dong Ward, Hanoi City): Achilles is a supplier, distributor, and processor of industrial materials specializing in the…",
+      "canonical": "https://community.erx.vn/doanh-nghiep/7",
+      "word_count": 382,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "c205b6252395853f",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/doanh-nghiep/6": {
+      "platform_id": "community",
+      "title": "Công ty TNHH Craft Paper Việt Nam — Doanh nghiệp SCM ERX",
+      "meta_description": "Công ty TNHH Craft Paper Việt Nam (4 Đường D19, Phường Phước Long, TPHCM, Việt Nam): Công ty TNHH Craft Paper Việt Nam (craftpaper.vn) cung cấp giải pháp quà…",
+      "canonical": "https://community.erx.vn/doanh-nghiep/6",
+      "word_count": 384,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "e78b39d9dbc243df",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/doanh-nghiep/5": {
+      "platform_id": "community",
+      "title": "Công ty cổ phần nhãn bao bì Vina Úc — Doanh nghiệp SCM ERX",
+      "meta_description": "Công ty cổ phần nhãn bao bì Vina Úc (Đường số 4, KCN Tam Phước, Phường Tam Phước, TP Đồng Nai): Bao bì Vina Úc là nhà cung cấp đem đến giải pháp toàn diện cho…",
+      "canonical": "https://community.erx.vn/doanh-nghiep/5",
+      "word_count": 404,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "5756846b365c4f38",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/doanh-nghiep/4": {
+      "platform_id": "community",
+      "title": "Công ty Cổ Phần Kỹ Thuật Tự Động Song Nguyên — Doanh nghiệp SCM ERX",
+      "meta_description": "Công ty Cổ Phần Kỹ Thuật Tự Động Song Nguyên (110/32/5 Tô Hiệu, Phường Phú Thạnh, TP Hồ Chí Minh): Về Song Nguyên Được thành lập năm 2006, Song Nguyên có hơn 19…",
+      "canonical": "https://community.erx.vn/doanh-nghiep/4",
+      "word_count": 469,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "08f3fd025286fe30",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/doanh-nghiep/3": {
+      "platform_id": "community",
+      "title": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ KỲ… — Doanh nghiệp SCM ERX",
+      "meta_description": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ KỲ LONG (Tầng 1 Toà nhà PVFCCo, Số 43 Mạc Đĩnh Chi, Phường Sài Gòn, TP Hồ Chí Minh): Cung cấp giải pháp trọn gói về khí…",
+      "canonical": "https://community.erx.vn/doanh-nghiep/3",
+      "word_count": 352,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "07d5f9406b861131",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/doanh-nghiep/2": {
+      "platform_id": "community",
+      "title": "CÔNG TY CỔ PHẦN GIẢI PHÁP CÔNG NGHỆ ARITO — Doanh nghiệp SCM ERX",
+      "meta_description": "CÔNG TY CỔ PHẦN GIẢI PHÁP CÔNG NGHỆ ARITO (87 Phạm Văn Xảo, Phường Phú Thọ Hòa, TP Hồ Chí Minh): Arito Solutions (Công ty Cổ phần Giải pháp Công nghệ Arito) là…",
+      "canonical": "https://community.erx.vn/doanh-nghiep/2",
+      "word_count": 365,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "5fceb1f68f3edcb5",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/doanh-nghiep/1": {
+      "platform_id": "community",
+      "title": "CÔNG TY TNHH ERX VIỆT NAM — Hồ sơ Doanh nghiệp & Đối tác SCM ERX",
+      "meta_description": "CÔNG TY TNHH ERX VIỆT NAM (46/4 Nguyễn Cửu Vân, Phường Gia Định, TP Hồ Chí Minh): Trung tâm đào tạo thực chiến quản trị doanh nghiệp Đối tác doanh nghiệp xác…",
+      "canonical": "https://community.erx.vn/doanh-nghiep/1",
+      "word_count": 356,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "f149c256a574ab8c",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/thanh-vien/36": {
+      "platform_id": "community",
+      "title": "Thành Nhân — Hồ sơ Thành viên Cộng đồng Chuỗi cung ứng ERX",
+      "meta_description": "Hồ sơ chuyên môn của Thành Nhân trên Cộng đồng Chuỗi cung ứng (Supply Chain Community ERX) với 2 chủ đề thảo luận tiêu biểu: 01 Page Dashboard trong 01 measure…",
+      "canonical": "https://community.erx.vn/thanh-vien/36",
+      "word_count": 256,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "23c7e483ee2e157b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/thanh-vien/14": {
+      "platform_id": "community",
+      "title": "Quang Toàn Lê Nguyễn — Hồ sơ Thành viên Cộng đồng Chuỗi cung ứng ERX",
+      "meta_description": "Hồ sơ chuyên môn của Quang Toàn Lê Nguyễn trên Cộng đồng Chuỗi cung ứng (Supply Chain Community ERX) với 1 chủ đề thảo luận tiêu biểu: Quản lý tồn kho và theo…",
+      "canonical": "https://community.erx.vn/thanh-vien/14",
+      "word_count": 232,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "08d8317835fff391",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/thanh-vien/8": {
+      "platform_id": "community",
+      "title": "Tuan Vuong — Hồ sơ Thành viên Cộng đồng Chuỗi cung ứng ERX",
+      "meta_description": "Hồ sơ chuyên môn của Tuan Vuong trên Cộng đồng Chuỗi cung ứng (Supply Chain Community ERX) với 1 chủ đề thảo luận tiêu biểu: Finance × Supply Chain × AI: Bài…",
+      "canonical": "https://community.erx.vn/thanh-vien/8",
+      "word_count": 220,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "d45acdd304f1d31b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/thanh-vien/6": {
+      "platform_id": "community",
+      "title": "Thư Nguyễn — Hồ sơ Thành viên Cộng đồng Chuỗi cung ứng ERX",
+      "meta_description": "Hồ sơ chuyên môn của Thư Nguyễn trên Cộng đồng Chuỗi cung ứng (Supply Chain Community ERX) với 3 chủ đề thảo luận tiêu biểu: Nhân lực Supply Chain Việt Nam…",
+      "canonical": "https://community.erx.vn/thanh-vien/6",
+      "word_count": 335,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "213fec245e2b374c",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/thanh-vien/2": {
+      "platform_id": "community",
+      "title": "Ngọc_Holcim — Hồ sơ Thành viên Cộng đồng Chuỗi cung ứng ERX",
+      "meta_description": "Hồ sơ chuyên môn của Ngọc_Holcim trên Cộng đồng Chuỗi cung ứng (Supply Chain Community ERX) với 1 chủ đề thảo luận tiêu biểu: Làm một trang SharePoint HTML từ…",
+      "canonical": "https://community.erx.vn/thanh-vien/2",
+      "word_count": 221,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "79bdb25be75cbeb0",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://community.erx.vn/thanh-vien/1": {
+      "platform_id": "community",
+      "title": "Minh Ngọc - ERX Vietnam — Thành viên Supply Chain Community ERX",
+      "meta_description": "Hồ sơ chuyên môn của Minh Ngọc - ERX Vietnam trên Cộng đồng Chuỗi cung ứng (Supply Chain Community ERX) với 35 chủ đề thảo luận tiêu biểu: Dự báo sai ở đâu thì…",
+      "canonical": "https://community.erx.vn/thanh-vien/1",
+      "word_count": 1246,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "4259d5118e77df0c",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:38.469205+07:00"
+    },
+    "https://erx.vn/": {
+      "platform_id": "erx-main",
+      "title": "ERX - Trung tâm đào tạo thực chiến phân tích dữ liệu & quản lý chuỗi cung ứng",
+      "meta_description": "Phân tích, xử lý dữ liệu, tối ưu hóa vận hành doanh nghiệp (đặc biệt là chuỗi cung ứng) với Excel, Power BI, Python và chuẩn quản trị dự án PMBOK 8.",
+      "canonical": "https://erx.vn/",
+      "word_count": 470,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "6d616e44b48e6c77",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/power-bi.html": {
+      "platform_id": "erx-main",
+      "title": "Power BI",
+      "meta_description": "Chuyên mục hướng dẫn Microsoft Power BI chuyên sâu: Xây dựng Data Model chuẩn Star Schema, viết hàm DAX nâng cao (CALCULATE, ALL, ALLSELECTED), Pareto và Dashboard.",
+      "canonical": "https://erx.vn/power-bi.html",
+      "word_count": 745,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "be99d1875939c15a",
+      "issues": [
+        "SHORT_TITLE (8 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/sql-in-excel.html": {
+      "platform_id": "erx-main",
+      "title": "SQL in Excel",
+      "meta_description": "Phương pháp sử dụng ngôn ngữ truy vấn SQL (SELECT, JOIN, GROUP BY, UNION, PIVOT) ngay trong Microsoft Excel qua ADODB giúp tổng hợp hàng trăm nghìn dòng trong 1 giây.",
+      "canonical": "https://erx.vn/sql-in-excel.html",
+      "word_count": 1105,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b59810e19872addb",
+      "issues": [
+        "SHORT_TITLE (12 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/supply-chain-management.html": {
+      "platform_id": "erx-main",
+      "title": "Supply Chain Management",
+      "meta_description": "Kiến thức chuyên sâu về Quản trị Chuỗi cung ứng (SCM) hiện đại: Chiến lược tìm nguồn cung ứng, hoạch định vật tư, vận hành kho bãi, Logistics và phân tích dữ liệu SCM.",
+      "canonical": "https://erx.vn/supply-chain-management.html",
+      "word_count": 1473,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "af1fa10a5f0cfefb",
+      "issues": [
+        "SHORT_TITLE (23 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/procurement-management.html": {
+      "platform_id": "erx-main",
+      "title": "Procurement Management",
+      "meta_description": "Cẩm nang Quản trị Mua sắm (Procurement) B2B: Tìm nguồn cung ứng chiến lược (Strategic Sourcing), phân tích chi phí TCO, 8 phương pháp tính Saving và đàm phán nhà cung cấp.",
+      "canonical": "https://erx.vn/procurement-management.html",
+      "word_count": 1435,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "8412daec8e4dc9bd",
+      "issues": [
+        "SHORT_TITLE (22 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/project-management.html": {
+      "platform_id": "erx-main",
+      "title": "Project Management",
+      "meta_description": "Trọn bộ cẩm nang Quản trị Dự án thực chiến theo chuẩn PMBOK Guide 8th Edition: Project Charter, Ma trận RACI, WBS, Đường găng CPM, 9 chỉ số EVM và định lượng rủi ro EMV.",
+      "canonical": "https://erx.vn/project-management.html",
+      "word_count": 1215,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b70dfe67198bc39d",
+      "issues": [
+        "SHORT_TITLE (18 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/dao-tao-doanh-nghiep.html": {
+      "platform_id": "erx-main",
+      "title": "Đào tạo doanh nghiệp",
+      "meta_description": "Chương trình đào tạo doanh nghiệp (Corporate In-house Training) thiết kế riêng theo bài toán thực tế về Phân tích dữ liệu (Excel, Power BI, SQL, Python) & Chuỗi cung ứng.",
+      "canonical": "https://erx.vn/dao-tao-doanh-nghiep.html",
+      "word_count": 1117,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "846df33c9d02b35e",
+      "issues": [
+        "SHORT_TITLE (20 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/hoi-thao.html": {
+      "platform_id": "erx-main",
+      "title": "Hội thảo",
+      "meta_description": "Hội thảo",
+      "canonical": "https://erx.vn/hoi-thao.html",
+      "word_count": 899,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "47474e6cb8adb79f",
+      "issues": [
+        "SHORT_TITLE (8 chars)",
+        "SHORT_META_DESCRIPTION (8 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/kien-thuc.html": {
+      "platform_id": "erx-main",
+      "title": "Chia sẻ kiến thức",
+      "meta_description": "Kho tàng bài viết chuyên sâu về Excel 365, VBA, SQL, Power BI DAX, Python, Quản trị Dự án PMBOK 8 và Quản lý Chuỗi cung ứng (Supply Chain) thực chiến tại ERX.",
+      "canonical": "https://erx.vn/kien-thuc.html",
+      "word_count": 1910,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "8a1767cfdb556a63",
+      "issues": [
+        "SHORT_TITLE (17 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/mau-file-quan-ly-excel.html": {
+      "platform_id": "erx-main",
+      "title": "Mẫu file quản lý Excel",
+      "meta_description": "Tải miễn phí bộ sưu tập mẫu file quản lý bằng Excel chuyên nghiệp: Quản lý tồn kho, kế hoạch mua hàng, lịch thanh toán, nhân sự và tự động hóa báo cáo doanh nghiệp.",
+      "canonical": "https://erx.vn/mau-file-quan-ly-excel.html",
+      "word_count": 710,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "20b4d09945c74603",
+      "issues": [
+        "SHORT_TITLE (22 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/excel-functions.html": {
+      "platform_id": "erx-main",
+      "title": "Excel",
+      "meta_description": "Cẩm nang tra cứu cú pháp và bài tập thực hành các hàm trong Excel (VLOOKUP, INDEX MATCH, SUMIFS, COUNTIFS, SUBTOTAL, XLOOKUP, FILTER, LAMBDA) dễ hiểu nhất.",
+      "canonical": "https://erx.vn/excel-functions.html",
+      "word_count": 507,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "6bb4526121fa68fd",
+      "issues": [
+        "SHORT_TITLE (5 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/excel-function.html": {
+      "platform_id": "erx-main",
+      "title": "Excel Functions",
+      "meta_description": "Hướng dẫn chi tiết cách kết hợp các hàm tính toán, dò tìm và xử lý chuỗi văn bản trong Microsoft Excel phục vụ lập báo cáo quản trị và vận hành doanh nghiệp.",
+      "canonical": "https://erx.vn/excel-function.html",
+      "word_count": 1888,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "1e6af549d4a5e21b",
+      "issues": [
+        "SHORT_TITLE (15 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/excel-vba.html": {
+      "platform_id": "erx-main",
+      "title": "Excel VBA",
+      "meta_description": "Hướng dẫn lập trình VBA trong Excel từ cơ bản đến nâng cao: Thao tác đối tượng Workbook/Range, viết hàm UDF, kết nối ADODB SQL và tự động hóa báo cáo doanh nghiệp.",
+      "canonical": "https://erx.vn/excel-vba.html",
+      "word_count": 1339,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "7f97c233890f8fb6",
+      "issues": [
+        "SHORT_TITLE (9 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/dashboard-automated-report.html": {
+      "platform_id": "erx-main",
+      "title": "Dashboard & Automated Report",
+      "meta_description": "Hướng dẫn kỹ thuật vẽ biểu đồ động (Dynamic Chart), Highlight Top N, nhãn dữ liệu thông minh và thiết kế hệ thống Dashboard báo cáo quản trị tự động trên Excel.",
+      "canonical": "https://erx.vn/dashboard-automated-report.html",
+      "word_count": 1370,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "7e884efe8cabac7b",
+      "issues": [
+        "SHORT_TITLE (28 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/excel-365.html": {
+      "platform_id": "erx-main",
+      "title": "Các hàm Excel 365",
+      "meta_description": "Khám phá sức mạnh đột phá của các hàm mảng động trong phiên bản Microsoft Excel 365 giúp tự động hóa hoàn toàn bảng tính mà không cần viết code phức tạp.",
+      "canonical": "https://erx.vn/excel-365.html",
+      "word_count": 1375,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "3db781bca9d7fd7d",
+      "issues": [
+        "SHORT_TITLE (17 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/logistics-management.html": {
+      "platform_id": "erx-main",
+      "title": "Logistics Management",
+      "meta_description": "Kiến thức thực chiến về Quản trị Logistics: Nghiệp vụ xuất nhập khẩu, tra cứu HS Code, bài toán tối ưu hóa tuyến đường vận tải (Route Optimization) và tính cước vận chuyển.",
+      "canonical": "https://erx.vn/logistics-management.html",
+      "word_count": 808,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "0511c34693d5f61f",
+      "issues": [
+        "SHORT_TITLE (20 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/planning-management.html": {
+      "platform_id": "erx-main",
+      "title": "Planning Management",
+      "meta_description": "Phương pháp Hoạch định Chuỗi cung ứng (Supply Chain Planning): Dự báo nhu cầu (Demand Forecasting), lập kế hoạch nguyên vật liệu (MRP) và tối ưu hóa mức tồn kho an toàn.",
+      "canonical": "https://erx.vn/planning-management.html",
+      "word_count": 505,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "c8f0391fbfd1d6e0",
+      "issues": [
+        "SHORT_TITLE (19 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/warehouse-management.html": {
+      "platform_id": "erx-main",
+      "title": "Warehouse Management",
+      "meta_description": "Giải pháp tối ưu hóa vận hành kho hàng hiện đại: Thiết kế Layout kho theo phân tích ABC đa chiều, tối ưu lộ trình lấy hàng (Order Picking Routing) và kiểm soát tồn kho.",
+      "canonical": "https://erx.vn/warehouse-management.html",
+      "word_count": 396,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "68eb47ac594a6957",
+      "issues": [
+        "SHORT_TITLE (20 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/python-for-supply-chain.html": {
+      "platform_id": "erx-main",
+      "title": "Python for Supply Chain",
+      "meta_description": "Hướng dẫn lập trình Python cho chuyên viên Supply Chain & Data Analyst: Làm chủ Google Colab, Jupyter Notebook, thư viện Pandas DataFrame và bài toán tự động hóa MRP.",
+      "canonical": "https://erx.vn/python-for-supply-chain.html",
+      "word_count": 803,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "579d9e1dcadc8e1e",
+      "issues": [
+        "SHORT_TITLE (23 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/cuoc-thi-supply-chain-data-analysis-challenge.html": {
+      "platform_id": "erx-main",
+      "title": "Cuộc thi Supply Chain Data Analysis Challenge",
+      "meta_description": "Sân chơi học thuật và thực chiến phân tích dữ liệu chuỗi cung ứng (Supply Chain Data Analysis Challenge) dành cho cộng đồng Supply Chain và Data Analyst tại Việt Nam.",
+      "canonical": "https://erx.vn/cuoc-thi-supply-chain-data-analysis-challenge.html",
+      "word_count": 322,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "5c8b55cc41005f8a",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/phan-mem.html": {
+      "platform_id": "erx-main",
+      "title": "Phần mềm",
+      "meta_description": "Hệ sinh thái phần mềm và Add-in thực chiến từ ERX Việt Nam: ERX Smart Tool, AI Project Gantt Planner (PMBOK 8), công cụ tối ưu hóa tuyến đường vận tải và kho vận.",
+      "canonical": "https://erx.vn/phan-mem.html",
+      "word_count": 429,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "df4d084178c310a9",
+      "issues": [
+        "SHORT_TITLE (8 chars)"
+      ],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/hanh-vi-cua-nguoi-mua-hang-cong-nghiep-phan-1-7123203445.html": {
+      "platform_id": "erx-main",
+      "title": "Hành vi của người mua hàng trong ngành công nghiệp (phần 1)",
+      "meta_description": "Để hiểu hành vi của người mua trong ngành công nghiệp, đầu tiên, chúng ta nên xem xét các yếu tố kinh tế ảnh hưởng đến thực hành mua sắm, sau đó xem xét...",
+      "canonical": "https://erx.vn/hanh-vi-cua-nguoi-mua-hang-cong-nghiep-phan-1-7123203445.html",
+      "word_count": 2937,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "e4ed1c3a1e319af5",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/thay-doi-cach-ban-thuyet-phuc-nguoi-khac-7122926210.html": {
+      "platform_id": "erx-main",
+      "title": "Nghệ thuật thay đổi cách thuyết phục người khác trong môi trường doanh nghiệp",
+      "meta_description": "Chắc hẳn bạn đã từng trải qua những trường hợp tương tự như này, bạn mời mọi người tham gia một cuộc họp để thuyết phục sếp và đồng nghiệp rằng công ty...",
+      "canonical": "https://erx.vn/thay-doi-cach-ban-thuyet-phuc-nguoi-khac-7122926210.html",
+      "word_count": 10794,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "94ed9374089a5e53",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/su-dung-thu-vien-pandas-de-kham-pha-du-lieu-7122438204.html": {
+      "platform_id": "erx-main",
+      "title": "Hướng dẫn sử dụng thư viện Pandas trong Python để khám phá dữ liệu (EDA)",
+      "meta_description": "Pandas là một thư viện mã nguồn mở để mọi người có thể xử lý và phân tích dữ liệu. Pandas có để đọc dữ liệu từ các file excel, csv,... lên để phân tích...",
+      "canonical": "https://erx.vn/su-dung-thu-vien-pandas-de-kham-pha-du-lieu-7122438204.html",
+      "word_count": 2512,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "dcc1732f79b20507",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/gioi-thieu-phan-mem-toi-uu-hoa-tuyen-duong-7122425785.html": {
+      "platform_id": "erx-main",
+      "title": "Giới thiệu phần mềm tối ưu hóa tuyến đường vận tải (Route Optimization) trên Excel",
+      "meta_description": "Trong bài viết lần trước Tối ưu hóa tuyến đường - Route optimization tôi đã trình bày về một giải thuật đơn giản giúp tìm đường đi ngắn nhất giữa các điểm...",
+      "canonical": "https://erx.vn/gioi-thieu-phan-mem-toi-uu-hoa-tuyen-duong-7122425785.html",
+      "word_count": 904,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "cadfafd29e750338",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/hs-code-nhung-thu-ma-chung-ta-can-phai-biet-7122293947.html": {
+      "platform_id": "erx-main",
+      "title": "HS code: Những thứ mà chúng ta cần phải biết!",
+      "meta_description": "Đối với hàng xuất nhập thì HS code là một tên gọi khá quen thuộc rồi. Nhưng ở bài viết này mình chia sẻ những thứ liên quan đến HS code. Hi vọng nó sẽ hữu...",
+      "canonical": "https://erx.vn/hs-code-nhung-thu-ma-chung-ta-can-phai-biet-7122293947.html",
+      "word_count": 1006,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "62240a49be7f4737",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/truy-van-so-km-giua-2-dia-diem-bat-ky-bang-ma-tran-vuong-7122103947.html": {
+      "platform_id": "erx-main",
+      "title": "Truy vấn số km giữa 2 địa điểm bất kỳ bằng \"Ma trận vuông\"",
+      "meta_description": "Giải pháp tra cứu siêu tốc khoảng cách (km) giữa 2 địa điểm bất kỳ bằng Ma trận vuông (Distance Matrix) trong Excel, giúp bộ phận Logistics và Mua hàng lập d...",
+      "canonical": "https://erx.vn/truy-van-so-km-giua-2-dia-diem-bat-ky-bang-ma-tran-vuong-7122103947.html",
+      "word_count": 1165,
+      "jsonld_count": 1,
+      "png_base64_kb": 176.5,
+      "fingerprint": "3f8f9237fd2edd9a",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/tinh-quang-duong-van-chuyen-bang-ham-api-cua-google-map-7122096748.html": {
+      "platform_id": "erx-main",
+      "title": "Tính quãng đường vận chuyển bằng hàm API của Google Map",
+      "meta_description": "Là một Logistics Procurement (người mua dịch vụ vận chuyển, hậu cần cho công ty), tôi rất quan tâm đến sự chính xác về quảng đường vận chuyển trước khi...",
+      "canonical": "https://erx.vn/tinh-quang-duong-van-chuyen-bang-ham-api-cua-google-map-7122096748.html",
+      "word_count": 1601,
+      "jsonld_count": 1,
+      "png_base64_kb": 25.8,
+      "fingerprint": "ab9382f990716caa",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/gioi-thieu-google-colab-7122518308.html": {
+      "platform_id": "erx-main",
+      "title": "Giới thiệu Google Colab: Môi trường lập trình Python miễn phí trên đám mây",
+      "meta_description": "Google colab là một sản phẩm của Google phát triển, là một môi trường dùng để lập trình ngôn ngữ Python chạy hoàn toàn trên Cloud và hoàn toàn được sử...",
+      "canonical": "https://erx.vn/gioi-thieu-google-colab-7122518308.html",
+      "word_count": 1036,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "8e6770e9a427bdd5",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/ham-groupby-trong-pandas-cong-dung-va-cach-dung-7122491878.html": {
+      "platform_id": "erx-main",
+      "title": "Hàm GroupBy trong Pandas - Công dụng và cách dùng",
+      "meta_description": "Pandas GroupBy là một hàm mạnh mẽ và linh hoạt trong Python. Nó cho phép bạn chia dữ liệu của mình thành các nhóm riêng biệt để thực hiện các phép tính...",
+      "canonical": "https://erx.vn/ham-groupby-trong-pandas-cong-dung-va-cach-dung-7122491878.html",
+      "word_count": 1196,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "6ef3a94e743ebc20",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/procurement-specialist-direct-material-raw-materials-energy-goods-7123986505.html": {
+      "platform_id": "erx-main",
+      "title": "Tuyển dụng Procurement Specialist - Direct Material (Raw Materials & Energy)",
+      "meta_description": "Thông tin tuyển dụng vị trí Chuyên viên Mua hàng Nguyên vật liệu trực tiếp (Procurement Specialist - Direct Material): mô tả công việc, yêu cầu năng lực và chế độ đãi ngộ.",
+      "canonical": "https://erx.vn/procurement-specialist-direct-material-raw-materials-energy-goods-7123986505.html",
+      "word_count": 834,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "a87d7d851aafc0ba",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/lead-logistics-process-specialist-7123976602.html": {
+      "platform_id": "erx-main",
+      "title": "Tuyển dụng Lead Logistics - Process Specialist (Chuyên gia Quy trình Logistics)",
+      "meta_description": "Cơ hội nghề nghiệp vị trí Lead Logistics - Process Specialist: Chịu trách nhiệm chuẩn hóa quy trình vận hành Logistics, tối ưu chi phí vận tải và phát triển hệ thống.",
+      "canonical": "https://erx.vn/lead-logistics-process-specialist-7123976602.html",
+      "word_count": 830,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "d2268b6f5626683b",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/supply-chain-manager-7123968182.html": {
+      "platform_id": "erx-main",
+      "title": "Tuyển dụng Trưởng phòng Chuỗi cung ứng (Supply Chain Manager)",
+      "meta_description": "Thông tin tuyển dụng vị trí Trưởng phòng Chuỗi cung ứng (Supply Chain Manager): Điều hành chiến lược kế hoạch, mua hàng, kho vận và tối ưu hiệu suất chuỗi cung ứng.",
+      "canonical": "https://erx.vn/supply-chain-manager-7123968182.html",
+      "word_count": 915,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "9acbb45539872684",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/tuyen-dung-tro-ly-kinh-doanh-t6-2024-7123946893.html": {
+      "platform_id": "erx-main",
+      "title": "Tuyển dụng vị trí Trợ lý Kinh doanh (Sales Admin) ngành Thiết bị Công nghiệp",
+      "meta_description": "Công ty Song Nguyên là nhà phân phối thiết bị công nghiệp, tự động hóa của các hãng hàng đầu thế giới như: Yaskawa, Nidec, động cơ PM, Robot Yaskawa, biến...",
+      "canonical": "https://erx.vn/tuyen-dung-tro-ly-kinh-doanh-t6-2024-7123946893.html",
+      "word_count": 1054,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "69503fdb4f53641c",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/deputy-purchasing-and-logistics-team-leader-7123956328.html": {
+      "platform_id": "erx-main",
+      "title": "Tuyển dụng Deputy Purchasing and Logistics Team Leader ( Mua hàng & Logistics)",
+      "meta_description": "Tuyển dụng vị trí Phó nhóm Mua hàng Quốc tế & Logistics (Deputy Purchasing and Logistics Team Leader): Quản lý thu mua nhập khẩu, đàm phán nhà cung cấp và điều phối xuất nhập khẩu.",
+      "canonical": "https://erx.vn/deputy-purchasing-and-logistics-team-leader-7123956328.html",
+      "word_count": 1170,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "10efd21e2084b209",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://erx.vn/layout-theo-quy-tac-abc-trong-cau-hinh-he-thong-kho-hang-7124011913.html": {
+      "platform_id": "erx-main",
+      "title": "Layout theo quy tắc ABC trong cấu hình hệ thống kho hàng",
+      "meta_description": "Với sự phát triển của công nghệ và nhu cầu phân tích chuyên sâu, phương pháp ABC ngày càng mở rộng theo hướng phân tích đa chiều, tích hợp thêm các yếu tố...",
+      "canonical": "https://erx.vn/layout-theo-quy-tac-abc-trong-cau-hinh-he-thong-kho-hang-7124011913.html",
+      "word_count": 1590,
+      "jsonld_count": 1,
+      "png_base64_kb": 0.0,
+      "fingerprint": "c2857d7d83f449a2",
+      "issues": [],
+      "last_checked": "2026-10-28T22:35:49.608112+07:00"
+    },
+    "https://khoahoc.erx.vn/": {
+      "platform_id": "khoahoc",
+      "title": "",
+      "meta_description": "",
+      "canonical": "",
+      "word_count": 0,
+      "jsonld_count": 0,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b9c9a2f75b77411e",
+      "issues": [
+        "MISSING_TITLE"
+      ],
+      "last_checked": "2026-10-28T22:35:50.259110+07:00"
+    },
+    "https://khoahoc.erx.vn/sitemap-courses.xml": {
+      "platform_id": "khoahoc",
+      "title": "",
+      "meta_description": "",
+      "canonical": "",
+      "word_count": 30,
+      "jsonld_count": 0,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b9c9a2f75b77411e",
+      "issues": [
+        "MISSING_TITLE"
+      ],
+      "last_checked": "2026-10-28T22:35:50.259110+07:00"
+    },
+    "https://khoahoc.erx.vn/sitemap-pages.xml": {
+      "platform_id": "khoahoc",
+      "title": "",
+      "meta_description": "",
+      "canonical": "",
+      "word_count": 20,
+      "jsonld_count": 0,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b9c9a2f75b77411e",
+      "issues": [
+        "MISSING_TITLE"
+      ],
+      "last_checked": "2026-10-28T22:35:50.259110+07:00"
+    },
+    "https://khoahoc.erx.vn/sitemap-instructors.xml": {
+      "platform_id": "khoahoc",
+      "title": "",
+      "meta_description": "",
+      "canonical": "",
+      "word_count": 6,
+      "jsonld_count": 0,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b9c9a2f75b77411e",
+      "issues": [
+        "MISSING_TITLE"
+      ],
+      "last_checked": "2026-10-28T22:35:50.259110+07:00"
+    },
+    "https://khoahoc.erx.vn/blog/sitemap.xml": {
+      "platform_id": "khoahoc",
+      "title": "",
+      "meta_description": "",
+      "canonical": "",
+      "word_count": 6,
+      "jsonld_count": 0,
+      "png_base64_kb": 0.0,
+      "fingerprint": "b9c9a2f75b77411e",
+      "issues": [
+        "MISSING_TITLE"
+      ],
+      "last_checked": "2026-10-28T22:35:50.259110+07:00"
+    }
+  },
+  "community_topics_seen": []
+}

@@ -1,0 +1,16 @@
+services:
+  erx-seo-daemon:
+    build: .
+    container_name: erx-seo-autonomous-daemon
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - SEO_DAEMON_MODE=daemon
+      - SEO_DAILY_TIME=07:00
+      - SEO_WATCH_INTERVAL=900
+    volumes:
+      - ./state:/app/state
+      - ./reports:/app/reports
+      - ./logs:/app/logs

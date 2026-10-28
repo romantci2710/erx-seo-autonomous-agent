@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-10-27 22:58:44",
+  "sites": [
+    {
+      "name": "erx.vn (Main Portal & Blog)",
+      "gsc_property": "sc-domain:erx.vn",
+      "base_url": "https://erx.vn/",
+      "status": 200,
+      "elapsed_ms": 1109.4,
+      "html_kb": 952.4,
+      "title": "ERX - Trung tâm đào tạo thực chiến phân tích dữ liệu & quản lý chuỗi cung ứng",
+      "meta_description_len": 148,
+      "canonical": "https://erx.vn/",
+      "jsonld_count": 1,
+      "robots_ok": true,
+      "sitemap_url_count": 147,
+      "issues": []
+    },
+    {
+      "name": "khoahoc.erx.vn (Hoola LMS)",
+      "gsc_property": "sc-domain:erx.vn",
+      "base_url": "https://khoahoc.erx.vn/",
+      "status": 200,
+      "elapsed_ms": 304.4,
+      "html_kb": 5.7,
+      "title": "",
+      "meta_description_len": 0,
+      "canonical": "",
+      "jsonld_count": 0,
+      "robots_ok": true,
+      "sitemap_url_count": 4,
+      "issues": []
+    },
+    {
+      "name": "doc-translate.erx.vn (AI PDF Translator)",
+      "gsc_property": "sc-domain:doc-translate.erx.vn",
+      "base_url": "https://doc-translate.erx.vn/",
+      "status": 200,
+      "elapsed_ms": 668.8,
+      "html_kb": 8.7,
+      "title": "ERX Translate — Dịch Tài liệu PDF, Word, Excel AI Giữ Định dạng",
+      "meta_description_len": 146,
+      "canonical": "https://doc-translate.erx.vn/",
+      "jsonld_count": 1,
+      "robots_ok": true,
+      "sitemap_url_count": 7,
+      "issues": []
+    },
+    {
+      "name": "doc-builder.erx.vn (AI Doc Builder & Audit)",
+      "gsc_property": "sc-domain:doc-builder.erx.vn",
+      "base_url": "https://doc-builder.erx.vn/",
+      "status": 200,
+      "elapsed_ms": 852.4,
+      "html_kb": 815.6,
+      "title": "ERX Doc Builder — Tạo Tài liệu Kỹ thuật, SOP & Audit Quy trình AI",
+      "meta_description_len": 174,
+      "canonical": "https://doc-builder.erx.vn/",
+      "jsonld_count": 1,
+      "robots_ok": true,
+      "sitemap_url_count": 6,
+      "issues": []
+    },
+    {
+      "name": "community.erx.vn (Supply Chain Community)",
+      "gsc_property": "https://community.erx.vn/",
+      "base_url": "https://community.erx.vn/",
+      "status": 200,
+      "elapsed_ms": 230.6,
+      "html_kb": 4.9,
+      "title": "Supply Chain Community — Cộng đồng Chuỗi cung ứng ERX",
+      "meta_description_len": 146,
+      "canonical": "https://community.erx.vn/",
+      "jsonld_count": 1,
+      "robots_ok": true,
+      "sitemap_url_count": 93,
+      "issues": []
+    },
+    {
+      "name": "project-management.erx.vn (AI Gantt Planner)",
+      "gsc_property": "sc-domain:project-management.erx.vn",
+      "base_url": "https://project-management.erx.vn/",
+      "status": 200,
+      "elapsed_ms": 601.4,
+      "html_kb": 29.3,
+      "title": "Phần mềm Quản lý Dự án & Tiến độ Gantt AI Chuẩn PMBOK | ERX",
+      "meta_description_len": 156,
+      "canonical": "https://project-management.erx.vn/",
+      "jsonld_count": 1,
+      "robots_ok": true,
+      "sitemap_url_count": 7,
+      "issues": []
+    }
+  ],
+  "erx_article_alerts": [],
+  "redirect_checks": [
+    {
+      "source": "https://erx.vn/tong-hop-du-lieu-tu-nhieu-",
+      "status": 301,
+      "location": "https://erx.vn/tong-hop-du-lieu-tu-nhieu-sheet-trong-cung-1-file-bang-ham-vstack-7123653300.html",
+      "expected": "https://erx.vn/tong-hop-du-lieu-tu-nhieu-sheet-trong-cung-1-file-bang-ham-vstack-7123653300.html",
+      "ok": true
+    },
+    {
+      "source": "https://erx.vn/sql-in-excel-level-01-data-analysis-automated-reports-dashboard-90302334.html",
+      "status": 301,
+      "location": "https://erx.vn/sql-in-excel.html",
+      "expected": "https://erx.vn/sql-in-excel.html",
+      "ok": true
+    },
+    {
+      "source": "https://erx.vn/khoa-hoc-chuyen-vien-mua-hang-hands-on-procurement-905837736.html",
+      "status": 301,
+      "location": "https://erx.vn/procurement-management.html",
+      "expected": "https://erx.vn/procurement-management.html",
+      "ok": true
+    }
+  ],
+  "action_items": []
+}

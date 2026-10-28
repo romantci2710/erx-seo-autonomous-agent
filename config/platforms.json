@@ -1,0 +1,217 @@
+{
+  "version": "2.0.0",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "daily_schedule_time": "07:00",
+  "watch_interval_seconds": 900,
+  "keywords_per_platform_per_day": 1,
+  "platforms": [
+    {
+      "id": "project-management",
+      "name": "ERX AI Project Gantt Planner (PMBOK 8)",
+      "domain": "project-management.erx.vn",
+      "base_url": "https://project-management.erx.vn/",
+      "sitemap_url": "https://project-management.erx.vn/sitemap.xml",
+      "robots_url": "https://project-management.erx.vn/robots.txt",
+      "github_repo": "romantci2710/Gantt-Planner3.4.3",
+      "local_repo_candidates": [
+        "D:/GIT/Gantt-Planner3.4.3",
+        "../Gantt-Planner3.4.3",
+        "/workspace/Gantt-Planner3.4.3"
+      ],
+      "primary_target_urls": [
+        "https://project-management.erx.vn/",
+        "https://project-management.erx.vn/phan-mem-quan-ly-du-an",
+        "https://project-management.erx.vn/so-do-gantt-online",
+        "https://project-management.erx.vn/quan-ly-du-an-xay-dung",
+        "https://project-management.erx.vn/huong-dan"
+      ],
+      "seed_keywords": [
+        "phần mềm quản lý dự án",
+        "sơ đồ gantt online",
+        "quản lý dự án xây dựng",
+        "lập tiến độ dự án",
+        "phân bổ nguồn lực dự án",
+        "quản lý chi phí dự án evm",
+        "cấu trúc phân chia công việc wbs"
+      ],
+      "competitor_domains": [
+        "1office.vn",
+        "base.vn",
+        "sheet.com.vn",
+        "fastwork.vn",
+        "itgtechnology.vn",
+        "dutoanxd.vn"
+      ]
+    },
+    {
+      "id": "doc-translate",
+      "name": "ERX DocTranslate (AI PDF & LaTeX Translator)",
+      "domain": "doc-translate.erx.vn",
+      "base_url": "https://doc-translate.erx.vn/",
+      "sitemap_url": "https://doc-translate.erx.vn/sitemap.xml",
+      "robots_url": "https://doc-translate.erx.vn/robots.txt",
+      "github_repo": "romantci2710/Translator_Machine",
+      "local_repo_candidates": [
+        "D:/GIT/PDFMathTranslate-3",
+        "../PDFMathTranslate-3",
+        "../Translator_Machine",
+        "/workspace/Translator_Machine"
+      ],
+      "primary_target_urls": [
+        "https://doc-translate.erx.vn/",
+        "https://doc-translate.erx.vn/dich-pdf-giu-nguyen-dinh-dang",
+        "https://doc-translate.erx.vn/dich-tai-lieu-khoa-hoc-cong-thuc-toan",
+        "https://doc-translate.erx.vn/huong-dan-dich-pdf-bang-ai",
+        "https://doc-translate.erx.vn/faq"
+      ],
+      "seed_keywords": [
+        "dịch file pdf giữ nguyên định dạng",
+        "dịch tài liệu khoa học công thức toán",
+        "dịch sách pdf song ngữ bằng ai",
+        "công cụ dịch pdf chuyên ngành",
+        "dịch bài báo khoa học pdf",
+        "dịch pdf tiếng anh sang tiếng việt giữ nguyên bố cục"
+      ],
+      "competitor_domains": [
+        "smallpdf.com",
+        "ilovepdf.com",
+        "supawork.ai",
+        "otranslator.com",
+        "doctranslator.com"
+      ]
+    },
+    {
+      "id": "doc-builder",
+      "name": "ERX DocBuilder (AI Contract, Report & Legal Audit)",
+      "domain": "doc-builder.erx.vn",
+      "base_url": "https://doc-builder.erx.vn/",
+      "sitemap_url": "https://doc-builder.erx.vn/sitemap.xml",
+      "robots_url": "https://doc-builder.erx.vn/robots.txt",
+      "github_repo": "romantci2710/build_document",
+      "local_repo_candidates": [
+        "D:/GIT/Build document",
+        "../build_document",
+        "/workspace/build_document"
+      ],
+      "primary_target_urls": [
+        "https://doc-builder.erx.vn/",
+        "https://doc-builder.erx.vn/soan-thao-hop-dong-bang-ai",
+        "https://doc-builder.erx.vn/tao-bao-cao-chuyen-nghiep",
+        "https://doc-builder.erx.vn/kiem-toan-van-ban-phap-ly",
+        "https://doc-builder.erx.vn/templates",
+        "https://doc-builder.erx.vn/guide"
+      ],
+      "seed_keywords": [
+        "soạn thảo hợp đồng bằng ai",
+        "tạo báo cáo chuyên nghiệp bằng ai",
+        "rà soát rủi ro hợp đồng pháp lý",
+        "kiểm tra thể thức văn bản nghị định 30",
+        "mẫu hợp đồng thương mại b2b",
+        "viết báo cáo quản trị tự động"
+      ],
+      "competitor_domains": [
+        "luathoangan.vn",
+        "gvlawyers.com.vn",
+        "1office.vn",
+        "base.vn",
+        "luatvietnam.vn"
+      ]
+    },
+    {
+      "id": "community",
+      "name": "ERX Supply Chain, Procurement & AI Community",
+      "domain": "community.erx.vn",
+      "base_url": "https://community.erx.vn/",
+      "sitemap_url": "https://community.erx.vn/sitemap.xml",
+      "robots_url": "https://community.erx.vn/robots.txt",
+      "api_topics_url": "https://community.erx.vn/api/community/topics",
+      "github_repo": "romantci2710/scm-com",
+      "local_repo_candidates": [
+        "D:/GIT/Supply_chain_community",
+        "../scm-com",
+        "/workspace/scm-com"
+      ],
+      "primary_target_urls": [
+        "https://community.erx.vn/forum",
+        "https://community.erx.vn/forum/danh-muc/procurement-5",
+        "https://community.erx.vn/forum/danh-muc/supply-chain-4",
+        "https://community.erx.vn/forum/danh-muc/ai-for-works-11"
+      ],
+      "seed_keywords": [
+        "quản trị chuỗi cung ứng supply chain",
+        "quy trình mua hàng procurement",
+        "phân tích chi phí mua hàng spend analysis",
+        "tiêu chí đánh giá nhà cung cấp",
+        "đấu thầu mua sắm doanh nghiệp",
+        "ứng dụng ai trong mua hàng và chuỗi cung ứng"
+      ],
+      "competitor_domains": [
+        "vilas.edu.vn",
+        "pace.edu.vn",
+        "topcv.vn",
+        "careerviet.vn",
+        "1office.vn"
+      ]
+    },
+    {
+      "id": "erx-main",
+      "name": "ERX Vietnam Main Portal (Excel 365, Power BI, SQL, SCM & PM)",
+      "domain": "erx.vn",
+      "base_url": "https://erx.vn/",
+      "sitemap_url": "https://erx.vn/sitemap.xml",
+      "robots_url": "https://erx.vn/robots.txt",
+      "cms_admin_url": "https://erx.vn/administrator",
+      "github_repo": null,
+      "local_repo_candidates": [
+        "D:/GIT/Excel 365"
+      ],
+      "primary_target_urls": [
+        "https://erx.vn/",
+        "https://erx.vn/cac-ham-excel-365.html",
+        "https://erx.vn/power-bi.html",
+        "https://erx.vn/sql-in-excel.html",
+        "https://erx.vn/supply-chain-management.html",
+        "https://erx.vn/procurement-management.html",
+        "https://erx.vn/project-management.html"
+      ],
+      "seed_keywords": [
+        "các hàm excel 365 mảng động",
+        "phân tích dữ liệu power bi dax",
+        "truy vấn sql trong excel",
+        "tự động hóa báo cáo excel vba",
+        "khóa học mua hàng thực chiến procurement",
+        "so sánh ms project và excel quản lý dự án"
+      ],
+      "competitor_domains": [
+        "datapot.edu.vn",
+        "gitiho.com",
+        "unica.vn",
+        "cellphones.com.vn",
+        "base.vn"
+      ]
+    },
+    {
+      "id": "khoahoc",
+      "name": "ERX E-Learning Academy (khoahoc.erx.vn)",
+      "domain": "khoahoc.erx.vn",
+      "base_url": "https://khoahoc.erx.vn/",
+      "sitemap_url": "https://khoahoc.erx.vn/sitemap.xml",
+      "robots_url": "https://khoahoc.erx.vn/robots.txt",
+      "github_repo": null,
+      "local_repo_candidates": [],
+      "primary_target_urls": [
+        "https://khoahoc.erx.vn/"
+      ],
+      "seed_keywords": [
+        "khóa học phân tích dữ liệu chuỗi cung ứng",
+        "khóa học excel 365 nâng cao cho doanh nghiệp",
+        "đào tạo mua hàng thực chiến hands on procurement"
+      ],
+      "competitor_domains": [
+        "gitiho.com",
+        "vilas.edu.vn",
+        "datapot.edu.vn"
+      ]
+    }
+  ]
+}
