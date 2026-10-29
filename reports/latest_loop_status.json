@@ -1,6 +1,6 @@
 {
   "cycle_type": "platform_watcher",
-  "executed_at": "2026-10-29T11:22:38.006634+07:00",
+  "executed_at": "2026-10-29T12:58:42.977782+07:00",
   "platforms_checked": [
     {
       "platform_id": "project-management",
@@ -52,6 +52,39 @@
   "modified_urls_sample": [],
   "remediations_sample": [
     {
+      "target_url": "https://erx.vn/power-bi.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (8 chars)"
+      ],
+      "recommended_title": "Power BI — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Chuyên mục hướng dẫn Microsoft Power BI chuyên sâu: Xây dựng Data Model chuẩn Star Schema, viết hàm DAX nâng cao (CALCULATE, ALL, ALLSELECTED), Pareto và Das...",
+      "recommended_canonical": "https://erx.vn/power-bi.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://erx.vn/sql-in-excel.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (12 chars)"
+      ],
+      "recommended_title": "SQL in Excel — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Phương pháp sử dụng ngôn ngữ truy vấn SQL (SELECT, JOIN, GROUP BY, UNION, PIVOT) ngay trong Microsoft Excel qua ADODB giúp tổng hợp hàng trăm nghìn dòng tron...",
+      "recommended_canonical": "https://erx.vn/sql-in-excel.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://erx.vn/supply-chain-management.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (23 chars)"
+      ],
+      "recommended_title": "Supply Chain Management — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Kiến thức chuyên sâu về Quản trị Chuỗi cung ứng (SCM) hiện đại: Chiến lược tìm nguồn cung ứng, hoạch định vật tư, vận hành kho bãi, Logistics và phân tích dữ...",
+      "recommended_canonical": "https://erx.vn/supply-chain-management.html",
+      "event_type": "UNCHANGED"
+    },
+    {
       "target_url": "https://erx.vn/procurement-management.html",
       "domain": "erx.vn",
       "detected_issues": [
@@ -79,9 +112,9 @@
       "detected_issues": [
         "MISSING_TITLE"
       ],
-      "recommended_title": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX",
-      "recommended_meta_description": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX — Tài liệu hướng dẫn chuyên sâu, biểu mẫu thực hành và công cụ tự động hoá trên hệ sinh thái khoahoc.er...",
-      "recommended_canonical": "https://khoahoc.erx.vn/sitemap-courses.xml",
+      "recommended_title": "Đào tạo doanh nghiệp — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Chương trình đào tạo doanh nghiệp (Corporate In-house Training) thiết kế riêng theo bài toán thực tế về Phân tích dữ liệu (Excel, Power BI, SQL, Python) & Ch...",
+      "recommended_canonical": "https://erx.vn/dao-tao-doanh-nghiep.html",
       "event_type": "UNCHANGED"
     },
     {
@@ -90,9 +123,9 @@
       "detected_issues": [
         "MISSING_TITLE"
       ],
-      "recommended_title": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX",
-      "recommended_meta_description": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX — Tài liệu hướng dẫn chuyên sâu, biểu mẫu thực hành và công cụ tự động hoá trên hệ sinh thái khoahoc.er...",
-      "recommended_canonical": "https://khoahoc.erx.vn/sitemap-pages.xml",
+      "recommended_title": "Hội thảo — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Hội thảo — Hướng dẫn & Công cụ Thực chiến | ERX — Tài liệu hướng dẫn chuyên sâu, biểu mẫu thực hành và công cụ tự động hoá trên hệ sinh thái erx.vn.",
+      "recommended_canonical": "https://erx.vn/hoi-thao.html",
       "event_type": "UNCHANGED"
     },
     {
@@ -101,9 +134,9 @@
       "detected_issues": [
         "MISSING_TITLE"
       ],
-      "recommended_title": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX",
-      "recommended_meta_description": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX — Tài liệu hướng dẫn chuyên sâu, biểu mẫu thực hành và công cụ tự động hoá trên hệ sinh thái khoahoc.er...",
-      "recommended_canonical": "https://khoahoc.erx.vn/sitemap-instructors.xml",
+      "recommended_title": "Chia sẻ kiến thức — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Kho tàng bài viết chuyên sâu về Excel 365, VBA, SQL, Power BI DAX, Python, Quản trị Dự án PMBOK 8 và Quản lý Chuỗi cung ứng (Supply Chain) thực chiến tại ERX.",
+      "recommended_canonical": "https://erx.vn/kien-thuc.html",
       "event_type": "UNCHANGED"
     },
     {
@@ -112,9 +145,75 @@
       "detected_issues": [
         "MISSING_TITLE"
       ],
-      "recommended_title": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX",
-      "recommended_meta_description": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX — Tài liệu hướng dẫn chuyên sâu, biểu mẫu thực hành và công cụ tự động hoá trên hệ sinh thái khoahoc.er...",
-      "recommended_canonical": "https://khoahoc.erx.vn/blog/sitemap.xml",
+      "recommended_title": "Mẫu file quản lý Excel — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Tải miễn phí bộ sưu tập mẫu file quản lý bằng Excel chuyên nghiệp: Quản lý tồn kho, kế hoạch mua hàng, lịch thanh toán, nhân sự và tự động hóa báo cáo doanh...",
+      "recommended_canonical": "https://erx.vn/mau-file-quan-ly-excel.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://erx.vn/excel-functions.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (5 chars)"
+      ],
+      "recommended_title": "Excel — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Cẩm nang tra cứu cú pháp và bài tập thực hành các hàm trong Excel (VLOOKUP, INDEX MATCH, SUMIFS, COUNTIFS, SUBTOTAL, XLOOKUP, FILTER, LAMBDA) dễ hiểu nhất.",
+      "recommended_canonical": "https://erx.vn/excel-functions.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://erx.vn/excel-function.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (15 chars)"
+      ],
+      "recommended_title": "Excel Functions — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Hướng dẫn chi tiết cách kết hợp các hàm tính toán, dò tìm và xử lý chuỗi văn bản trong Microsoft Excel phục vụ lập báo cáo quản trị và vận hành doanh nghiệp.",
+      "recommended_canonical": "https://erx.vn/excel-function.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://erx.vn/excel-vba.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (9 chars)"
+      ],
+      "recommended_title": "Excel VBA — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Hướng dẫn lập trình VBA trong Excel từ cơ bản đến nâng cao: Thao tác đối tượng Workbook/Range, viết hàm UDF, kết nối ADODB SQL và tự động hóa báo cáo doanh n...",
+      "recommended_canonical": "https://erx.vn/excel-vba.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://erx.vn/dashboard-automated-report.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (28 chars)"
+      ],
+      "recommended_title": "Dashboard & Automated Report — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Hướng dẫn kỹ thuật vẽ biểu đồ động (Dynamic Chart), Highlight Top N, nhãn dữ liệu thông minh và thiết kế hệ thống Dashboard báo cáo quản trị tự động trên Excel.",
+      "recommended_canonical": "https://erx.vn/dashboard-automated-report.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://erx.vn/excel-365.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (17 chars)"
+      ],
+      "recommended_title": "Các hàm Excel 365 — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Khám phá sức mạnh đột phá của các hàm mảng động trong phiên bản Microsoft Excel 365 giúp tự động hóa hoàn toàn bảng tính mà không cần viết code phức tạp.",
+      "recommended_canonical": "https://erx.vn/excel-365.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://erx.vn/logistics-management.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (20 chars)"
+      ],
+      "recommended_title": "Logistics Management — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Kiến thức thực chiến về Quản trị Logistics: Nghiệp vụ xuất nhập khẩu, tra cứu HS Code, bài toán tối ưu hóa tuyến đường vận tải (Route Optimization) và tính c...",
+      "recommended_canonical": "https://erx.vn/logistics-management.html",
       "event_type": "UNCHANGED"
     }
   ]

@@ -65,6 +65,8 @@ def sync_injections_to_platform_repos() -> dict[str, Any]:
         # Write latest dynamic keyword & FAQ enrichment manifest into the repo's public/seo directory if present
         target_manifest_dir = repo_dir / "public"
         if not target_manifest_dir.exists():
+            target_manifest_dir = repo_dir / "frontend" / "public"
+        if not target_manifest_dir.exists():
             target_manifest_dir = repo_dir / "reports"
         if not target_manifest_dir.exists():
             continue
@@ -91,7 +93,7 @@ def sync_injections_to_platform_repos() -> dict[str, Any]:
                     capture_output=True,
                 )
                 diff_proc = subprocess.run(
-                    ["git", " status", "--porcelain"],
+                    ["git", "status", "--porcelain", str(manifest_path.relative_to(repo_dir))],
                     cwd=str(repo_dir),
                     capture_output=True,
                     text=True,
