@@ -1,6 +1,6 @@
 {
   "cycle_type": "platform_watcher",
-  "executed_at": "2026-10-29T12:58:42.977782+07:00",
+  "executed_at": "2026-10-30T06:44:55.044569+07:00",
   "platforms_checked": [
     {
       "platform_id": "project-management",
@@ -29,8 +29,8 @@
     {
       "platform_id": "erx-main",
       "domain": "erx.vn",
-      "sitemap_url_count": 0,
-      "inspected_count": 7
+      "sitemap_url_count": 147,
+      "inspected_count": 37
     },
     {
       "platform_id": "khoahoc",
@@ -42,7 +42,7 @@
   "new_urls_count": 0,
   "modified_urls_count": 0,
   "new_community_topics_warmed": 0,
-  "remediations_triggered_count": 6,
+  "remediations_triggered_count": 24,
   "cms_remediation_status": {
     "mode": "staged_js_payload",
     "patched_count": 0,
@@ -107,10 +107,10 @@
       "event_type": "UNCHANGED"
     },
     {
-      "target_url": "https://khoahoc.erx.vn/sitemap-courses.xml",
-      "domain": "khoahoc.erx.vn",
+      "target_url": "https://erx.vn/dao-tao-doanh-nghiep.html",
+      "domain": "erx.vn",
       "detected_issues": [
-        "MISSING_TITLE"
+        "SHORT_TITLE (20 chars)"
       ],
       "recommended_title": "Đào tạo doanh nghiệp — Hướng dẫn & Công cụ Thực chiến | ERX",
       "recommended_meta_description": "Chương trình đào tạo doanh nghiệp (Corporate In-house Training) thiết kế riêng theo bài toán thực tế về Phân tích dữ liệu (Excel, Power BI, SQL, Python) & Ch...",
@@ -118,10 +118,11 @@
       "event_type": "UNCHANGED"
     },
     {
-      "target_url": "https://khoahoc.erx.vn/sitemap-pages.xml",
-      "domain": "khoahoc.erx.vn",
+      "target_url": "https://erx.vn/hoi-thao.html",
+      "domain": "erx.vn",
       "detected_issues": [
-        "MISSING_TITLE"
+        "SHORT_TITLE (8 chars)",
+        "SHORT_META_DESCRIPTION (8 chars)"
       ],
       "recommended_title": "Hội thảo — Hướng dẫn & Công cụ Thực chiến | ERX",
       "recommended_meta_description": "Hội thảo — Hướng dẫn & Công cụ Thực chiến | ERX — Tài liệu hướng dẫn chuyên sâu, biểu mẫu thực hành và công cụ tự động hoá trên hệ sinh thái erx.vn.",
@@ -129,10 +130,10 @@
       "event_type": "UNCHANGED"
     },
     {
-      "target_url": "https://khoahoc.erx.vn/sitemap-instructors.xml",
-      "domain": "khoahoc.erx.vn",
+      "target_url": "https://erx.vn/kien-thuc.html",
+      "domain": "erx.vn",
       "detected_issues": [
-        "MISSING_TITLE"
+        "SHORT_TITLE (17 chars)"
       ],
       "recommended_title": "Chia sẻ kiến thức — Hướng dẫn & Công cụ Thực chiến | ERX",
       "recommended_meta_description": "Kho tàng bài viết chuyên sâu về Excel 365, VBA, SQL, Power BI DAX, Python, Quản trị Dự án PMBOK 8 và Quản lý Chuỗi cung ứng (Supply Chain) thực chiến tại ERX.",
@@ -140,10 +141,10 @@
       "event_type": "UNCHANGED"
     },
     {
-      "target_url": "https://khoahoc.erx.vn/blog/sitemap.xml",
-      "domain": "khoahoc.erx.vn",
+      "target_url": "https://erx.vn/mau-file-quan-ly-excel.html",
+      "domain": "erx.vn",
       "detected_issues": [
-        "MISSING_TITLE"
+        "SHORT_TITLE (22 chars)"
       ],
       "recommended_title": "Mẫu file quản lý Excel — Hướng dẫn & Công cụ Thực chiến | ERX",
       "recommended_meta_description": "Tải miễn phí bộ sưu tập mẫu file quản lý bằng Excel chuyên nghiệp: Quản lý tồn kho, kế hoạch mua hàng, lịch thanh toán, nhân sự và tự động hóa báo cáo doanh...",
