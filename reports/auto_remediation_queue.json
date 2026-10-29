@@ -1,27 +1,38 @@
 {
-  "generated_at": "2026-10-29T07:49:01.973216+07:00",
-  "remediations_count": 5,
+  "generated_at": "2026-10-29T11:22:38.003550+07:00",
+  "remediations_count": 6,
   "remediations": [
     {
-      "target_url": "https://erx.vn/power-bi.html",
+      "target_url": "https://erx.vn/procurement-management.html",
       "domain": "erx.vn",
       "detected_issues": [
-        "SHORT_TITLE (8 chars)"
+        "SHORT_TITLE (22 chars)"
       ],
-      "recommended_title": "Power BI — Hướng dẫn & Công cụ Thực chiến | ERX",
-      "recommended_meta_description": "Chuyên mục hướng dẫn Microsoft Power BI chuyên sâu: Xây dựng Data Model chuẩn Star Schema, viết hàm DAX nâng cao (CALCULATE, ALL, ALLSELECTED), Pareto và Das...",
-      "recommended_canonical": "https://erx.vn/power-bi.html",
+      "recommended_title": "Procurement Management — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Cẩm nang Quản trị Mua sắm (Procurement) B2B: Tìm nguồn cung ứng chiến lược (Strategic Sourcing), phân tích chi phí TCO, 8 phương pháp tính Saving và đàm phán...",
+      "recommended_canonical": "https://erx.vn/procurement-management.html",
       "event_type": "UNCHANGED"
     },
     {
-      "target_url": "https://khoahoc.erx.vn/",
+      "target_url": "https://erx.vn/project-management.html",
+      "domain": "erx.vn",
+      "detected_issues": [
+        "SHORT_TITLE (18 chars)"
+      ],
+      "recommended_title": "Project Management — Hướng dẫn & Công cụ Thực chiến | ERX",
+      "recommended_meta_description": "Trọn bộ cẩm nang Quản trị Dự án thực chiến theo chuẩn PMBOK Guide 8th Edition: Project Charter, Ma trận RACI, WBS, Đường găng CPM, 9 chỉ số EVM và định lượng...",
+      "recommended_canonical": "https://erx.vn/project-management.html",
+      "event_type": "UNCHANGED"
+    },
+    {
+      "target_url": "https://khoahoc.erx.vn/sitemap-courses.xml",
       "domain": "khoahoc.erx.vn",
       "detected_issues": [
         "MISSING_TITLE"
       ],
       "recommended_title": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX",
       "recommended_meta_description": "khoahoc.erx.vn — Hướng dẫn & Công cụ Thực chiến | ERX — Tài liệu hướng dẫn chuyên sâu, biểu mẫu thực hành và công cụ tự động hoá trên hệ sinh thái khoahoc.er...",
-      "recommended_canonical": "https://khoahoc.erx.vn/",
+      "recommended_canonical": "https://khoahoc.erx.vn/sitemap-courses.xml",
       "event_type": "UNCHANGED"
     },
     {
