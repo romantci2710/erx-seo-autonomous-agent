@@ -1,12 +1,18 @@
 {
-  "last_daily_run": "2026-10-28",
+  "last_daily_run": "2026-10-29",
   "optimized_keywords": {
     "project-management::sơ đồ gantt online": "2026-10-28T22:38:03.336902+07:00",
     "doc-translate::công cụ dịch pdf chuyên ngành": "2026-10-28T22:38:15.589784+07:00",
     "doc-builder::tạo báo cáo chuyên nghiệp bằng ai": "2026-10-28T22:38:31.557641+07:00",
     "community::phân tích chi phí mua hàng spend analysis": "2026-10-28T22:38:42.226123+07:00",
     "erx-main::khóa học mua hàng thực chiến procurement": "2026-10-28T22:38:54.954487+07:00",
-    "khoahoc::khóa học phân tích dữ liệu chuỗi cung ứng": "2026-10-28T22:39:07.961836+07:00"
+    "khoahoc::khóa học phân tích dữ liệu chuỗi cung ứng": "2026-10-28T22:39:07.961836+07:00",
+    "project-management::về sơ đồ gantt online": "2026-10-29T07:40:13.196274+07:00",
+    "doc-translate::dịch file pdf giữ nguyên định dạng": "2026-10-29T07:41:50.024476+07:00",
+    "doc-builder::soạn thảo hợp đồng bằng ai": "2026-10-29T07:43:43.714451+07:00",
+    "community::tiêu chí đánh giá nhà cung cấp": "2026-10-29T07:45:18.866632+07:00",
+    "erx-main::truy vấn sql trong excel": "2026-10-29T07:47:28.022925+07:00",
+    "khoahoc::khóa học excel 365 nâng cao cho doanh nghiệp": "2026-10-29T07:48:04.152229+07:00"
   },
   "history": [
     {
@@ -19,6 +25,18 @@
         "phân tích chi phí mua hàng spend analysis",
         "khóa học mua hàng thực chiến procurement",
         "khóa học phân tích dữ liệu chuỗi cung ứng"
+      ]
+    },
+    {
+      "executed_at": "2026-10-29T07:48:21.331212+07:00",
+      "keywords_optimized_count": 6,
+      "keywords": [
+        "về sơ đồ gantt online",
+        "dịch file pdf giữ nguyên định dạng",
+        "soạn thảo hợp đồng bằng ai",
+        "tiêu chí đánh giá nhà cung cấp",
+        "truy vấn sql trong excel",
+        "khóa học excel 365 nâng cao cho doanh nghiệp"
       ]
     }
   ]
