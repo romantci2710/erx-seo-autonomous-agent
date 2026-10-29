@@ -35,6 +35,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import datetime as dt
+import gzip
 import hashlib
 import html
 import json
@@ -49,6 +50,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import zlib
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -159,11 +161,32 @@ def http_get(url: str, timeout: int = 18, retries: int = 2) -> dict[str, Any]:
                 "User-Agent": USER_AGENT,
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
                 "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+                # Request compressed responses: the erx.vn sitemap served as plain
+                # XML over the egress proxy is deterministically truncated
+                # (IncompleteRead) for urllib, while the gzip variant reads fully.
+                "Accept-Encoding": "gzip, deflate",
             },
         )
         try:
             with urllib.request.urlopen(req, timeout=timeout, context=SSL_CTX) as resp:
                 raw = resp.read()
+                # urllib does not decompress automatically; decode per
+                # Content-Encoding, falling back to raw bytes on any failure
+                # so a mislabelled body never breaks the fetch.
+                encoding = (resp.headers.get("Content-Encoding") or "").lower()
+                if "gzip" in encoding:
+                    try:
+                        raw = gzip.decompress(raw)
+                    except Exception:
+                        pass
+                elif "deflate" in encoding:
+                    try:
+                        raw = zlib.decompress(raw)
+                    except Exception:
+                        try:
+                            raw = zlib.decompress(raw, -zlib.MAX_WBITS)
+                        except Exception:
+                            pass
                 elapsed_ms = round((time.perf_counter() - t0) * 1000, 1)
                 return {
                     "ok": True,
