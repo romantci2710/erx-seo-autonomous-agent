@@ -1,5 +1,5 @@
 {
-  "last_watch_run": "2026-10-30T06:49:10.480137+07:00",
+  "last_watch_run": "2026-10-30T17:16:10.507345+07:00",
   "url_registry": {
     "https://project-management.erx.vn/": {
       "platform_id": "project-management",
@@ -11,7 +11,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f814d642b0d425f1",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/phan-mem-quan-ly-du-an": {
       "platform_id": "project-management",
@@ -23,7 +23,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "dc84be7a7678a2bf",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/so-do-gantt-online": {
       "platform_id": "project-management",
@@ -35,7 +35,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f814d642b0d425f1",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/quan-ly-du-an-xay-dung": {
       "platform_id": "project-management",
@@ -47,7 +47,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f814d642b0d425f1",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/huong-dan": {
       "platform_id": "project-management",
@@ -59,7 +59,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f814d642b0d425f1",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/so-do-gantt-cpm": {
       "platform_id": "project-management",
@@ -71,7 +71,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "9aa12109799481fe",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/quan-ly-chi-phi-evm": {
       "platform_id": "project-management",
@@ -83,7 +83,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "3dece0f169b4066b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/tai-lieu-pmbok-8": {
       "platform_id": "project-management",
@@ -95,7 +95,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "2a6bbc561cd3ebad",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/so-sanh-ms-project-excel": {
       "platform_id": "project-management",
@@ -107,7 +107,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "008a5f5e47c45d5d",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://project-management.erx.vn/cau-hoi-thuong-gap": {
       "platform_id": "project-management",
@@ -119,7 +119,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "e042eb11fa210621",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:54.453392+07:00"
+      "last_checked": "2026-10-30T17:15:52.635473+07:00"
     },
     "https://doc-translate.erx.vn/": {
       "platform_id": "doc-translate",
@@ -131,7 +131,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "736fd7d5b12dd5e4",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.885515+07:00"
     },
     "https://doc-translate.erx.vn/dich-pdf-giu-nguyen-dinh-dang": {
       "platform_id": "doc-translate",
@@ -143,7 +143,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f19f8bd790ee7d29",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.885515+07:00"
     },
     "https://doc-translate.erx.vn/dich-tai-lieu-khoa-hoc-cong-thuc-toan": {
       "platform_id": "doc-translate",
@@ -155,7 +155,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "6d687287ca3f8aac",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.886215+07:00"
     },
     "https://doc-translate.erx.vn/huong-dan-dich-pdf-bang-ai": {
       "platform_id": "doc-translate",
@@ -167,7 +167,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "5a4b994d2a9067bd",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.886215+07:00"
     },
     "https://doc-translate.erx.vn/faq": {
       "platform_id": "doc-translate",
@@ -179,7 +179,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "ed4e2320346a5a8f",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.886215+07:00"
     },
     "https://doc-translate.erx.vn/about": {
       "platform_id": "doc-translate",
@@ -191,7 +191,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "8ea640b03452a0ad",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.886215+07:00"
     },
     "https://doc-translate.erx.vn/pricing": {
       "platform_id": "doc-translate",
@@ -203,7 +203,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "07b14feb2c13e6cb",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.886215+07:00"
     },
     "https://doc-translate.erx.vn/contact": {
       "platform_id": "doc-translate",
@@ -215,7 +215,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "5307edbdbfdffc2d",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.886215+07:00"
     },
     "https://doc-translate.erx.vn/terms": {
       "platform_id": "doc-translate",
@@ -227,7 +227,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "6189f965d9d8b83b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.886215+07:00"
     },
     "https://doc-translate.erx.vn/privacy": {
       "platform_id": "doc-translate",
@@ -239,7 +239,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "9fcfb8b4312df55e",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:55.497479+07:00"
+      "last_checked": "2026-10-30T17:15:53.886215+07:00"
     },
     "https://doc-builder.erx.vn/": {
       "platform_id": "doc-builder",
@@ -251,7 +251,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "83cfd2c6896c780b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/soan-thao-hop-dong-bang-ai": {
       "platform_id": "doc-builder",
@@ -263,7 +263,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "45e9ce684f5cb9bd",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/tao-bao-cao-chuyen-nghiep": {
       "platform_id": "doc-builder",
@@ -275,7 +275,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "d913a748f68d9866",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/kiem-toan-van-ban-phap-ly": {
       "platform_id": "doc-builder",
@@ -287,7 +287,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "39d4c2f46ecf2093",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/templates": {
       "platform_id": "doc-builder",
@@ -299,7 +299,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "83cfd2c6896c780b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/guide": {
       "platform_id": "doc-builder",
@@ -311,7 +311,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "83cfd2c6896c780b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/tinh-nang": {
       "platform_id": "doc-builder",
@@ -323,7 +323,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "8ee4c709dcf1bf65",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/audit-quy-trinh": {
       "platform_id": "doc-builder",
@@ -335,7 +335,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "6c92090d7a41e6dd",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/thu-vien-mau": {
       "platform_id": "doc-builder",
@@ -347,7 +347,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "01ee6b81aab0ebd6",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/huong-dan": {
       "platform_id": "doc-builder",
@@ -359,7 +359,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "cdaff7ddb3085765",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://doc-builder.erx.vn/cau-hoi-thuong-gap": {
       "platform_id": "doc-builder",
@@ -371,7 +371,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "909c48f4133959d4",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:57.030381+07:00"
+      "last_checked": "2026-10-30T17:15:55.425136+07:00"
     },
     "https://community.erx.vn/forum": {
       "platform_id": "community",
@@ -383,7 +383,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f4cd9f7f557c1ecd",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/": {
       "platform_id": "community",
@@ -395,7 +395,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "3c9790b44f16feb0",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/": {
       "platform_id": "community",
@@ -407,7 +407,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f4cd9f7f557c1ecd",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/tuyen-dung/": {
       "platform_id": "community",
@@ -419,7 +419,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "cb87755f010d1dc1",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/khoa-hoc/": {
       "platform_id": "community",
@@ -431,7 +431,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "b167377af7f1abbc",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/antigravity-25": {
       "platform_id": "community",
@@ -443,7 +443,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "516a1650519ce7f6",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/muse_ai-30": {
       "platform_id": "community",
@@ -455,7 +455,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "093553138ac0bc6b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/review_ai-29": {
       "platform_id": "community",
@@ -467,7 +467,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "9485ef77a24dd642",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/html_dashboard-27": {
       "platform_id": "community",
@@ -479,7 +479,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "c0b22e72b06a9c31",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/datastorytelling-26": {
       "platform_id": "community",
@@ -491,7 +491,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f94cb697ff53a728",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/entertainment-24": {
       "platform_id": "community",
@@ -503,19 +503,19 @@
       "png_base64_kb": 0.0,
       "fingerprint": "0206dc4016d2a626",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/ai-10": {
       "platform_id": "community",
       "title": "Trí tuệ Nhân tạo Ứng dụng (AI & Agents) — Diễn đàn Công nghệ ERX",
       "meta_description": "Diễn đàn Trí tuệ Nhân tạo (AI) ứng dụng cho Doanh nghiệp & Chuỗi cung ứng: AI Agents, Microsoft Copilot, Claude, Gemini, Vibe Coding và tự động hoá quy trình.",
       "canonical": "https://community.erx.vn/forum/ai-10",
-      "word_count": 1378,
+      "word_count": 1383,
       "jsonld_count": 1,
       "png_base64_kb": 0.0,
       "fingerprint": "5eb797a4ce8db546",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/hotnews-28": {
       "platform_id": "community",
@@ -527,7 +527,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "b5e5b2a4e98e8dfa",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/vibe_coding-18": {
       "platform_id": "community",
@@ -539,19 +539,19 @@
       "png_base64_kb": 0.0,
       "fingerprint": "59f601d723120003",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/foundation-20": {
       "platform_id": "community",
       "title": "Kiến thức Nền tảng về AI, LLM & Agentic Architecture — Diễn đàn ERX",
       "meta_description": "Nền tảng cốt lõi về Trí tuệ Nhân tạo (AI Foundation): kiến trúc mô hình ngôn ngữ lớn LLM, RAG, Context Engineering, Memory, Tool Calling và giao thức MCP.",
       "canonical": "https://community.erx.vn/forum/foundation-20",
-      "word_count": 710,
+      "word_count": 732,
       "jsonld_count": 1,
       "png_base64_kb": 0.0,
       "fingerprint": "f0b67d3d4dbb0f35",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/github_repo-19": {
       "platform_id": "community",
@@ -563,19 +563,19 @@
       "png_base64_kb": 0.0,
       "fingerprint": "b9aa3b3c1c62f4c7",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/ai_for_works-11": {
       "platform_id": "community",
       "title": "Ứng dụng AI trong Công việc & Văn phòng (AI for Works) — Diễn đàn ERX",
       "meta_description": "Tổng hợp kinh nghiệm ứng dụng AI vào công việc hàng ngày (AI for Works): tự động hoá Excel, PowerPoint, Outlook, báo cáo quản trị với Copilot, Claude, Gemini.",
       "canonical": "https://community.erx.vn/forum/ai_for_works-11",
-      "word_count": 1342,
+      "word_count": 1408,
       "jsonld_count": 1,
       "png_base64_kb": 0.0,
       "fingerprint": "1564240f4fd4b6e0",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/microsoft-13": {
       "platform_id": "community",
@@ -587,7 +587,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "7f602a5b996d9e79",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/copilot-14": {
       "platform_id": "community",
@@ -599,7 +599,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "fd00a91974fc186b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/microsoft_studio-17": {
       "platform_id": "community",
@@ -611,7 +611,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "eca933f8895d82f0",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/forum/google-15": {
       "platform_id": "community",
@@ -623,7 +623,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "3ed9b7c52f5dbe4c",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/tuyen-dung/pmc-specialist-senior-specialist-material-control-3": {
       "platform_id": "community",
@@ -635,7 +635,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "53281c1438debdc1",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/khoa-hoc/procurement-manager-2": {
       "platform_id": "community",
@@ -647,7 +647,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "c5ab4321bb3b6044",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/doanh-nghiep/7": {
       "platform_id": "community",
@@ -659,7 +659,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "c205b6252395853f",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/doanh-nghiep/6": {
       "platform_id": "community",
@@ -671,7 +671,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "e78b39d9dbc243df",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/doanh-nghiep/5": {
       "platform_id": "community",
@@ -683,7 +683,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "5756846b365c4f38",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/doanh-nghiep/4": {
       "platform_id": "community",
@@ -695,7 +695,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "08f3fd025286fe30",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/doanh-nghiep/3": {
       "platform_id": "community",
@@ -707,7 +707,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "07d5f9406b861131",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/doanh-nghiep/2": {
       "platform_id": "community",
@@ -719,7 +719,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "5fceb1f68f3edcb5",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/doanh-nghiep/1": {
       "platform_id": "community",
@@ -731,7 +731,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "f149c256a574ab8c",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/thanh-vien/36": {
       "platform_id": "community",
@@ -743,7 +743,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "23c7e483ee2e157b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/thanh-vien/14": {
       "platform_id": "community",
@@ -755,7 +755,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "08d8317835fff391",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/thanh-vien/8": {
       "platform_id": "community",
@@ -767,7 +767,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "d45acdd304f1d31b",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/thanh-vien/6": {
       "platform_id": "community",
@@ -779,7 +779,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "213fec245e2b374c",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/thanh-vien/2": {
       "platform_id": "community",
@@ -791,19 +791,19 @@
       "png_base64_kb": 0.0,
       "fingerprint": "79bdb25be75cbeb0",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://community.erx.vn/thanh-vien/1": {
       "platform_id": "community",
       "title": "Minh Ngọc - ERX Vietnam — Thành viên Supply Chain Community ERX",
-      "meta_description": "Hồ sơ chuyên môn của Minh Ngọc - ERX Vietnam trên Cộng đồng Chuỗi cung ứng (Supply Chain Community ERX) với 35 chủ đề thảo luận tiêu biểu: Dự báo sai ở đâu thì…",
+      "meta_description": "Hồ sơ chuyên môn của Minh Ngọc - ERX Vietnam trên Cộng đồng Chuỗi cung ứng (Supply Chain Community ERX) với 36 chủ đề thảo luận tiêu biểu: Copilot trong công…",
       "canonical": "https://community.erx.vn/thanh-vien/1",
-      "word_count": 1246,
+      "word_count": 1254,
       "jsonld_count": 1,
       "png_base64_kb": 0.0,
-      "fingerprint": "4259d5118e77df0c",
+      "fingerprint": "6f4128c8780a75c9",
       "issues": [],
-      "last_checked": "2026-10-30T06:48:59.205117+07:00"
+      "last_checked": "2026-10-30T17:15:58.239799+07:00"
     },
     "https://erx.vn/": {
       "platform_id": "erx-main",
@@ -815,7 +815,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "6d616e44b48e6c77",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/power-bi.html": {
       "platform_id": "erx-main",
@@ -829,7 +829,7 @@
       "issues": [
         "SHORT_TITLE (8 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/sql-in-excel.html": {
       "platform_id": "erx-main",
@@ -843,7 +843,7 @@
       "issues": [
         "SHORT_TITLE (12 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/supply-chain-management.html": {
       "platform_id": "erx-main",
@@ -857,7 +857,7 @@
       "issues": [
         "SHORT_TITLE (23 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/procurement-management.html": {
       "platform_id": "erx-main",
@@ -871,7 +871,7 @@
       "issues": [
         "SHORT_TITLE (22 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/project-management.html": {
       "platform_id": "erx-main",
@@ -885,7 +885,7 @@
       "issues": [
         "SHORT_TITLE (18 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/dao-tao-doanh-nghiep.html": {
       "platform_id": "erx-main",
@@ -899,7 +899,7 @@
       "issues": [
         "SHORT_TITLE (20 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/hoi-thao.html": {
       "platform_id": "erx-main",
@@ -914,7 +914,7 @@
         "SHORT_TITLE (8 chars)",
         "SHORT_META_DESCRIPTION (8 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/kien-thuc.html": {
       "platform_id": "erx-main",
@@ -928,7 +928,7 @@
       "issues": [
         "SHORT_TITLE (17 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/mau-file-quan-ly-excel.html": {
       "platform_id": "erx-main",
@@ -942,7 +942,7 @@
       "issues": [
         "SHORT_TITLE (22 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/excel-functions.html": {
       "platform_id": "erx-main",
@@ -956,7 +956,7 @@
       "issues": [
         "SHORT_TITLE (5 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/excel-function.html": {
       "platform_id": "erx-main",
@@ -970,7 +970,7 @@
       "issues": [
         "SHORT_TITLE (15 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/excel-vba.html": {
       "platform_id": "erx-main",
@@ -984,7 +984,7 @@
       "issues": [
         "SHORT_TITLE (9 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/dashboard-automated-report.html": {
       "platform_id": "erx-main",
@@ -998,7 +998,7 @@
       "issues": [
         "SHORT_TITLE (28 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/excel-365.html": {
       "platform_id": "erx-main",
@@ -1012,7 +1012,7 @@
       "issues": [
         "SHORT_TITLE (17 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/logistics-management.html": {
       "platform_id": "erx-main",
@@ -1026,7 +1026,7 @@
       "issues": [
         "SHORT_TITLE (20 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/planning-management.html": {
       "platform_id": "erx-main",
@@ -1040,7 +1040,7 @@
       "issues": [
         "SHORT_TITLE (19 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/warehouse-management.html": {
       "platform_id": "erx-main",
@@ -1054,7 +1054,7 @@
       "issues": [
         "SHORT_TITLE (20 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/python-for-supply-chain.html": {
       "platform_id": "erx-main",
@@ -1068,7 +1068,7 @@
       "issues": [
         "SHORT_TITLE (23 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/cuoc-thi-supply-chain-data-analysis-challenge.html": {
       "platform_id": "erx-main",
@@ -1080,7 +1080,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "5c8b55cc41005f8a",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/phan-mem.html": {
       "platform_id": "erx-main",
@@ -1094,7 +1094,7 @@
       "issues": [
         "SHORT_TITLE (8 chars)"
       ],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/hanh-vi-cua-nguoi-mua-hang-cong-nghiep-phan-1-7123203445.html": {
       "platform_id": "erx-main",
@@ -1106,7 +1106,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "e4ed1c3a1e319af5",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/thay-doi-cach-ban-thuyet-phuc-nguoi-khac-7122926210.html": {
       "platform_id": "erx-main",
@@ -1118,7 +1118,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "94ed9374089a5e53",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/su-dung-thu-vien-pandas-de-kham-pha-du-lieu-7122438204.html": {
       "platform_id": "erx-main",
@@ -1130,7 +1130,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "dcc1732f79b20507",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/gioi-thieu-phan-mem-toi-uu-hoa-tuyen-duong-7122425785.html": {
       "platform_id": "erx-main",
@@ -1142,7 +1142,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "cadfafd29e750338",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/hs-code-nhung-thu-ma-chung-ta-can-phai-biet-7122293947.html": {
       "platform_id": "erx-main",
@@ -1154,7 +1154,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "62240a49be7f4737",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/truy-van-so-km-giua-2-dia-diem-bat-ky-bang-ma-tran-vuong-7122103947.html": {
       "platform_id": "erx-main",
@@ -1166,7 +1166,7 @@
       "png_base64_kb": 176.5,
       "fingerprint": "3f8f9237fd2edd9a",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/tinh-quang-duong-van-chuyen-bang-ham-api-cua-google-map-7122096748.html": {
       "platform_id": "erx-main",
@@ -1178,7 +1178,7 @@
       "png_base64_kb": 25.8,
       "fingerprint": "ab9382f990716caa",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/gioi-thieu-google-colab-7122518308.html": {
       "platform_id": "erx-main",
@@ -1190,7 +1190,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "8e6770e9a427bdd5",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/ham-groupby-trong-pandas-cong-dung-va-cach-dung-7122491878.html": {
       "platform_id": "erx-main",
@@ -1202,7 +1202,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "6ef3a94e743ebc20",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/procurement-specialist-direct-material-raw-materials-energy-goods-7123986505.html": {
       "platform_id": "erx-main",
@@ -1214,7 +1214,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "a87d7d851aafc0ba",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/lead-logistics-process-specialist-7123976602.html": {
       "platform_id": "erx-main",
@@ -1226,7 +1226,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "d2268b6f5626683b",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/supply-chain-manager-7123968182.html": {
       "platform_id": "erx-main",
@@ -1238,7 +1238,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "9acbb45539872684",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/tuyen-dung-tro-ly-kinh-doanh-t6-2024-7123946893.html": {
       "platform_id": "erx-main",
@@ -1250,7 +1250,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "69503fdb4f53641c",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/deputy-purchasing-and-logistics-team-leader-7123956328.html": {
       "platform_id": "erx-main",
@@ -1262,7 +1262,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "10efd21e2084b209",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://erx.vn/layout-theo-quy-tac-abc-trong-cau-hinh-he-thong-kho-hang-7124011913.html": {
       "platform_id": "erx-main",
@@ -1274,7 +1274,7 @@
       "png_base64_kb": 0.0,
       "fingerprint": "c2857d7d83f449a2",
       "issues": [],
-      "last_checked": "2026-10-30T06:49:09.651965+07:00"
+      "last_checked": "2026-10-30T17:16:09.622461+07:00"
     },
     "https://khoahoc.erx.vn/": {
       "platform_id": "khoahoc",
@@ -1288,7 +1288,7 @@
       "issues": [
         "MISSING_TITLE"
       ],
-      "last_checked": "2026-10-30T06:49:10.189857+07:00"
+      "last_checked": "2026-10-30T17:16:10.228809+07:00"
     },
     "https://khoahoc.erx.vn/sitemap-courses.xml": {
       "platform_id": "khoahoc",
@@ -1302,7 +1302,7 @@
       "issues": [
         "MISSING_TITLE"
       ],
-      "last_checked": "2026-10-30T06:49:10.189857+07:00"
+      "last_checked": "2026-10-30T17:16:10.228809+07:00"
     },
     "https://khoahoc.erx.vn/sitemap-pages.xml": {
       "platform_id": "khoahoc",
@@ -1316,7 +1316,7 @@
       "issues": [
         "MISSING_TITLE"
       ],
-      "last_checked": "2026-10-30T06:49:10.189857+07:00"
+      "last_checked": "2026-10-30T17:16:10.228809+07:00"
     },
     "https://khoahoc.erx.vn/sitemap-instructors.xml": {
       "platform_id": "khoahoc",
@@ -1330,7 +1330,7 @@
       "issues": [
         "MISSING_TITLE"
       ],
-      "last_checked": "2026-10-30T06:49:10.189857+07:00"
+      "last_checked": "2026-10-30T17:16:10.228809+07:00"
     },
     "https://khoahoc.erx.vn/blog/sitemap.xml": {
       "platform_id": "khoahoc",
@@ -1344,7 +1344,7 @@
       "issues": [
         "MISSING_TITLE"
       ],
-      "last_checked": "2026-10-30T06:49:10.189857+07:00"
+      "last_checked": "2026-10-30T17:16:10.228809+07:00"
     }
   },
   "community_topics_seen": []
