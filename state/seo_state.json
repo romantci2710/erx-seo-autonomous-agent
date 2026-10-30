@@ -1,5 +1,5 @@
 {
-  "last_daily_run": "2026-10-29",
+  "last_daily_run": "2026-10-30",
   "optimized_keywords": {
     "project-management::sơ đồ gantt online": "2026-10-28T22:38:03.336902+07:00",
     "doc-translate::công cụ dịch pdf chuyên ngành": "2026-10-28T22:38:15.589784+07:00",
@@ -7,12 +7,18 @@
     "community::phân tích chi phí mua hàng spend analysis": "2026-10-28T22:38:42.226123+07:00",
     "erx-main::khóa học mua hàng thực chiến procurement": "2026-10-28T22:38:54.954487+07:00",
     "khoahoc::khóa học phân tích dữ liệu chuỗi cung ứng": "2026-10-28T22:39:07.961836+07:00",
-    "project-management::về sơ đồ gantt online": "2026-10-29T07:40:13.196274+07:00",
-    "doc-translate::dịch file pdf giữ nguyên định dạng": "2026-10-29T07:41:50.024476+07:00",
-    "doc-builder::soạn thảo hợp đồng bằng ai": "2026-10-29T07:43:43.714451+07:00",
-    "community::tiêu chí đánh giá nhà cung cấp": "2026-10-29T07:45:18.866632+07:00",
-    "erx-main::truy vấn sql trong excel": "2026-10-29T07:47:28.022925+07:00",
-    "khoahoc::khóa học excel 365 nâng cao cho doanh nghiệp": "2026-10-29T07:48:04.152229+07:00"
+    "project-management::về sơ đồ gantt online": "2026-10-29T12:41:01.558084+07:00",
+    "doc-translate::ai dịch file pdf giữ nguyên định dạng": "2026-10-29T12:41:15.801710+07:00",
+    "doc-builder::mẫu hợp đồng thương mại b2b": "2026-10-29T12:41:31.336196+07:00",
+    "community::tiêu chí đánh giá nhà cung cấp": "2026-10-29T12:42:05.694182+07:00",
+    "erx-main::truy vấn sql trong excel": "2026-10-29T12:42:18.806503+07:00",
+    "khoahoc::khóa học excel 365 nâng cao cho doanh nghiệp": "2026-10-29T12:42:51.942749+07:00",
+    "project-management::phần mềm lập tiến độ dự án": "2026-10-30T07:00:24.277581+07:00",
+    "doc-translate::dịch file pdf giữ nguyên định dạng free": "2026-10-30T07:00:35.897773+07:00",
+    "doc-builder::viết báo cáo quản trị tự động": "2026-10-30T07:00:54.092323+07:00",
+    "community::7 tiêu chí đánh giá nhà cung cấp": "2026-10-30T07:01:03.691941+07:00",
+    "erx-main::phân tích dữ liệu power bi dax": "2026-10-30T07:01:15.953181+07:00",
+    "khoahoc::đào tạo mua hàng thực chiến hands on procurement": "2026-10-30T07:01:27.839107+07:00"
   },
   "history": [
     {
@@ -37,6 +43,18 @@
         "tiêu chí đánh giá nhà cung cấp",
         "truy vấn sql trong excel",
         "khóa học excel 365 nâng cao cho doanh nghiệp"
+      ]
+    },
+    {
+      "executed_at": "2026-10-30T07:01:31.317253+07:00",
+      "keywords_optimized_count": 6,
+      "keywords": [
+        "phần mềm lập tiến độ dự án",
+        "dịch file pdf giữ nguyên định dạng free",
+        "viết báo cáo quản trị tự động",
+        "7 tiêu chí đánh giá nhà cung cấp",
+        "phân tích dữ liệu power bi dax",
+        "đào tạo mua hàng thực chiến hands on procurement"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 {
   "cycle_type": "platform_watcher",
-  "executed_at": "2026-10-30T06:44:55.044569+07:00",
+  "executed_at": "2026-10-30T06:49:10.484118+07:00",
   "platforms_checked": [
     {
       "platform_id": "project-management",
@@ -46,7 +46,7 @@
   "cms_remediation_status": {
     "mode": "staged_js_payload",
     "patched_count": 0,
-    "payload_file": "/home/hatch/workspace/erx-seo-autonomous-agent/reports/erx_cms_auto_patch.js"
+    "payload_file": "D:\\GIT\\SEO Tool\\reports\\erx_cms_auto_patch.js"
   },
   "new_urls_sample": [],
   "modified_urls_sample": [],
