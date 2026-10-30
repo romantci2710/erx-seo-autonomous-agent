@@ -22,7 +22,7 @@ Every day at `07:00 AM`, `muse_seo_daemon.py` executes `run_daily_keyword_seo_cy
 3. **Automated SEO Execution:**
    - Selects the highest-scoring unoptimized keyword for each platform.
    - Generates optimized `<title>` (50–65 chars), `<meta name="description">` (145–160 chars), `META_KEY`, **Schema.org `FAQPage` JSON-LD**, and an **Outranking Comparison `<table>` HTML snippet**.
-   - Pushes updates to `erx.vn/administrator` (if `ERX_ADMIN_COOKIE` is set), syncs keyword manifests to sibling repos via `muse_repo_auto_deployer.py`, warms SSR caches, and writes `reports/daily_keyword_seo_YYYY-MM-DD.md`.
+   - Stages Title/Meta patches in `reports/erx_cms_auto_patch.js` (the CMS is not written to; `ERX_ADMIN_COOKIE` only verifies edit pages are reachable), submits URLs to IndexNow if `INDEXNOW_KEY` is set, syncs keyword manifests to sibling repos via `muse_repo_auto_deployer.py`, warms SSR caches, and writes `reports/daily_keyword_seo_YYYY-MM-DD.md`.
 
 ### Loop 2: Continuous `15-Minute` Platform Content & Tag Watcher
 Every `15 minutes` (`900 seconds`), `muse_seo_daemon.py` executes `run_platform_watcher_cycle()`:

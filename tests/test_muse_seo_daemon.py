@@ -104,3 +104,110 @@ def test_evaluate_and_select_keywords_and_package():
     assert len(pkg["recommended_meta_description"]) <= 160
     assert pkg["faq_jsonld"]["@type"] == "FAQPage"
     assert "<table" in pkg["pillar_html_snippet"]
+
+
+# ---- honesty of CMS / IndexNow reporting and TLS verification ----
+
+def test_ssl_context_verifies_certificates_by_default():
+    import ssl
+    from muse_seo_daemon import build_ssl_context
+
+    ctx = build_ssl_context(insecure=False)
+    assert ctx.verify_mode == ssl.CERT_REQUIRED
+    assert ctx.check_hostname is True
+
+
+def test_ssl_context_insecure_is_explicit_opt_in():
+    import ssl
+    from muse_seo_daemon import build_ssl_context
+
+    ctx = build_ssl_context(insecure=True)
+    assert ctx.verify_mode == ssl.CERT_NONE
+
+
+def test_cms_update_with_cookie_never_claims_patched(monkeypatch, tmp_path):
+    import muse_seo_daemon as d
+
+    monkeypatch.setattr(d, "REPORTS_DIR", tmp_path)
+    monkeypatch.setenv("ERX_ADMIN_COOKIE", "session=abc")
+    calls = []
+
+    class FakeResp:
+        status = 200
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+    def fake_urlopen(req, timeout=0, context=None):
+        calls.append((req.get_method(), req.full_url))
+        return FakeResp()
+
+    monkeypatch.setattr(d.urllib.request, "urlopen", fake_urlopen)
+    patches = [{
+        "target_url": "https://erx.vn/bai-viet-123456789012.html",
+        "recommended_title": "T",
+        "recommended_meta_description": "D",
+        "recommended_meta_keywords": "K",
+    }]
+    result = d.apply_erx_cms_direct_update(patches)
+
+    assert result["patched_count"] == 0
+    assert result["mode"] == "staged_session_verified"
+    assert result["session_reachable_count"] == 1
+    assert all(m == "GET" for m, _ in calls)
+
+
+def test_cms_update_without_cookie_is_staged(monkeypatch, tmp_path):
+    import muse_seo_daemon as d
+
+    monkeypatch.setattr(d, "REPORTS_DIR", tmp_path)
+    monkeypatch.delenv("ERX_ADMIN_COOKIE", raising=False)
+    result = d.apply_erx_cms_direct_update([])
+    assert result["mode"] == "staged_js_payload"
+    assert result["patched_count"] == 0
+
+
+def test_indexnow_skipped_without_key(monkeypatch):
+    import muse_seo_daemon as d
+
+    monkeypatch.delenv("INDEXNOW_KEY", raising=False)
+    monkeypatch.setattr(d, "http_get", lambda *a, **k: {"ok": True, "status": 200})
+    out = d.ping_indexnow_and_warm_cache(["https://erx.vn/a"])
+    assert out["indexnow"]["status"] == "skipped_no_key"
+    assert out["ssr_warmed_ok"] == 1
+
+
+def test_indexnow_posts_grouped_by_host_when_key_set(monkeypatch):
+    import muse_seo_daemon as d
+
+    monkeypatch.setenv("INDEXNOW_KEY", "k" * 16)
+    monkeypatch.setattr(d, "http_get", lambda *a, **k: {"ok": True, "status": 200})
+    posted = []
+
+    class FakeResp:
+        status = 202
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+    def fake_urlopen(req, timeout=0, context=None):
+        posted.append((req.get_method(), json.loads(req.data.decode("utf-8"))))
+        return FakeResp()
+
+    monkeypatch.setattr(d.urllib.request, "urlopen", fake_urlopen)
+    out = d.ping_indexnow_and_warm_cache(
+        ["https://erx.vn/a", "https://erx.vn/b", "https://community.erx.vn/c"]
+    )
+    hosts = {p["host"]: p["urlList"] for _, p in posted}
+    assert hosts == {
+        "erx.vn": ["https://erx.vn/a", "https://erx.vn/b"],
+        "community.erx.vn": ["https://community.erx.vn/c"],
+    }
+    assert all(m == "POST" for m, _ in posted)
+    assert out["indexnow"]["status"] == "submitted"

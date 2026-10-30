@@ -33,6 +33,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import collections
 import concurrent.futures
 import datetime as dt
 import gzip
@@ -77,9 +78,21 @@ USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 )
-SSL_CTX = ssl.create_default_context()
-SSL_CTX.check_hostname = False
-SSL_CTX.verify_mode = ssl.CERT_NONE
+
+
+def build_ssl_context(insecure: bool | None = None) -> ssl.SSLContext:
+    """TLS context that verifies certificates. Set SEO_INSECURE_SSL=1 only behind
+    an intercepting egress proxy whose CA is not installed."""
+    if insecure is None:
+        insecure = os.environ.get("SEO_INSECURE_SSL", "").strip().lower() in ("1", "true", "yes")
+    ctx = ssl.create_default_context()
+    if insecure:
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+    return ctx
+
+
+SSL_CTX = build_ssl_context()
 
 if hasattr(sys.stdout, "reconfigure"):
     try:
@@ -281,6 +294,20 @@ def extract_page_seo_signals(html_text: str, url: str = "") -> dict[str, Any]:
             if tm not in schema_types:
                 schema_types.append(tm)
 
+    h1_raw_count = len(re.findall(r"<h1[\s>]", html_text, re.I))
+    tw_m = re.search(
+        r'<meta\s+[^>]*name=["\']twitter:card["\'][^>]*content=["\'](.*?)["\']',
+        html_text,
+        re.I | re.S,
+    )
+    twitter_card = tw_m.group(1).strip() if tw_m else None
+    img_tags = re.findall(r"<img\b[^>]*>", html_text, re.I)
+    img_missing_dims = sum(
+        1
+        for tag in img_tags
+        if not (re.search(r"\bwidth\s*=", tag, re.I) and re.search(r"\bheight\s*=", tag, re.I))
+    )
+
     png_b64_matches = re.findall(r"data:image/png;base64,[A-Za-z0-9+/=]+", html_text)
     png_b64_kb = round(sum(len(m) for m in png_b64_matches) / 1024, 1)
 
@@ -313,8 +340,12 @@ def extract_page_seo_signals(html_text: str, url: str = "") -> dict[str, Any]:
         "meta_description": meta_desc,
         "canonical": canonical,
         "h1": h1_list[:5],
+        "h1_raw_count": h1_raw_count,
         "h2": h2_list[:15],
         "h3": h3_list[:15],
+        "twitter_card": twitter_card,
+        "img_total": len(img_tags),
+        "img_missing_dims": img_missing_dims,
         "table_count": table_count,
         "jsonld_count": len(jsonld_blocks),
         "schema_types": schema_types,
@@ -549,6 +580,27 @@ def discover_platform_hot_keywords(platform: dict[str, Any]) -> list[str]:
     return discovered
 
 
+_KEYWORD_FILLER_PREFIXES = {"về", "của", "và", "là", "cho", "với", "các", "những", "một", "để", "thì", "mà"}
+_KEYWORD_NOISE_TOKENS = {"free", "online", "miễn", "phí", "2024", "2025", "2026"}
+
+
+def is_low_quality_keyword(kw: str) -> bool:
+    """True for fragments such as 'về sơ đồ gantt online' that start with a filler word."""
+    tokens = kw.strip().lower().split()
+    return not tokens or tokens[0] in _KEYWORD_FILLER_PREFIXES
+
+
+def keyword_dedup_key(kw: str) -> tuple[str, ...]:
+    """Order- and noise-insensitive key: 'dịch pdf giữ nguyên định dạng free' == 'dịch pdf giữ nguyên định dạng',
+    '7 tiêu chí X' == 'tiêu chí X'."""
+    tokens = [
+        t
+        for t in kw.strip().lower().split()
+        if not t.isdigit() and t not in _KEYWORD_NOISE_TOKENS and t not in _KEYWORD_FILLER_PREFIXES
+    ]
+    return tuple(sorted(set(tokens)))
+
+
 def evaluate_and_select_keywords(
     platform: dict[str, Any],
     discovered_keywords: list[str],
@@ -581,6 +633,18 @@ def evaluate_and_select_keywords(
     comp_has_tables = any(c.get("table_count", 0) > 0 for c in competitor_signals)
     comp_has_faq = any("FAQPage" in c.get("schema_types", []) for c in competitor_signals)
 
+    # Keys of keywords this platform optimized in the last 14 days, to reject near-duplicates
+    recent_keys: set[tuple[str, ...]] = set()
+    history_prefix = f"{platform['id']}::"
+    for hist_key, hist_iso in optimized_history.items():
+        if not hist_key.startswith(history_prefix):
+            continue
+        try:
+            if (now - dt.datetime.fromisoformat(hist_iso)).days < 14:
+                recent_keys.add(keyword_dedup_key(hist_key[len(history_prefix):]))
+        except Exception:
+            continue
+
     scored_candidates: list[dict[str, Any]] = []
     for kw in discovered_keywords:
         # Skip if optimized within the last 14 days
@@ -592,6 +656,9 @@ def evaluate_and_select_keywords(
                     continue
             except Exception:
                 pass
+
+        if is_low_quality_keyword(kw) or keyword_dedup_key(kw) in recent_keys:
+            continue
 
         intent_label, intent_score = classify_keyword_intent(kw)
 
@@ -649,7 +716,85 @@ def evaluate_and_select_keywords(
         )
 
     scored_candidates.sort(key=lambda x: (-x["priority_score"], len(x["keyword"])))
-    return scored_candidates[:top_n]
+    selected: list[dict[str, Any]] = []
+    selected_keys: set[tuple[str, ...]] = set()
+    for cand in scored_candidates:
+        key = keyword_dedup_key(cand["keyword"])
+        if key in selected_keys:
+            continue
+        selected_keys.add(key)
+        selected.append(cand)
+        if len(selected) >= top_n:
+            break
+    return selected
+
+
+# (core sentence, optional clauses in priority order). Clauses are appended whole while they
+# still fit, so a description never ends mid-phrase.
+META_DESCRIPTION_TEMPLATES = (
+    (
+        "Hướng dẫn và công cụ {kw} trên {d}",
+        ("chuẩn hoá quy trình", "bảng so sánh thông số thực tế", "tự động hoá bằng AI miễn phí",
+         "từ ERX Việt Nam", "dễ áp dụng", "có ví dụ minh hoạ", "sẵn sàng dùng ngay"),
+    ),
+    (
+        "{Kw} thực chiến trên {d}",
+        ("quy trình từng bước", "bảng đối chiếu tiêu chí rõ ràng", "công cụ AI hỗ trợ áp dụng ngay",
+         "cùng ERX Việt Nam", "có ví dụ thực tế", "dễ làm theo", "tiết kiệm thời gian"),
+    ),
+    (
+        "Tìm hiểu {kw} qua ví dụ thực tế",
+        ("bảng so sánh cách làm thủ công và tự động", "công cụ trực tuyến miễn phí",
+         "trên {d} của ERX Việt Nam", "dễ áp dụng", "có hướng dẫn chi tiết", "dùng được ngay"),
+    ),
+    (
+        "Áp dụng {kw} nhanh và chính xác hơn trên {d}",
+        ("checklist chuẩn hoá", "biểu mẫu tương tác", "trợ lý AI sẵn dùng",
+         "phát triển bởi ERX Việt Nam", "có ví dụ thực tế", "dễ làm theo", "tiết kiệm thời gian"),
+    ),
+    (
+        "{Kw}: so sánh các cách làm phổ biến",
+        ("hướng dẫn thao tác chi tiết", "công cụ tự động hoá tiết kiệm thời gian",
+         "có sẵn miễn phí trên {d}", "từ ERX Việt Nam", "dễ áp dụng", "có ví dụ minh hoạ", "dễ làm theo"),
+    ),
+)
+
+_DANGLING_WORDS = {
+    "và", "với", "cho", "của", "để", "là", "bằng", "từ", "trong", "các", "những", "một",
+    "trên", "tại", "qua", "kèm", "theo", "bởi", "vào", "cùng",
+}
+
+
+def compose_meta_description(core: str, clauses: tuple[str, ...], limit: int = 160) -> str:
+    """Core sentence plus as many whole clauses as fit in `limit` chars, ending with a period."""
+    out = fit_meta_description(core, limit - 1).rstrip(".")
+    for clause in clauses:
+        candidate = f"{out}, {clause}"
+        if len(candidate) + 1 <= limit:
+            out = candidate
+    return out + "."
+
+
+def fit_meta_description(text: str, limit: int = 160) -> str:
+    """Fits text into `limit` chars on a word boundary, ending with a period (no '...')."""
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) <= limit:
+        return text
+    window = text[: limit - 1]
+    if not text[limit - 1].isspace():
+        cut = window.rfind(" ")
+        if cut > limit // 2:
+            window = window[:cut]
+    out = window.rstrip(" ,;:-–—")
+    while True:
+        head, _, last = out.rpartition(" ")
+        if head and last.lower() in _DANGLING_WORDS:
+            out = head.rstrip(" ,;:-–—")
+        else:
+            break
+    if not out.endswith((".", "!", "?")):
+        out += "."
+    return out
 
 
 def build_keyword_seo_package(
@@ -676,13 +821,14 @@ def build_keyword_seo_package(
     if len(base_title) > 65:
         base_title = f"{kw_title_case[:55].rstrip()}{brand_suffix}"
 
-    # Build a 145-160 char Meta Description
-    meta_desc = (
-        f"Hướng dẫn và công cụ {kw} trên {platform['domain']}: "
-        f"chuẩn hoá quy trình, bảng so sánh thông số thực tế và tự động hoá bằng AI miễn phí từ ERX Việt Nam."
+    # Build a 145-160 char Meta Description (opener varies per keyword, cut on a word boundary)
+    core, clauses = META_DESCRIPTION_TEMPLATES[
+        int(hashlib.sha1(kw.encode("utf-8")).hexdigest(), 16) % len(META_DESCRIPTION_TEMPLATES)
+    ]
+    fmt = {"kw": kw, "Kw": kw_title_case, "d": platform["domain"]}
+    meta_desc = compose_meta_description(
+        core.format(**fmt), tuple(c.format(**fmt) for c in clauses)
     )
-    if len(meta_desc) > 160:
-        meta_desc = meta_desc[:157].rstrip() + "..."
 
     seed_cluster = [kw] + [s for s in platform.get("seed_keywords", [])[:4] if s != kw]
     meta_keywords = ", ".join(seed_cluster)
@@ -778,20 +924,70 @@ def build_keyword_seo_package(
     }
 
 
+def submit_indexnow(urls: list[str]) -> dict[str, Any]:
+    """Submits URLs to the IndexNow API (Bing, Yandex, etc.; Google does not use it).
+    Requires INDEXNOW_KEY, with the key file hosted at https://<host>/<key>.txt."""
+    key = os.environ.get("INDEXNOW_KEY", "").strip()
+    if not key:
+        return {"status": "skipped_no_key", "submitted": 0}
+    by_host: dict[str, list[str]] = {}
+    for u in urls:
+        host = urllib.parse.urlparse(u).netloc.lower()
+        if host:
+            by_host.setdefault(host, []).append(u)
+    submitted = 0
+    errors: list[str] = []
+    for host, host_urls in by_host.items():
+        body = json.dumps(
+            {
+                "host": host,
+                "key": key,
+                "keyLocation": f"https://{host}/{key}.txt",
+                "urlList": host_urls,
+            }
+        ).encode("utf-8")
+        req = urllib.request.Request(
+            "https://api.indexnow.org/indexnow",
+            data=body,
+            method="POST",
+            headers={"Content-Type": "application/json; charset=utf-8", "User-Agent": USER_AGENT},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=15, context=SSL_CTX) as resp:
+                if resp.status in (200, 202):
+                    submitted += len(host_urls)
+                else:
+                    errors.append(f"{host}: HTTP {resp.status}")
+        except Exception as exc:
+            errors.append(f"{host}: {exc}")
+    result: dict[str, Any] = {"status": "submitted" if submitted else "failed", "submitted": submitted}
+    if errors:
+        result["errors"] = errors
+    return result
+
+
 def ping_indexnow_and_warm_cache(urls: list[str]) -> dict[str, Any]:
-    """Warms SSR caches on our platforms and pings IndexNow where supported."""
+    """Warms SSR caches on our platforms, then submits the URLs to IndexNow if configured."""
     warmed = 0
     for u in urls:
         res = http_get(u, timeout=12, retries=1)
         if res["ok"] and res["status"] == 200:
             warmed += 1
-    return {"urls_submitted": len(urls), "ssr_warmed_ok": warmed}
+    return {
+        "urls_submitted": len(urls),
+        "ssr_warmed_ok": warmed,
+        "indexnow": submit_indexnow(urls),
+    }
 
 
 def apply_erx_cms_direct_update(patches: list[dict[str, Any]]) -> dict[str, Any]:
     """
-    If ERX_ADMIN_COOKIE is provided in environment (.env), pushes Title/Meta updates
-    directly to https://erx.vn/administrator. Always writes an audit JS bundle as well.
+    Stages Title/Meta patches for erx.vn in reports/erx_cms_auto_patch.js.
+
+    This function does NOT write to the CMS: the administrator edit form is an
+    ASP.NET page whose POST contract is not implemented here. When ERX_ADMIN_COOKIE
+    is set it only confirms the edit pages are reachable with that session
+    (`session_reachable_count`); `patched_count` is always 0.
     """
     js_payload_path = REPORTS_DIR / "erx_cms_auto_patch.js"
     patch_map = {}
@@ -817,12 +1013,13 @@ def apply_erx_cms_direct_update(patches: list[dict[str, Any]]) -> dict[str, Any]
     if not admin_cookie or not patch_map:
         return {
             "mode": "staged_js_payload",
-            "patched_count": len(patch_map),
+            "patched_count": 0,
+            "staged_count": len(patch_map),
             "payload_file": str(js_payload_path),
         }
 
-    applied = 0
-    for nid, seo in patch_map.items():
+    reachable = 0
+    for nid in patch_map:
         edit_url = f"https://erx.vn/administrator/content/edit.aspx?nContentId={nid}&divid=300&from=31"
         req = urllib.request.Request(
             edit_url,
@@ -831,13 +1028,15 @@ def apply_erx_cms_direct_update(patches: list[dict[str, Any]]) -> dict[str, Any]
         try:
             with urllib.request.urlopen(req, timeout=15, context=SSL_CTX) as resp:
                 if resp.status == 200:
-                    applied += 1
+                    reachable += 1
         except Exception as exc:
-            logger.warning("CMS direct patch failed for %s: %s", nid, exc)
+            logger.warning("CMS edit page unreachable for %s: %s", nid, exc)
 
     return {
-        "mode": "direct_cms_session",
-        "patched_count": applied,
+        "mode": "staged_session_verified",
+        "patched_count": 0,
+        "staged_count": len(patch_map),
+        "session_reachable_count": reachable,
         "payload_file": str(js_payload_path),
     }
 
@@ -1052,6 +1251,32 @@ def audit_single_page_seo(sig: dict[str, Any], domain: str) -> list[str]:
     return issues
 
 
+def audit_advisory_seo(sig: dict[str, Any], domain: str) -> list[str]:
+    """Advisory on-page checks. Reported, but they never trigger title/meta auto-remediation."""
+    advisories: list[str] = []
+
+    title = sig.get("title", "")
+    if len(title) > 65:
+        advisories.append(f"LONG_TITLE ({len(title)} chars)")
+
+    h1_raw = sig.get("h1_raw_count")
+    if h1_raw is not None:
+        if h1_raw == 0:
+            advisories.append("MISSING_H1")
+        elif not sig.get("h1"):
+            advisories.append("EMPTY_H1")
+
+    if sig.get("twitter_card") == "":
+        advisories.append("EMPTY_TWITTER_CARD")
+
+    img_total = sig.get("img_total", 0)
+    img_missing = sig.get("img_missing_dims", 0)
+    if img_total >= 3 and img_missing / img_total >= 0.5:
+        advisories.append(f"IMAGES_MISSING_DIMENSIONS ({img_missing}/{img_total})")
+
+    return advisories
+
+
 def synthesize_remediation_for_page(sig: dict[str, Any], domain: str, issues: list[str]) -> dict[str, Any]:
     """Generates immediate auto-fix metadata for a new or degraded page."""
     raw_title = sig.get("title", "") or (sig.get("h1", [""])[0] if sig.get("h1") else domain)
@@ -1068,8 +1293,7 @@ def synthesize_remediation_for_page(sig: dict[str, Any], domain: str, issues: li
             raw_desc = f"{clean_title}: Phân tích chi tiết về {h2_preview} kèm biểu mẫu và hướng dẫn thực chiến tại {domain}."
         else:
             raw_desc = f"{clean_title} — Tài liệu hướng dẫn chuyên sâu, biểu mẫu thực hành và công cụ tự động hoá trên hệ sinh thái {domain}."
-    if len(raw_desc) > 160:
-        raw_desc = raw_desc[:157].rstrip() + "..."
+    raw_desc = fit_meta_description(raw_desc)
 
     return {
         "target_url": sig.get("url", ""),
@@ -1115,6 +1339,7 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
     new_urls_found: list[dict[str, Any]] = []
     modified_urls_found: list[dict[str, Any]] = []
     remediations_triggered: list[dict[str, Any]] = []
+    advisory_pages: list[dict[str, Any]] = []
     platform_health: list[dict[str, Any]] = []
 
     for platform in config.get("platforms", []):
@@ -1155,6 +1380,9 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
                 continue
 
             issues = audit_single_page_seo(item, domain)
+            advisories = audit_advisory_seo(item, domain)
+            if advisories:
+                advisory_pages.append({"platform_id": pid, "url": u, "advisories": advisories})
             prev = url_registry.get(u)
 
             if prev is None:
@@ -1199,6 +1427,7 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
                 "png_base64_kb": item.get("png_base64_kb", 0),
                 "fingerprint": item.get("fingerprint", ""),
                 "issues": issues,
+                "advisories": advisories,
                 "last_checked": now_vn().isoformat(),
             }
 
@@ -1258,6 +1487,11 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
         "new_community_topics_warmed": len(new_community_topics),
         "remediations_triggered_count": len(remediations_triggered),
         "cms_remediation_status": cms_remediation_status,
+        "advisory_pages_count": len(advisory_pages),
+        "advisory_counts": dict(
+            collections.Counter(a.split(" (")[0] for p in advisory_pages for a in p["advisories"])
+        ),
+        "advisory_pages_sample": advisory_pages[:15],
         "new_urls_sample": new_urls_found[:15],
         "modified_urls_sample": modified_urls_found[:15],
         "remediations_sample": remediations_triggered[:15],
@@ -1324,6 +1558,22 @@ def write_watcher_report_md(path: Path, summary: dict[str, Any]) -> None:
                 f"| `{r['domain']}` | {r['target_url']} | `{', '.join(r['detected_issues'])}` | "
                 f"{r['recommended_title']} | {r['recommended_meta_description']} |"
             )
+
+    if summary.get("advisory_pages_sample"):
+        counts = ", ".join(f"{k}: {v}" for k, v in summary.get("advisory_counts", {}).items())
+        lines.extend(
+            [
+                "",
+                f"## 4. Khuyến nghị On-page (Advisory, không tự sửa) — `{summary['advisory_pages_count']}` trang",
+                "",
+                f"Tổng hợp: {counts}",
+                "",
+                "| Nền tảng | URL | Khuyến nghị |",
+                "| :--- | :--- | :--- |",
+            ]
+        )
+        for a in summary["advisory_pages_sample"]:
+            lines.append(f"| `{a['platform_id']}` | {a['url']} | `{', '.join(a['advisories'])}` |")
 
     path.write_text("\n".join(lines), encoding="utf-8")
 
