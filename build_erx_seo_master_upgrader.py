@@ -35,16 +35,16 @@ MENU_SEO_MAP = {
         "meta_key": "hội thảo excel, workshop power bi, hội thảo chuỗi cung ứng, sự kiện erx việt nam, đào tạo phân tích dữ liệu"
     },
     "dao-tao-doanh-nghiep": {
-        "meta_title": "Đào tạo doanh nghiệp (In-house Training) Data & Supply Chain | ERX",
+        "meta_title": "Đào tạo doanh nghiệp In-house: Data & Supply Chain | ERX",
         "meta_desc": "Chương trình đào tạo doanh nghiệp (Corporate In-house Training) thiết kế riêng theo bài toán thực tế về Phân tích dữ liệu (Excel, Power BI, SQL, Python) & Chuỗi cung ứng.",
         "meta_key": "đào tạo doanh nghiệp, inhouse training excel power bi, đào tạo chuỗi cung ứng cho doanh nghiệp, tư vấn đào tạo erx"
     },
     "phan-mem": {
-        "meta_title": "Phần mềm & Công cụ tối ưu hóa Chuỗi cung ứng, Quản trị dự án | ERX",
+        "meta_title": "Phần mềm & công cụ tối ưu Chuỗi cung ứng, Quản trị dự án | ERX",
         "meta_desc": "Hệ sinh thái phần mềm và Add-in thực chiến từ ERX Việt Nam: ERX Smart Tool, AI Project Gantt Planner (PMBOK 8), công cụ tối ưu hóa tuyến đường vận tải và kho vận.",
         "meta_key": "phần mềm chuỗi cung ứng, addin excel erx smart tool, phần mềm quản lý dự án pmbok 8, tối ưu hóa tuyến đường"
     },
-    "tuyen-dung": {
+    "hop-tac-viec-lam": {
         "meta_title": "Hợp tác Giảng viên & Tuyển dụng Nhân sự Chuỗi cung ứng | ERX",
         "meta_desc": "Cơ hội hợp tác trở thành Giảng viên chuyên gia tại ERX Việt Nam và thông tin tuyển dụng các vị trí Quản lý Chuỗi cung ứng, Mua hàng (Procurement), Logistics uy tín.",
         "meta_key": "hợp tác việc làm erx, tuyển dụng supply chain, tuyển dụng mua hàng logistics, tuyển giảng viên phân tích dữ liệu"
@@ -61,22 +61,22 @@ MENU_SEO_MAP = {
     },
     "mau-file-quan-ly-excel": {
         "new_nav_title": "Mẫu file quản lý Excel",
-        "meta_title": "Mẫu file quản lý Excel miễn phí cho Kho vận, Mua hàng & Dự án | ERX",
+        "meta_title": "Mẫu file quản lý Excel miễn phí: Kho vận, Mua hàng, Dự án | ERX",
         "meta_desc": "Tải miễn phí bộ sưu tập mẫu file quản lý bằng Excel chuyên nghiệp: Quản lý tồn kho, kế hoạch mua hàng, lịch thanh toán, nhân sự và tự động hóa báo cáo doanh nghiệp.",
         "meta_key": "mẫu file quản lý excel, file excel quản lý kho, mẫu báo cáo excel đẹp, tải file excel miễn phí erx"
     },
     "excel": {
-        "meta_title": "Kiến thức Microsoft Excel thực chiến từ Cơ bản đến Chuyên sâu | ERX",
+        "meta_title": "Kiến thức Excel thực chiến từ cơ bản đến chuyên sâu | ERX",
         "meta_desc": "Tổng hợp kiến thức Microsoft Excel toàn diện: Hệ thống hàm Excel 365 mảng động, lập trình tự động hóa VBA, truy vấn SQL trong Excel và thiết kế Dashboard quản trị.",
         "meta_key": "học excel thực chiến, thủ thuật excel nâng cao, excel cho chuỗi cung ứng, đào tạo excel erx"
     },
     "excel-functions": {
-        "meta_title": "Tra cứu các Hàm Excel thông dụng & Nâng cao kèm Ví dụ thực tế | ERX",
+        "meta_title": "Tra cứu hàm Excel thông dụng & nâng cao kèm ví dụ thực tế | ERX",
         "meta_desc": "Cẩm nang tra cứu cú pháp và bài tập thực hành các hàm trong Excel (VLOOKUP, INDEX MATCH, SUMIFS, COUNTIFS, SUBTOTAL, XLOOKUP, FILTER, LAMBDA) dễ hiểu nhất.",
         "meta_key": "các hàm trong excel, excel functions, hàm lọc dữ liệu excel, hàm tìm kiếm trong excel, công thức excel nâng cao"
     },
     "excel-function": {
-        "meta_title": "Tổng hợp Hàm Excel thực chiến trong Phân tích Dữ liệu | ERX Việt Nam",
+        "meta_title": "Tổng hợp hàm Excel thực chiến trong Phân tích Dữ liệu | ERX",
         "meta_desc": "Hướng dẫn chi tiết cách kết hợp các hàm tính toán, dò tìm và xử lý chuỗi văn bản trong Microsoft Excel phục vụ lập báo cáo quản trị và vận hành doanh nghiệp.",
         "meta_key": "hàm excel thực chiến, công thức excel văn phòng, hướng dẫn hàm excel erx"
     },
@@ -86,37 +86,37 @@ MENU_SEO_MAP = {
         "meta_key": "các hàm excel 365, hàm mảng động excel, hàm filter trong excel, hàm lambda excel 365, hàm vstack textsplit"
     },
     "excel-365": {
-        "meta_title": "Hướng dẫn các Hàm Mảng Động trên Microsoft Excel 365 | ERX Việt Nam",
+        "meta_title": "Hướng dẫn hàm mảng động trên Excel 365 | ERX Việt Nam",
         "meta_desc": "Khám phá sức mạnh đột phá của các hàm mảng động trong phiên bản Microsoft Excel 365 giúp tự động hóa hoàn toàn bảng tính mà không cần viết code phức tạp.",
         "meta_key": "excel 365 nâng cao, hàm mới trong office 365, tự động hóa báo cáo excel 365"
     },
     "excel-vba": {
-        "meta_title": "Lập trình Excel VBA thực chiến: Tự động hóa Báo cáo chỉ 1 Click | ERX",
+        "meta_title": "Lập trình Excel VBA thực chiến: tự động hóa báo cáo 1 Click | ERX",
         "meta_desc": "Hướng dẫn lập trình VBA trong Excel từ cơ bản đến nâng cao: Thao tác đối tượng Workbook/Range, viết hàm UDF, kết nối ADODB SQL và tự động hóa báo cáo doanh nghiệp.",
         "meta_key": "lập trình excel vba, tự động hóa báo cáo bằng vba, học vba excel cho người mới, code vba excel thực chiến"
     },
-    "sql": {
+    "sql-in-excel": {
         "meta_title": "SQL trong Excel: Truy vấn & Tổng hợp Dữ liệu lớn Siêu tốc | ERX",
         "meta_desc": "Phương pháp sử dụng ngôn ngữ truy vấn SQL (SELECT, JOIN, GROUP BY, UNION, PIVOT) ngay trong Microsoft Excel qua ADODB giúp tổng hợp hàng trăm nghìn dòng trong 1 giây.",
         "meta_key": "sql trong excel, sql in excel, adodb connection excel vba, truy vấn sql trên file excel, gộp dữ liệu nhiều file excel"
     },
     "dashboard-automated-report": {
-        "meta_title": "Thiết kế Dashboard & Báo cáo Tự động (Automated Report) trên Excel",
+        "meta_title": "Thiết kế Dashboard & Báo cáo tự động trên Excel | ERX",
         "meta_desc": "Hướng dẫn kỹ thuật vẽ biểu đồ động (Dynamic Chart), Highlight Top N, nhãn dữ liệu thông minh và thiết kế hệ thống Dashboard báo cáo quản trị tự động trên Excel.",
         "meta_key": "thiết kế dashboard excel, báo cáo tự động trong excel, vẽ biểu đồ động excel, automated report erx"
     },
     "power-bi": {
-        "meta_title": "Tài liệu học Power BI & Ngôn ngữ DAX thực chiến từ A-Z | ERX Việt Nam",
+        "meta_title": "Tài liệu học Power BI & DAX thực chiến từ A-Z | ERX Việt Nam",
         "meta_desc": "Chuyên mục hướng dẫn Microsoft Power BI chuyên sâu: Xây dựng Data Model chuẩn Star Schema, viết hàm DAX nâng cao (CALCULATE, ALL, ALLSELECTED), Pareto và Dashboard.",
         "meta_key": "học power bi, hàm dax trong power bi, phân tích dữ liệu power bi, thiết kế dashboard power bi, data modeling"
     },
     "supply-chain-management": {
-        "meta_title": "Quản trị Chuỗi cung ứng (Supply Chain Management) Thực chiến | ERX",
+        "meta_title": "Quản trị Chuỗi cung ứng (Supply Chain) thực chiến | ERX",
         "meta_desc": "Kiến thức chuyên sâu về Quản trị Chuỗi cung ứng (SCM) hiện đại: Chiến lược tìm nguồn cung ứng, hoạch định vật tư, vận hành kho bãi, Logistics và phân tích dữ liệu SCM.",
         "meta_key": "quản trị chuỗi cung ứng, supply chain management là gì, kiến thức chuỗi cung ứng thực chiến, phân tích dữ liệu chuỗi cung ứng"
     },
     "procurement-management": {
-        "meta_title": "Quản trị Mua hàng (Procurement Management) & Strategic Sourcing | ERX",
+        "meta_title": "Quản trị Mua hàng (Procurement) & Strategic Sourcing | ERX",
         "meta_desc": "Cẩm nang Quản trị Mua sắm (Procurement) B2B: Tìm nguồn cung ứng chiến lược (Strategic Sourcing), phân tích chi phí TCO, 8 phương pháp tính Saving và đàm phán nhà cung cấp.",
         "meta_key": "quản trị mua hàng, procurement management, strategic sourcing là gì, phân tích tco, cắt giảm chi phí mua hàng"
     },
@@ -125,23 +125,23 @@ MENU_SEO_MAP = {
         "meta_desc": "Phương pháp Hoạch định Chuỗi cung ứng (Supply Chain Planning): Dự báo nhu cầu (Demand Forecasting), lập kế hoạch nguyên vật liệu (MRP) và tối ưu hóa mức tồn kho an toàn.",
         "meta_key": "planning management, hoạch định chuỗi cung ứng, tính toán mrp bằng python excel, quản lý kế hoạch sản xuất"
     },
-    "inventory-management": {
-        "meta_title": "Quản trị Kho hàng (Warehouse & Inventory Management) Thực chiến | ERX",
+    "warehouse-management": {
+        "meta_title": "Quản trị Kho hàng (Warehouse & Inventory) thực chiến | ERX",
         "meta_desc": "Giải pháp tối ưu hóa vận hành kho hàng hiện đại: Thiết kế Layout kho theo phân tích ABC đa chiều, tối ưu lộ trình lấy hàng (Order Picking Routing) và kiểm soát tồn kho.",
         "meta_key": "warehouse management, inventory management, quản lý kho hàng, phân tích abc trong kho, tối ưu lộ trình lấy hàng"
     },
     "logistics-management": {
-        "meta_title": "Quản trị Vận hành Logistics, Xuất nhập khẩu & Tối ưu Tuyến đường | ERX",
+        "meta_title": "Quản trị Logistics, Xuất nhập khẩu & Tối ưu Tuyến đường | ERX",
         "meta_desc": "Kiến thức thực chiến về Quản trị Logistics: Nghiệp vụ xuất nhập khẩu, tra cứu HS Code, bài toán tối ưu hóa tuyến đường vận tải (Route Optimization) và tính cước vận chuyển.",
         "meta_key": "quản trị logistics, logistics management, tối ưu hóa tuyến đường vận tải, tra cứu hs code, vận hành logistics thực chiến"
     },
     "python-for-supply-chain": {
-        "meta_title": "Ứng dụng Python trong Chuỗi cung ứng & Phân tích Dữ liệu (Pandas) | ERX",
+        "meta_title": "Ứng dụng Python trong Chuỗi cung ứng & Phân tích Dữ liệu | ERX",
         "meta_desc": "Hướng dẫn lập trình Python cho chuyên viên Supply Chain & Data Analyst: Làm chủ Google Colab, Jupyter Notebook, thư viện Pandas DataFrame và bài toán tự động hóa MRP.",
         "meta_key": "python for supply chain, ứng dụng python trong chuỗi cung ứng, học thư viện pandas python, phân tích dữ liệu bằng python"
     },
     "project-management": {
-        "meta_title": "Quản trị Dự án Chuẩn PMBOK 8: WBS, Đường găng CPM, EVM & AI Gantt | ERX",
+        "meta_title": "Quản trị Dự án PMBOK 8: WBS, Đường găng CPM, EVM & AI Gantt | ERX",
         "meta_desc": "Trọn bộ cẩm nang Quản trị Dự án thực chiến theo chuẩn PMBOK Guide 8th Edition: Project Charter, Ma trận RACI, WBS, Đường găng CPM, 9 chỉ số EVM và định lượng rủi ro EMV.",
         "meta_key": "quản trị dự án pmbok 8, project management erx, cấu trúc wbs, đường găng cpm, earned value management evm, ai gantt planner"
     },
@@ -171,7 +171,7 @@ MENU_SEO_MAP = {
         "meta_key": "câu chuyện thành công học viên erx, ứng dụng python excel vào công việc thực tế"
     },
     "su-kien": {
-        "meta_title": "Sự kiện & Hội thảo Chuyên đề Phân tích Dữ liệu, Chuỗi cung ứng | ERX",
+        "meta_title": "Sự kiện & Hội thảo chuyên đề Dữ liệu, Chuỗi cung ứng | ERX",
         "meta_desc": "Tổng hợp các sự kiện, buổi chia sẻ chuyên đề và hội thảo trực tuyến về ứng dụng công nghệ dữ liệu trong quản trị doanh nghiệp tại ERX Việt Nam.",
         "meta_key": "sự kiện erx, hội thảo phân tích dữ liệu, webinar chuỗi cung ứng"
     }
@@ -369,121 +369,121 @@ WORKSHOP_SEO_MAP = {
     "8315644": {
         "url": "https://erx.vn/tai-sao-and-or-khong-spill-4-giai-phap-thay-the-trong-excel-moi-8315644.html",
         "h1": "“Tại sao hàm AND/OR không Spill? 4 giải pháp thay thế trong Excel 365”",
-        "meta_title": "Tại sao hàm AND/OR không Spill? 4 giải pháp mảng động trong Excel 365 | ERX",
+        "meta_title": "Hàm AND/OR không Spill? 4 giải pháp mảng động Excel 365 | ERX",
         "meta_desc": "Hội thảo thực chiến ERX: Giải thích nguyên nhân hàm AND/OR không trả về mảng động (Spill) khi kết hợp với FILTER/IF và 4 giải pháp thay thế bằng toán tử *, +, BYROW."
     },
     "8318776": {
         "url": "https://erx.vn/groupby-trong-excel-tong-hop-du-lieu-theo-thang-fiscal-year-chuan-xac-8318776.html",
         "h1": "“Hàm GROUPBY trong Excel – Tổng hợp dữ liệu theo tháng & Fiscal Year chuẩn xác”",
-        "meta_title": "Hàm GROUPBY trong Excel 365: Tổng hợp dữ liệu theo Tháng & Fiscal Year | ERX",
+        "meta_title": "Hàm GROUPBY Excel 365: Tổng hợp theo Tháng & Fiscal Year | ERX",
         "meta_desc": "Workshop thực chiến cách ứng dụng hàm GROUPBY mới trong Excel 365 để gom nhóm, tính tổng doanh thu theo tháng và năm tài chính (Fiscal Year) thay thế PivotTable."
     },
     "8313513": {
         "url": "https://erx.vn/xlookup-vs-filter-dung-ham-nao-trong-tinh-huong-nao-8313513.html",
         "h1": "“XLOOKUP vs FILTER – Dùng hàm nào trong tình huống nào?”",
-        "meta_title": "So sánh hàm XLOOKUP và FILTER trong Excel 365: Khi nào dùng hàm nào? | ERX",
+        "meta_title": "XLOOKUP vs FILTER trong Excel 365: Khi nào dùng hàm nào? | ERX",
         "meta_desc": "Phân tích chuyên sâu sự khác biệt giữa hàm XLOOKUP và hàm FILTER trong Excel 365: Cách chọn đúng hàm khi dò tìm 1 kết quả, nhiều kết quả và tối ưu tốc độ bảng tính."
     },
     "8312031": {
         "url": "https://erx.vn/filter-with-wildcards-3-cach-tim-kiem-nang-cao-trong-excel-8312031.html",
         "h1": "“Hàm FILTER với Wildcards – 3 cách tìm kiếm nâng cao trong Excel”",
-        "meta_title": "Hàm FILTER kết hợp Wildcard trong Excel: 3 cách lọc tìm kiếm gần đúng | ERX",
+        "meta_title": "Hàm FILTER với Wildcard: 3 cách lọc tìm kiếm gần đúng | ERX",
         "meta_desc": "Hướng dẫn 3 kỹ thuật khắc phục nhược điểm hàm FILTER không hỗ trợ trực tiếp ký tự đại diện (*, ?) bằng tổ hợp SEARCH + ISNUMBER, REGEXTEST và XMATCH trong Excel 365."
     },
     "8313066": {
         "url": "https://erx.vn/tu-bo-xlookup-lam-chu-data-model-power-pivot-buoc-khoi-dau-de-tien-toi-8313066.html",
         "h1": "“Từ bỏ XLOOKUP – Làm chủ Data Model & Power Pivot: Bước khởi đầu tiến tới Power BI”",
-        "meta_title": "Làm chủ Data Model & Power Pivot trong Excel: Bước đệm tiến tới Power BI | ERX",
+        "meta_title": "Data Model & Power Pivot trong Excel: Bước sang Power BI | ERX",
         "meta_desc": "Tại sao nên chuyển từ nối bảng bằng VLOOKUP/XLOOKUP sang xây dựng mô hình quan hệ dữ liệu (Data Model & Power Pivot) để xử lý hàng triệu dòng mượt mà trên Excel?"
     },
     "8314296": {
         "url": "https://erx.vn/su-dung-ham-hyperlink-trong-excel-tao-bao-cao-thong-minh-va-dieu-huong-8314296.html",
         "h1": "🚀 “Sử dụng hàm HYPERLINK trong Excel – Tạo báo cáo thông minh và điều hướng chuyên nghiệp”",
-        "meta_title": "Hàm HYPERLINK trong Excel: Cách tạo Menu điều hướng báo cáo thông minh | ERX",
+        "meta_title": "Hàm HYPERLINK Excel: Tạo Menu điều hướng báo cáo thông minh | ERX",
         "meta_desc": "Hướng dẫn ứng dụng hàm HYPERLINK kết hợp CELL, ADDRESS, XMATCH để tạo mục lục điều hướng động giữa các Sheet, mở nhanh thư mục chứng từ và thiết kế Dashboard chuyên nghiệp."
     },
     "8318087": {
         "url": "https://erx.vn/giai-ma-ham-match-trong-excel-true-1-0-khac-nhau-nhu-the-nao-8318087.html",
         "h1": "🚀 “Giải mã hàm MATCH trong Excel – Tham số 1, 0, -1 khác nhau như thế nào?”",
-        "meta_title": "Giải mã hàm MATCH trong Excel: Phân biệt tham số 1, 0 và -1 chi tiết | ERX",
+        "meta_title": "Hàm MATCH trong Excel: Phân biệt tham số 1, 0 và -1 | ERX",
         "meta_desc": "Hiểu tận gốc cơ chế tìm kiếm nhị phân (Binary Search) và tuyến tính của hàm MATCH / XMATCH trong Excel với các kiểu khớp 0 (chính xác), 1 (nhỏ hơn) và -1 (lớn hơn)."
     },
     "8316838": {
         "url": "https://erx.vn/tai-sao-nen-chuyen-tu-vlookup-sang-index-match-tim-kiem-du-lieu-chuyen-8316838.html",
         "h1": "🚀 “Tại sao nên chuyển từ VLOOKUP sang INDEX MATCH – Tìm kiếm dữ liệu chuyên nghiệp trong Excel”",
-        "meta_title": "Tại sao nên chuyển từ VLOOKUP sang INDEX MATCH trong Excel? | Hội thảo ERX",
+        "meta_title": "Vì sao nên chuyển từ VLOOKUP sang INDEX MATCH trong Excel? | ERX",
         "meta_desc": "So sánh hiệu năng và tính linh hoạt giữa VLOOKUP và cặp hàm INDEX + MATCH: Cách dò tìm ngược từ phải sang trái, chống gãy công thức khi chèn cột và dò tìm đa chiều."
     },
     "8318928": {
         "url": "https://erx.vn/power-query-chuan-hoa-du-lieu-cham-cong-bang-power-query-noi-khong-8318928.html",
         "h1": "🚀 “Power Query – Chuẩn hóa dữ liệu chấm công bằng Power Query: Nói không với dữ liệu lỗi”",
-        "meta_title": "Chuẩn hóa dữ liệu chấm công tự động bằng Power Query trong Excel | ERX",
+        "meta_title": "Chuẩn hóa dữ liệu chấm công tự động bằng Power Query | ERX",
         "meta_desc": "Hướng dẫn thực chiến dùng Power Query trong Excel để làm sạch, xoay bảng (Unpivot) và tự động tổng hợp bảng chấm công phức tạp từ máy chấm công chỉ với 1 nút Refresh."
     },
     "8313099": {
         "url": "https://erx.vn/power-query-trong-excel-lam-sach-tong-hop-du-lieu-chuyen-nghiep-8313099.html",
         "h1": "🚀 “Power Query trong Excel – Làm sạch & tổng hợp dữ liệu chuyên nghiệp”",
-        "meta_title": "Power Query trong Excel: Hướng dẫn làm sạch & gộp dữ liệu tự động | ERX",
+        "meta_title": "Power Query trong Excel: Làm sạch & gộp dữ liệu tự động | ERX",
         "meta_desc": "Làm chủ quy trình ETL (Extract - Transform - Load) bằng công cụ Power Query có sẵn trong Excel để gộp hàng chục file báo cáo và chuẩn hóa dữ liệu không cần VBA."
     },
     "8313087": {
         "url": "https://erx.vn/thuc-hanh-giai-de-excel-kiem-tra-trinh-do-cua-ban-8313087.html",
         "h1": "🚀 “Thực hành giải đề Excel – Kiểm tra trình độ của bạn”",
-        "meta_title": "Thực hành giải đề thi tuyển dụng Excel thực chiến cho Data & Supply Chain | ERX",
+        "meta_title": "Giải đề thi tuyển dụng Excel cho Data & Supply Chain | ERX",
         "meta_desc": "Trực tiếp giải các bài test Excel tuyển dụng thực tế tại các tập đoàn lớn cho vị trí Supply Chain, Mua hàng, Kế toán và Data Analyst cùng chuyên gia ERX Việt Nam."
     },
     "8317247": {
         "url": "https://erx.vn/lam-chu-table-trong-excel-tham-chieu-ham-va-ung-dung-bao-cao-tren-8317247.html",
         "h1": "🚀 “Làm chủ Table trong Excel – Tham chiếu, hàm và ứng dụng báo cáo trên Excel 365”",
-        "meta_title": "Làm chủ Excel Table (Ctrl+T): Tham chiếu có cấu trúc & Báo cáo tự động | ERX",
+        "meta_title": "Excel Table (Ctrl+T): Tham chiếu cấu trúc & Báo cáo tự động | ERX",
         "meta_desc": "Khám phá sức mạnh của Excel Table (Structured References): Cách viết công thức tự động co giãn theo dòng dữ liệu mới và kết hợp mượt mà với hàm mảng động Excel 365."
     },
     "8312267": {
         "url": "https://erx.vn/sumproduct-than-chuong-phan-2-giai-ma-co-che-ma-tran-hieu-tan-goc-co-8312267.html",
         "h1": "“Làm chủ hàm SUMPRODUCT – Phần 2: Giải mã cơ chế mảng & ma trận”",
-        "meta_title": "Làm chủ hàm SUMPRODUCT (Phần 2): Giải mã cơ chế tính toán Ma trận | ERX",
+        "meta_title": "Hàm SUMPRODUCT (Phần 2): Cơ chế tính toán Ma trận | ERX",
         "meta_desc": "Hiểu sâu bản chất toán học của mảng 1 chiều, mảng 2 chiều (Ma trận dòng × cột) và toán tử dấu gạch ngang kép (--) bên trong hàm SUMPRODUCT nâng cao."
     },
     "8313732": {
         "url": "https://erx.vn/sumproduct-than-chuong-phan-01-ung-dung-thuc-chien-trong-bao-cao-va-xu-8313732.html",
         "h1": "“Làm chủ hàm SUMPRODUCT – Phần 1: Ứng dụng thực chiến trong báo cáo và xử lý dữ liệu”",
-        "meta_title": "Làm chủ hàm SUMPRODUCT (Phần 1): Ứng dụng tính tổng đa điều kiện | ERX",
+        "meta_title": "Hàm SUMPRODUCT (Phần 1): Tính tổng đa điều kiện | ERX",
         "meta_desc": "Hướng dẫn thực hành hàm SUMPRODUCT trong Excel để tính tổng có điều kiện phức tạp (AND/OR), tính trung bình gia quyền và xử lý dữ liệu mảng không cần Ctrl+Shift+Enter."
     },
     "8318279": {
         "url": "https://erx.vn/ung-dung-check-box-trong-excel-365-check-box-conditional-formatting-8318279.html",
         "h1": "“Ứng dụng Check Box trong Excel 365 – Kết hợp Conditional Formatting & hàm FILTER”",
-        "meta_title": "Cách tạo và ứng dụng Check Box mới trong Excel 365 kèm hàm FILTER | ERX",
+        "meta_title": "Check Box mới trong Excel 365 kèm hàm FILTER | ERX",
         "meta_desc": "Hướng dẫn sử dụng tính năng Cell Checkbox mới trên Excel 365 kết hợp với Conditional Formatting và hàm FILTER để làm bảng theo dõi tiến độ công việc tương tác."
     },
     "8315591": {
         "url": "https://erx.vn/tu-dong-hoa-tong-hop-du-lieu-google-sheets-excel-power-bi-google-8315591.html",
         "h1": "“Tự động hóa tổng hợp dữ liệu Google Sheets sang Excel & Power BI”",
-        "meta_title": "Cách kết nối và tự động đồng bộ dữ liệu Google Sheets sang Excel & Power BI",
+        "meta_title": "Đồng bộ dữ liệu Google Sheets sang Excel & Power BI tự động | ERX",
         "meta_desc": "Giải pháp xây dựng luồng đồng bộ dữ liệu tự động từ nhiều file Google Sheets về Microsoft Excel và Power BI bằng Google Drive Desktop, Apps Script và Power Query."
     },
     "8316071": {
         "url": "https://erx.vn/lam-chu-xu-ly-merge-cells-trong-excel-365-conditional-formatting-custom-8316071.html",
         "h1": "“Làm chủ xử lý Merge Cells trong Excel 365 – Conditional Formatting, Custom Format & AGGREGATE”",
-        "meta_title": "Cách xử lý ô gộp (Merge Cells) trong Excel 365 không làm hỏng dữ liệu | ERX",
+        "meta_title": "Xử lý ô gộp (Merge Cells) trong Excel 365 an toàn dữ liệu | ERX",
         "meta_desc": "Giải pháp thay thế thao tác Merge & Center gây lỗi lọc dữ liệu bằng Center Across Selection, Conditional Formatting giả lập gộp ô và cách điền đầy dữ liệu sau khi bỏ gộp."
     },
     "8315449": {
         "url": "https://erx.vn/lam-chu-dynamic-named-range-trong-excel-365-index-offset-trimrange-8315449.html",
         "h1": "“Làm chủ Dynamic Named Range trong Excel 365 – INDEX, OFFSET, TRIMRANGE & các giải pháp khác”",
-        "meta_title": "Cách tạo vùng tên động (Dynamic Named Range) bằng INDEX, OFFSET & TRIMRANGE",
+        "meta_title": "Vùng tên động (Dynamic Named Range): INDEX, OFFSET, TRIMRANGE",
         "meta_desc": "So sánh 4 phương pháp tạo dải ô động (Dynamic Named Range) trong Excel 365: Toán tử tràn (#), hàm mới TRIMRANGE / dấu chấm (.:.), hàm INDEX và hàm OFFSET."
     },
     "8317559": {
         "url": "https://erx.vn/lam-chu-pareto-chart-trong-excel-pivot-table-running-total-8317559.html",
         "h1": "“Làm chủ biểu đồ Pareto Chart trong Excel – PivotTable, % Running Total & Highlight Visual”",
-        "meta_title": "Cách vẽ biểu đồ Pareto 80/20 trong Excel bằng PivotTable & Highlight động",
+        "meta_title": "Biểu đồ Pareto 80/20 trong Excel: PivotTable & Highlight | ERX",
         "meta_desc": "Hướng dẫn từng bước thiết kế biểu đồ Pareto (Quy tắc 80/20) chuyên nghiệp trên Excel kết hợp đường lũy kế % Running Total và tự động tô màu nhóm nguyên nhân cốt lõi."
     },
     "8318738": {
         "url": "https://erx.vn/lam-chu-search-box-trong-excel-filter-conditional-formatting-activex-8318738.html",
         "h1": "“Làm chủ Search Box trong Excel – Kết hợp FILTER, Conditional Formatting & ActiveX TextBox”",
-        "meta_title": "Cách tạo ô tìm kiếm tức thời (Search Box) trong Excel bằng FILTER & TextBox",
+        "meta_title": "Tạo ô tìm kiếm tức thời (Search Box) trong Excel: FILTER | ERX",
         "meta_desc": "Hướng dẫn tạo thanh tìm kiếm dữ liệu theo thời gian thực (Instant Search Box) ngay khi gõ phím trong Excel bằng ActiveX TextBox kết hợp hàm FILTER và Conditional Formatting."
     }
 }
@@ -495,21 +495,21 @@ canonical_hub_urls = [
     "https://erx.vn/hoi-thao.html",
     "https://erx.vn/dao-tao-doanh-nghiep.html",
     "https://erx.vn/phan-mem.html",
-    "https://erx.vn/tuyen-dung.html",
+    "https://erx.vn/hop-tac-viec-lam.html",
     "https://erx.vn/lien-he.html",
     "https://erx.vn/gioi-thieu.html",
     "https://erx.vn/mau-file-quan-ly-excel.html",
-    "https://erx.vn/excel.html",
     "https://erx.vn/excel-functions.html",
-    "https://erx.vn/cac-ham-excel-365.html",
+    "https://erx.vn/excel-function.html",
+    "https://erx.vn/excel-365.html",
     "https://erx.vn/excel-vba.html",
-    "https://erx.vn/sql.html",
+    "https://erx.vn/sql-in-excel.html",
     "https://erx.vn/dashboard-automated-report.html",
     "https://erx.vn/power-bi.html",
     "https://erx.vn/supply-chain-management.html",
     "https://erx.vn/procurement-management.html",
     "https://erx.vn/planning-management.html",
-    "https://erx.vn/inventory-management.html",
+    "https://erx.vn/warehouse-management.html",
     "https://erx.vn/logistics-management.html",
     "https://erx.vn/python-for-supply-chain.html",
     "https://erx.vn/project-management.html",
@@ -525,12 +525,24 @@ for u in canonical_hub_urls + article_urls + workshop_urls:
 OUT_SITEMAP.write_text("\n".join(all_sitemap_urls) + "\n", encoding="utf-8")
 print(f"Wrote {OUT_SITEMAP} with {len(all_sitemap_urls)} canonical URLs")
 
+# Pages with no menu entry of their own: SEO applied only by the head script
+HEAD_ONLY_SEO = {
+    "lien-he0": {
+        "meta_title": "Liên hệ ERX tại TP.HCM: hotline, Zalo, email tư vấn | ERX",
+        "meta_desc": "Thông tin liên hệ Trung tâm đào tạo thực chiến Phân tích dữ liệu & Quản lý chuỗi cung ứng ERX Việt Nam tại TP.HCM. Hotline: 0879.490.845 - Email: info@erx.vn.",
+    },
+}
+# Utility pages that should not be indexed
+HEAD_NOINDEX_SLUGS = ["danh-sach-ua-thich"]
+
 # 5. Build Synchronous Head SEO & Valid Schema.org JSON-LD Upgrade Script for META.SCRIPT_HEADER
 HEAD_SEO_AND_SCHEMA_SCRIPT = f"""
 <script id="erx-seo-schema-upgrader">
 (function() {{
   var menuSeo = {json.dumps(MENU_SEO_MAP, ensure_ascii=False)};
   var workshopSeo = {json.dumps(WORKSHOP_SEO_MAP, ensure_ascii=False)};
+  var headOnlySeo = {json.dumps(HEAD_ONLY_SEO, ensure_ascii=False)};
+  var noindexSlugs = {json.dumps(HEAD_NOINDEX_SLUGS)};
   var path = window.location.pathname || '/';
   var cleanSlug = path.replace(/^\\/+/, '').replace(/\\.html$/i, '');
 
@@ -555,8 +567,8 @@ HEAD_SEO_AND_SCHEMA_SCRIPT = f"""
     setMetaTag('name', 'description', w.meta_desc);
     setMetaTag('property', 'og:title', w.meta_title);
     setMetaTag('property', 'og:description', w.meta_desc);
-  }} else if (menuSeo[cleanSlug]) {{
-    var m = menuSeo[cleanSlug];
+  }} else if (menuSeo[cleanSlug] || headOnlySeo[cleanSlug]) {{
+    var m = menuSeo[cleanSlug] || headOnlySeo[cleanSlug];
     if (!document.title || document.title.length < 35) {{
       document.title = m.meta_title;
     }}
@@ -567,6 +579,10 @@ HEAD_SEO_AND_SCHEMA_SCRIPT = f"""
       setMetaTag('property', 'og:description', m.meta_desc);
     }}
     setMetaTag('property', 'og:title', document.title);
+  }}
+
+  if (noindexSlugs.indexOf(cleanSlug) !== -1) {{
+    setMetaTag('name', 'robots', 'noindex, follow');
   }}
 
   // 2. Replace broken lowercase JSON-LD (@type: "article" / "website") with valid Schema.org Graph

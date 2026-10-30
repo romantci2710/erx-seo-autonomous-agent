@@ -20,10 +20,7 @@
       ],
       "primary_target_urls": [
         "https://project-management.erx.vn/",
-        "https://project-management.erx.vn/phan-mem-quan-ly-du-an",
-        "https://project-management.erx.vn/so-do-gantt-online",
-        "https://project-management.erx.vn/quan-ly-du-an-xay-dung",
-        "https://project-management.erx.vn/huong-dan"
+        "https://project-management.erx.vn/phan-mem-quan-ly-du-an"
       ],
       "seed_keywords": [
         "phần mềm quản lý dự án",
@@ -97,9 +94,7 @@
         "https://doc-builder.erx.vn/",
         "https://doc-builder.erx.vn/soan-thao-hop-dong-bang-ai",
         "https://doc-builder.erx.vn/tao-bao-cao-chuyen-nghiep",
-        "https://doc-builder.erx.vn/kiem-toan-van-ban-phap-ly",
-        "https://doc-builder.erx.vn/templates",
-        "https://doc-builder.erx.vn/guide"
+        "https://doc-builder.erx.vn/kiem-toan-van-ban-phap-ly"
       ],
       "seed_keywords": [
         "soạn thảo hợp đồng bằng ai",
@@ -133,9 +128,9 @@
       ],
       "primary_target_urls": [
         "https://community.erx.vn/forum",
-        "https://community.erx.vn/forum/danh-muc/procurement-5",
-        "https://community.erx.vn/forum/danh-muc/supply-chain-4",
-        "https://community.erx.vn/forum/danh-muc/ai-for-works-11"
+        "https://community.erx.vn/forum/procurement-2",
+        "https://community.erx.vn/forum/supply-chain-21",
+        "https://community.erx.vn/forum/ai_for_works-11"
       ],
       "seed_keywords": [
         "quản trị chuỗi cung ứng supply chain",
@@ -167,7 +162,7 @@
       ],
       "primary_target_urls": [
         "https://erx.vn/",
-        "https://erx.vn/cac-ham-excel-365.html",
+        "https://erx.vn/excel-functions.html",
         "https://erx.vn/power-bi.html",
         "https://erx.vn/sql-in-excel.html",
         "https://erx.vn/supply-chain-management.html",

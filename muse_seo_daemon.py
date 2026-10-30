@@ -50,6 +50,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import uuid
 import xml.etree.ElementTree as ET
 import zlib
 from pathlib import Path
@@ -301,7 +302,9 @@ def extract_page_seo_signals(html_text: str, url: str = "") -> dict[str, Any]:
         re.I | re.S,
     )
     twitter_card = tw_m.group(1).strip() if tw_m else None
-    img_tags = re.findall(r"<img\b[^>]*>", html_text, re.I)
+    # <img> strings inside JS templates are not real images
+    markup_only = re.sub(r"<(script|style|template)\b.*?</\1>", " ", html_text, flags=re.I | re.S)
+    img_tags = re.findall(r"<img\b[^>]*>", markup_only, re.I)
     img_missing_dims = sum(
         1
         for tag in img_tags
@@ -1251,9 +1254,142 @@ def audit_single_page_seo(sig: dict[str, Any], domain: str) -> list[str]:
     return issues
 
 
+GOOGLEBOT_UA = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+SITE_HEALTH_TTL_HOURS = 6
+HTML_COMPRESSION_MIN_BYTES = 100_000
+_PLACEHOLDER_VALUES = {"undefined", "null", "nan", "[object object]"}
+
+
+def fetch_with_headers(url: str, user_agent: str = USER_AGENT, timeout: int = 15) -> dict[str, Any]:
+    """GET that keeps response headers and on-the-wire size; never raises."""
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": user_agent,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Accept-Encoding": "gzip, deflate",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout, context=SSL_CTX) as resp:
+            raw, status, headers = resp.read(5_000_000), resp.status, resp.headers
+    except urllib.error.HTTPError as exc:
+        try:
+            raw = exc.read(5_000_000)
+        except Exception:
+            raw = b""
+        status, headers = exc.code, exc.headers
+    except Exception:
+        return {"ok": False, "status": 0, "headers": {}, "text": "", "wire_bytes": 0}
+
+    wire_bytes = len(raw)
+    encoding = (headers.get("Content-Encoding") or "").lower()
+    try:
+        if "gzip" in encoding:
+            raw = gzip.decompress(raw)
+        elif "deflate" in encoding:
+            raw = zlib.decompress(raw)
+    except Exception:
+        pass
+    return {
+        "ok": status < 400,
+        "status": status,
+        "headers": {k.lower(): v for k, v in headers.items()},
+        "text": raw.decode("utf-8", errors="replace"),
+        "wire_bytes": wire_bytes,
+    }
+
+
+def check_security_headers(headers: dict[str, str]) -> list[str]:
+    flags: list[str] = []
+    hsts = headers.get("strict-transport-security", "").strip()
+    if not hsts:
+        flags.append("MISSING_HSTS")
+    elif not re.match(r"max-age=\d+", hsts, re.I):
+        flags.append("MALFORMED_HSTS")
+    if headers.get("x-content-type-options", "").strip().lower() != "nosniff":
+        flags.append("MISSING_NOSNIFF")
+    if not headers.get("referrer-policy", "").strip():
+        flags.append("MISSING_REFERRER_POLICY")
+    return flags
+
+
+def _differs_by_user_agent(chrome: dict[str, Any], bot: dict[str, Any], url: str) -> bool:
+    sig_c = extract_page_seo_signals(chrome["text"], url)
+    sig_b = extract_page_seo_signals(bot["text"], url)
+    if sig_c["title"] and sig_b["title"] and sig_c["title"] != sig_b["title"]:
+        return True
+    if bool(sig_c["title"]) != bool(sig_b["title"]) or bool(sig_c["h1"]) != bool(sig_b["h1"]):
+        return True
+    small, large = sorted((len(chrome["text"]), len(bot["text"])))
+    return (small == 0 and large > 0) or (small > 0 and large / small > 2.0)
+
+
+def check_site_health(
+    platform: dict[str, Any],
+    fetch: Any = fetch_with_headers,
+    parity_urls: Any = (),
+) -> dict[str, Any]:
+    """Site-level checks: security headers, HTML compression, soft 404, Googlebot-vs-browser parity."""
+    base = platform["base_url"]
+    flags: list[str] = []
+
+    home = fetch(base, user_agent=USER_AGENT)
+    if not home.get("ok"):
+        flags.append("HOMEPAGE_UNREACHABLE")
+    else:
+        flags.extend(check_security_headers(home["headers"]))
+        encoding = home["headers"].get("content-encoding", "").lower()
+        if home["wire_bytes"] > HTML_COMPRESSION_MIN_BYTES and not any(
+            e in encoding for e in ("gzip", "br", "deflate", "zstd")
+        ):
+            flags.append(f"HTML_NOT_COMPRESSED ({home['wire_bytes'] // 1024} KB)")
+
+    probe = fetch(f"{base.rstrip('/')}/__seo-probe-{uuid.uuid4().hex[:8]}", user_agent=USER_AGENT)
+    if probe.get("status") == 200:
+        flags.append("SOFT_404")
+    elif probe.get("status") in (404, 410):
+        ctype = probe.get("headers", {}).get("content-type", "").lower()
+        if ctype and "html" not in ctype:
+            flags.append("NON_HTML_404")
+
+    for url in [base, *list(parity_urls)[:2]]:
+        chrome = home if url == base else fetch(url, user_agent=USER_AGENT)
+        bot = fetch(url, user_agent=GOOGLEBOT_UA)
+        if chrome.get("ok") and bot.get("ok") and _differs_by_user_agent(chrome, bot, url):
+            flags.append("UA_CONTENT_MISMATCH")
+            break
+
+    return {"checked_at": now_vn().isoformat(), "flags": flags}
+
+
+def site_health_due(
+    entry: dict[str, Any] | None, now: dt.datetime, ttl_hours: int = SITE_HEALTH_TTL_HOURS
+) -> bool:
+    if not entry:
+        return True
+    try:
+        return (now - dt.datetime.fromisoformat(entry["checked_at"])) >= dt.timedelta(hours=ttl_hours)
+    except Exception:
+        return True
+
+
 def audit_advisory_seo(sig: dict[str, Any], domain: str) -> list[str]:
     """Advisory on-page checks. Reported, but they never trigger title/meta auto-remediation."""
     advisories: list[str] = []
+
+    placeholder_fields = [
+        name
+        for name, values in (
+            ("title", [sig.get("title", "")]),
+            ("meta_description", [sig.get("meta_description", "")]),
+            ("h1", sig.get("h1", [])),
+        )
+        if any(v.strip().lower() in _PLACEHOLDER_VALUES or "[object Object]" in v for v in values)
+    ]
+    if placeholder_fields:
+        advisories.append(f"UNDEFINED_PLACEHOLDER ({', '.join(placeholder_fields)})")
 
     title = sig.get("title", "")
     if len(title) > 65:
@@ -1341,6 +1477,8 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
     remediations_triggered: list[dict[str, Any]] = []
     advisory_pages: list[dict[str, Any]] = []
     platform_health: list[dict[str, Any]] = []
+    site_health_state: dict[str, dict[str, Any]] = watch_state.setdefault("site_health", {})
+    site_health_results: list[dict[str, Any]] = []
 
     for platform in config.get("platforms", []):
         pid = platform["id"]
@@ -1351,6 +1489,15 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
         # 1. Fetch sitemap URLs
         s_res = http_get(sitemap_url, timeout=15) if sitemap_url else {"ok": False, "text": ""}
         sitemap_locs = parse_sitemap_urls(s_res["text"]) if s_res.get("ok") else []
+
+        # 1b. Site-level health (security headers, compression, soft 404, Googlebot parity), cached 6h
+        health = site_health_state.get(pid)
+        if site_health_due(health, now_vn()):
+            health = check_site_health(platform, parity_urls=sitemap_locs[:2])
+            site_health_state[pid] = health
+        site_health_results.append(
+            {"platform_id": pid, "domain": domain, "checked_at": health["checked_at"], "flags": health["flags"]}
+        )
 
         # Combine primary URLs + most recent/important sitemap URLs (cap at 35 per cycle for fast non-blocking checks)
         urls_to_inspect: list[str] = []
@@ -1487,6 +1634,7 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
         "new_community_topics_warmed": len(new_community_topics),
         "remediations_triggered_count": len(remediations_triggered),
         "cms_remediation_status": cms_remediation_status,
+        "site_health": site_health_results,
         "advisory_pages_count": len(advisory_pages),
         "advisory_counts": dict(
             collections.Counter(a.split(" (")[0] for p in advisory_pages for a in p["advisories"])
@@ -1559,8 +1707,23 @@ def write_watcher_report_md(path: Path, summary: dict[str, Any]) -> None:
                 f"{r['recommended_title']} | {r['recommended_meta_description']} |"
             )
 
+    if summary.get("site_health"):
+        lines.extend(
+            [
+                "",
+                "## 5. Sức khỏe cấp Site (header bảo mật, nén HTML, soft 404, Googlebot vs trình duyệt)",
+                "",
+                "| Nền tảng | Tên miền | Cờ cảnh báo | Kiểm tra lúc |",
+                "| :--- | :--- | :--- | :--- |",
+            ]
+        )
+        for h in summary["site_health"]:
+            lines.append(
+                f"| `{h['platform_id']}` | `{h['domain']}` | `{', '.join(h['flags']) or 'OK'}` | {h['checked_at']} |"
+            )
+
     if summary.get("advisory_pages_sample"):
-        counts = ", ".join(f"{k}: {v}" for k, v in summary.get("advisory_counts", {}).items())
+        counts =", ".join(f"{k}: {v}" for k, v in summary.get("advisory_counts", {}).items())
         lines.extend(
             [
                 "",

@@ -207,3 +207,12 @@ def test_meta_description_length_holds_for_all_templates_domains_and_keyword_len
                 assert not meta.endswith(("...", "…"))
                 checked += 1
     assert checked > 200
+
+
+def test_images_inside_script_templates_are_not_counted():
+    scripts = "<script>var t = '<img src=\"/a.png\"><img src=\"/b.png\"><img src=\"/c.png\">';</script>"
+    sig = _page(body=H1_OK + scripts)
+    assert sig["img_total"] == 0
+    assert not any(i.startswith("IMAGES_MISSING_DIMENSIONS") for i in audit_advisory_seo(sig, "erx.vn"))
+    real = _page(body=H1_OK + scripts + "".join(f'<img src="/{i}.png" alt="a"/>' for i in range(3)))
+    assert real["img_total"] == 3 and real["img_missing_dims"] == 3
