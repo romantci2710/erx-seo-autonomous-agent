@@ -1,15 +1,15 @@
-# Báo cáo Giám sát SEO Định kỳ Hệ sinh thái ERX (2026-10-27 22:58:44)
+# Báo cáo Giám sát SEO Định kỳ Hệ sinh thái ERX (2026-10-30 20:10:42)
 
 ## 1. Trạng thái Sức khỏe 6 Website (5 Google Search Console Properties)
 
 | Website | HTTP | Phản hồi | Dung lượng HTML | Canonical | Robots.txt | Sitemap URLs | Trạng thái |
 |---|---:|---:|---:|---|---|---:|---|
-| **erx.vn (Main Portal & Blog)** | `200` | `1109.4 ms` | `952.4 KB` | ✅ | ✅ | `147` | ✅ OK |
-| **khoahoc.erx.vn (Hoola LMS)** | `200` | `304.4 ms` | `5.7 KB` | ➖ SPA | ✅ | `4` | ✅ OK |
-| **doc-translate.erx.vn (AI PDF Translator)** | `200` | `668.8 ms` | `8.7 KB` | ✅ | ✅ | `7` | ✅ OK |
-| **doc-builder.erx.vn (AI Doc Builder & Audit)** | `200` | `852.4 ms` | `815.6 KB` | ✅ | ✅ | `6` | ✅ OK |
-| **community.erx.vn (Supply Chain Community)** | `200` | `230.6 ms` | `4.9 KB` | ✅ | ✅ | `93` | ✅ OK |
-| **project-management.erx.vn (AI Gantt Planner)** | `200` | `601.4 ms` | `29.3 KB` | ✅ | ✅ | `7` | ✅ OK |
+| **erx.vn (Main Portal & Blog)** | `200` | `856.3 ms` | `952.4 KB` | ✅ | ✅ | `147` | ✅ OK |
+| **khoahoc.erx.vn (Hoola LMS)** | `200` | `257.5 ms` | `5.7 KB` | ➖ SPA | ✅ | `4` | ✅ OK |
+| **doc-translate.erx.vn (AI PDF Translator)** | `200` | `513.0 ms` | `9.6 KB` | ✅ | ✅ | `10` | ✅ OK |
+| **doc-builder.erx.vn (AI Doc Builder & Audit)** | `200` | `737.3 ms` | `815.6 KB` | ✅ | ✅ | `9` | ✅ OK |
+| **community.erx.vn (Supply Chain Community)** | `200` | `361.1 ms` | `4.9 KB` | ✅ | ✅ | `94` | ✅ OK |
+| **project-management.erx.vn (AI Gantt Planner)** | `200` | `212.2 ms` | `29.3 KB` | ✅ | ✅ | `7` | ✅ OK |
 
 ## 2. Kiểm tra 301 Redirect trên `erx.vn`
 
