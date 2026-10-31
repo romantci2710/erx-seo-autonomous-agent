@@ -1,0 +1,30 @@
+{
+  "experiments": [
+    {
+      "id": "exp-20261031-001",
+      "url": "https://erx.vn/ham-textsplit-trong-excel-tach-o-chuoi-van-ban-bang-dau-phan-cach-7123727669.html",
+      "date": "2026-10-31",
+      "kind": "title+meta",
+      "old": {
+        "title": "Hàm TEXTSPLIT trong Excel: Cách tách ô/chuỗi văn bản bằng dấu phân cách (Delimiter)",
+        "meta_description": "Hướng dẫn chi tiết cú pháp và 5 ví dụ thực tế dùng hàm TEXTSPLIT trong Excel 365 để tách họ tên, tách chuỗi theo cột/hàng, xử lý nhiều dấu phân cách và bỏ qua ô trống."
+      },
+      "new": {
+        "title": "Hàm TEXTSPLIT trong Excel: Cách tách chuỗi, tách ký tự nhanh",
+        "meta_description": "Cách dùng hàm TEXTSPLIT trong Excel 365 để tách chuỗi, tách ký tự và tách họ tên theo dấu phân cách, kèm 5 ví dụ thực tế dễ làm theo từng bước."
+      },
+      "baseline": {
+        "start": "2026-10-01",
+        "end": "2026-10-28",
+        "days": 28,
+        "clicks": 89,
+        "impressions": 9513,
+        "ctr": 0.009355618627141807,
+        "position": 5.18
+      },
+      "note": "Bài thử đầu tiên: title cũ 83 ký tự không có 'tách ký tự' (truy vấn lớn nhất). Chi tiết: seo-audits/ARTICLE-CHANGE-LOG.md",
+      "status": "pending",
+      "measurements": {}
+    }
+  ]
+}

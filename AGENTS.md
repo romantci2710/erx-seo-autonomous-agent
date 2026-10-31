@@ -77,3 +77,8 @@ python3 muse_repo_auto_deployer.py
 - `reports/latest_loop_status.json` & `reports/latest_loop_report.md`: Latest 15-minute watcher status and detected tag modifications.
 - `reports/daily_keyword_seo_YYYY-MM-DD.md`: Daily 07:00 AM keyword research & auto-SEO execution report.
 - `reports/auto_remediation_queue.json`: Actionable queue of pages needing immediate tag remediation.
+- `reports/gsc_opportunities_YYYY-MM-DD.md`: Search Console opportunities (low-CTR pages, striking-distance queries). Needs `GSC_CREDENTIALS_FILE` or gcloud ADC; skipped otherwise.
+- `state/experiments.json` & `reports/experiments_latest.md`: SEO experiment ledger. Record every live title/meta change with
+  `python experiments.py add --url URL --old-title "..." --new-title "..." [--old-meta "..." --new-meta "..."] [--note "..."]`;
+  the daily cycle measures it at 14 and 21 days (clicks/impressions per day, CTR, position) against a 28-day Search Console baseline.
+  Results are correlational. Run `python experiments.py measure` to measure on demand.

@@ -57,6 +57,7 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+import experiments
 import gsc_client
 from gsc_client import real_query_impressions
 
@@ -1067,6 +1068,26 @@ def collect_gsc_for_cycle(config: dict[str, Any]) -> tuple[dict[str, dict[str, A
     return data, {"status": "ok", "start": start.isoformat(), "end": end.isoformat(), "platforms": len(data)}
 
 
+def run_experiment_cycle(
+    ledger_path: Path | None = None,
+    report_path: Path | None = None,
+    today: dt.date | None = None,
+    fetch: Any = None,
+    resolve: Any = None,
+) -> dict[str, Any]:
+    """Measure SEO experiments that reached their 14/21-day mark and refresh reports/experiments_latest.md."""
+    fetch = fetch or experiments.default_gsc_fetcher()
+    if not fetch:
+        return {"status": "skipped_no_credentials"}
+    ledger_path = ledger_path or experiments.LEDGER_PATH
+    today = today or now_vn().date()
+    ledger = experiments.load_ledger(ledger_path)
+    done = experiments.run_due_measurements(ledger, today, fetch, resolve or experiments.property_resolver())
+    experiments.save_ledger(ledger_path, ledger)
+    experiments.write_experiments_report(report_path or experiments.REPORT_PATH, ledger, today)
+    return {"status": "ok", "measured": len(done), "verdicts": [r["verdict"] for r in done]}
+
+
 def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
     """
     Executes the complete 07:00 AM Autonomous Keyword Discovery, Evaluation & SEO Optimization cycle.
@@ -1080,6 +1101,12 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
 
     gsc_data, gsc_status = collect_gsc_for_cycle(config)
     logger.info("Search Console: %s", gsc_status)
+    try:
+        experiments_status = run_experiment_cycle()
+    except Exception as exc:  # never let the experiment ledger break the daily cycle
+        logger.warning("Experiment measurement failed: %s", exc)
+        experiments_status = {"status": f"error: {exc}"}
+    logger.info("Experiments: %s", experiments_status)
 
     trending_vn = fetch_google_trends_vn_rss()
     logger.info("Fetched %d trending topics from Google Trends Vietnam RSS", len(trending_vn))
@@ -1193,6 +1220,7 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
         "optimizations": cycle_results,
         "cms_patch_status": cms_result,
         "gsc_status": gsc_status,
+        "experiments_status": experiments_status,
         "muse_hook_status": hook_status,
         "cache_and_indexnow": warm_result,
     }
