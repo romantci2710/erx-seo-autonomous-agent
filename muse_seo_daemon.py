@@ -57,6 +57,7 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+import alerts
 import experiments
 import gsc_client
 from gsc_client import real_query_impressions
@@ -153,10 +154,32 @@ def load_json_state(path: Path, default: dict[str, Any]) -> dict[str, Any]:
     return dict(default)
 
 
-def save_json_state(path: Path, data: dict[str, Any]) -> None:
+# Informational timestamps that are never read back; ignored so an unchanged state is not rewritten
+VOLATILE_STATE_KEYS = ("last_checked", "last_watch_run")
+
+
+def _without_keys(obj: Any, keys: tuple[str, ...]) -> Any:
+    if isinstance(obj, dict):
+        return {k: _without_keys(v, keys) for k, v in obj.items() if k not in keys}
+    if isinstance(obj, list):
+        return [_without_keys(v, keys) for v in obj]
+    return obj
+
+
+def save_json_state(path: Path, data: dict[str, Any], ignore_keys: tuple[str, ...] = ()) -> bool:
+    """Writes `data` atomically. With `ignore_keys`, skips the write when only those keys differ from the
+    file on disk, so unchanged state does not churn git. Returns True when the file was written."""
+    if ignore_keys and path.exists():
+        try:
+            on_disk = json.loads(path.read_text(encoding="utf-8"))
+            if _without_keys(on_disk, ignore_keys) == _without_keys(data, ignore_keys):
+                return False
+        except Exception:
+            pass  # unreadable file: fall through and rewrite it
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(path)
+    return True
 
 
 def now_vn(tz_name: str = "Asia/Ho_Chi_Minh") -> dt.datetime:
@@ -608,6 +631,9 @@ def keyword_dedup_key(kw: str) -> tuple[str, ...]:
     return tuple(sorted(set(tokens)))
 
 
+MIN_PROVEN_DEMAND = 50  # Search Console impressions needed to treat a keyword as proven demand
+
+
 def evaluate_and_select_keywords(
     platform: dict[str, Any],
     discovered_keywords: list[str],
@@ -616,10 +642,13 @@ def evaluate_and_select_keywords(
     seo_state: dict[str, Any],
     top_n: int = 1,
     real_queries: dict[str, int] | None = None,
+    target_overrides: dict[str, str] | None = None,
 ) -> list[dict[str, Any]]:
     """
     Scores all discovered keywords (0-100) and selects the top `top_n` unoptimized keywords.
-    `real_queries` (query -> impressions from Search Console) breaks ties between equal scores.
+    `real_queries` (query -> impressions from Search Console): keywords with proven demand (>= MIN_PROVEN_DEMAND
+    impressions) are ranked ahead of heuristic-only ones. `target_overrides` maps a keyword to the page that
+    already ranks for it.
     """
     optimized_history: dict[str, str] = seo_state.get("optimized_keywords", {})
     now = now_vn()
@@ -707,6 +736,7 @@ def evaluate_and_select_keywords(
             if overlap > best_overlap:
                 best_overlap = overlap
                 best_url = p.get("url", platform["base_url"])
+        best_url = (target_overrides or {}).get(kw, best_url)
 
         scored_candidates.append(
             {
@@ -725,7 +755,14 @@ def evaluate_and_select_keywords(
             }
         )
 
-    scored_candidates.sort(key=lambda x: (-x["priority_score"], -x["gsc_impressions"], len(x["keyword"])))
+    scored_candidates.sort(
+        key=lambda x: (
+            -(x["gsc_impressions"] >= MIN_PROVEN_DEMAND),
+            -x["priority_score"],
+            -x["gsc_impressions"],
+            len(x["keyword"]),
+        )
+    )
     selected: list[dict[str, Any]] = []
     selected_keys: set[tuple[str, ...]] = set()
     for cand in scored_candidates:
@@ -929,7 +966,8 @@ def build_keyword_seo_package(
         "recommended_title": base_title,
         "recommended_meta_description": meta_desc,
         "recommended_meta_keywords": meta_keywords,
-        "faq_jsonld": faq_schema,
+        # Google stopped showing FAQ rich results on 2026-05-07, so this is opt-in (SEO_GENERATE_FAQ_SCHEMA=1)
+        "faq_jsonld": faq_schema if os.environ.get("SEO_GENERATE_FAQ_SCHEMA", "").strip().lower() in ("1", "true", "yes") else None,
         "pillar_html_snippet": pillar_html_snippet,
     }
 
@@ -1085,7 +1123,12 @@ def run_experiment_cycle(
     done = experiments.run_due_measurements(ledger, today, fetch, resolve or experiments.property_resolver())
     experiments.save_ledger(ledger_path, ledger)
     experiments.write_experiments_report(report_path or experiments.REPORT_PATH, ledger, today)
-    return {"status": "ok", "measured": len(done), "verdicts": [r["verdict"] for r in done]}
+    return {
+        "status": "ok",
+        "measured": len(done),
+        "verdicts": [r["verdict"] for r in done],
+        "regressed": [{"id": r["id"], "url": r["url"], "days": r["days"]} for r in done if r["verdict"] == "regressed"],
+    }
 
 
 def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
@@ -1107,6 +1150,9 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
         logger.warning("Experiment measurement failed: %s", exc)
         experiments_status = {"status": f"error: {exc}"}
     logger.info("Experiments: %s", experiments_status)
+    regressed = experiments_status.get("regressed", [])
+    if regressed:
+        alerts.send(alerts.format_message([{"type": "experiment_regressed", **r} for r in regressed]))
 
     trending_vn = fetch_google_trends_vn_rss()
     logger.info("Fetched %d trending topics from Google Trends Vietnam RSS", len(trending_vn))
@@ -1125,8 +1171,14 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
         pid = platform["id"]
         logger.info("Discovering hot keywords for platform [%s] (%s)...", pid, platform["domain"])
 
-        # 1. Discover hot keywords via Google Suggest Vietnam
+        # 1. Discover hot keywords via Google Suggest Vietnam, plus queries that already rank 4-20 in Search Console
         discovered = discover_platform_hot_keywords(platform)
+        target_overrides: dict[str, str] = {}
+        for sd in gsc_client.striking_distance(gsc_data.get(pid, {}).get("page_queries", []))[:5]:
+            query = sd["query"].strip().lower()
+            if len(query) >= 10 and query not in discovered:
+                discovered.append(query)
+                target_overrides[query] = sd["page"]
 
         # 2. Crawl our live primary target URLs on this platform
         live_pages: list[dict[str, Any]] = []
@@ -1165,6 +1217,7 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
             seo_state=seo_state,
             top_n=keywords_per_platform,
             real_queries=gsc_client.queries_by_impressions(gsc_data.get(pid, {})),
+            target_overrides=target_overrides,
         )
 
         # 5. Build and execute SEO upgrade package for each selected keyword
@@ -1426,6 +1479,24 @@ def check_site_health(
     return {"checked_at": now_vn().isoformat(), "flags": flags}
 
 
+def site_health_events(
+    previous: dict[str, dict[str, Any] | None], current: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Alert events for platforms whose site-health flags changed since the previous check.
+
+    `previous` only has entries for platforms that were re-checked; a None value is a first observation."""
+    events = []
+    for r in current:
+        pid = r["platform_id"]
+        if pid not in previous:
+            continue
+        old = previous[pid]
+        diff = alerts.diff_flags(old["flags"] if old else None, r["flags"])
+        if diff:
+            events.append({"type": "site_health", "platform": pid, "domain": r["domain"], **diff})
+    return events
+
+
 def site_health_due(
     entry: dict[str, Any] | None, now: dt.datetime, ttl_hours: int = SITE_HEALTH_TTL_HOURS
 ) -> bool:
@@ -1541,6 +1612,7 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
     platform_health: list[dict[str, Any]] = []
     site_health_state: dict[str, dict[str, Any]] = watch_state.setdefault("site_health", {})
     site_health_results: list[dict[str, Any]] = []
+    previous_health: dict[str, dict[str, Any] | None] = {}
 
     for platform in config.get("platforms", []):
         pid = platform["id"]
@@ -1555,6 +1627,7 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
         # 1b. Site-level health (security headers, compression, soft 404, Googlebot parity), cached 6h
         health = site_health_state.get(pid)
         if site_health_due(health, now_vn()):
+            previous_health[pid] = health  # None on the first observation
             health = check_site_health(platform, parity_urls=sitemap_locs[:2])
             site_health_state[pid] = health
         site_health_results.append(
@@ -1671,7 +1744,7 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
 
     watch_state["community_topics_seen"] = sorted(list(seen_topics))[-500:]
     watch_state["last_watch_run"] = now_vn().isoformat()
-    save_json_state(WATCH_STATE_FILE, watch_state)
+    save_json_state(WATCH_STATE_FILE, watch_state, ignore_keys=VOLATILE_STATE_KEYS)
 
     # Automatically apply any ERX CMS remediations
     cms_remediation_status = apply_erx_cms_direct_update(remediations_triggered)
@@ -1687,6 +1760,11 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
         },
     )
 
+    health_events = site_health_events(previous_health, site_health_results)
+    alert_channels = alerts.send(alerts.format_message(health_events)) if health_events else []
+    if health_events:
+        logger.warning("Site health changes: %s (alert channels: %s)", health_events, alert_channels)
+
     watch_summary = {
         "cycle_type": "platform_watcher",
         "executed_at": now_vn().isoformat(),
@@ -1697,6 +1775,7 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
         "remediations_triggered_count": len(remediations_triggered),
         "cms_remediation_status": cms_remediation_status,
         "site_health": site_health_results,
+        "site_health_alerts": {"events": len(health_events), "channels": alert_channels},
         "advisory_pages_count": len(advisory_pages),
         "advisory_counts": dict(
             collections.Counter(a.split(" (")[0] for p in advisory_pages for a in p["advisories"])

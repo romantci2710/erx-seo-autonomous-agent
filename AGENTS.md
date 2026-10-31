@@ -19,9 +19,10 @@ Every day at `07:00 AM`, `muse_seo_daemon.py` executes `run_daily_keyword_seo_cy
    - Crawls live pages on our 6 platforms and compares them against Top-3 organic competitors (`1office.vn`, `base.vn`, `smallpdf.com`, `ilovepdf.com`, `supawork.ai`, `luathoangan.vn`, `vilas.edu.vn`, `datapot.edu.vn`, etc.).
    - Scores every keyword by **Search Intent (35 pts)** + **Platform Coverage Gap (35 pts)** + **SERP Outranking Feasibility (30 pts)**.
    - Filters out keywords already optimized within the last 14 days (`state/seo_state.json`).
+   - With Search Console credentials, keywords with proven demand (>= 50 real impressions) are ranked ahead of heuristic-only ones, and queries that already rank 4-20 become candidates pointing at the page that ranks.
 3. **Automated SEO Execution:**
    - Selects the highest-scoring unoptimized keyword for each platform.
-   - Generates optimized `<title>` (50–65 chars), `<meta name="description">` (145–160 chars), `META_KEY`, **Schema.org `FAQPage` JSON-LD**, and an **Outranking Comparison `<table>` HTML snippet**.
+   - Generates optimized `<title>` (50–65 chars), `<meta name="description">` (145–160 chars), `META_KEY`, and an **Outranking Comparison `<table>` HTML snippet**. `FAQPage` JSON-LD is opt-in (`SEO_GENERATE_FAQ_SCHEMA=1`) because Google stopped showing FAQ rich results on 2026-05-07.
    - Stages Title/Meta patches in `reports/erx_cms_auto_patch.js` (the CMS is not written to; `ERX_ADMIN_COOKIE` only verifies edit pages are reachable), submits URLs to IndexNow if `INDEXNOW_KEY` is set, syncs keyword manifests to sibling repos via `muse_repo_auto_deployer.py`, warms SSR caches, and writes `reports/daily_keyword_seo_YYYY-MM-DD.md`.
 
 ### Loop 2: Continuous `15-Minute` Platform Content & Tag Watcher
@@ -73,7 +74,7 @@ python3 muse_repo_auto_deployer.py
 ## 3. Key Output Files for MUSE Agent Inspection
 - `state/seo_state.json`: Persistent history of all daily runs and optimized keywords.
 - `state/platform_watch_state.json`: SHA-256 fingerprint registry of all monitored URLs and community topics.
-- `state/keyword_seo_injections.json`: Full structured payloads (`<title>`, `<meta description>`, `FAQPage` JSON-LD, comparison `<table>` HTML) for every selected keyword.
+- `state/keyword_seo_injections.json`: Full structured payloads (`<title>`, `<meta description>`, comparison `<table>` HTML, optional `FAQPage` JSON-LD) for every selected keyword.
 - `reports/latest_loop_status.json` & `reports/latest_loop_report.md`: Latest 15-minute watcher status and detected tag modifications.
 - `reports/daily_keyword_seo_YYYY-MM-DD.md`: Daily 07:00 AM keyword research & auto-SEO execution report.
 - `reports/auto_remediation_queue.json`: Actionable queue of pages needing immediate tag remediation.

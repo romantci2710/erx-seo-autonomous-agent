@@ -16,3 +16,10 @@ logs/*.log
 *.tmp
 pm_assets/*.js
 pm_assets/*.json
+
+# Regenerated on every 15-minute watcher cycle (only timestamps change); durable history lives in
+# state/ and the dated reports, which stay tracked.
+reports/latest_loop_report.md
+reports/latest_loop_status.json
+reports/auto_remediation_queue.json
+reports/erx_cms_auto_patch.js

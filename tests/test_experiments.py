@@ -162,7 +162,7 @@ def test_daemon_experiment_cycle_measures_due_items_and_writes_report(tmp_path):
         ledger_path=ledger_path, report_path=report_path, today=dt.date(2026, 11, 17),
         fetch=lambda prop, start, end: [_row(URL, 140, 4800, 5.0)], resolve=lambda url: "sc-domain:erx.vn",
     )
-    assert out == {"status": "ok", "measured": 1, "verdicts": ["improved"]}
+    assert out == {"status": "ok", "measured": 1, "verdicts": ["improved"], "regressed": []}
     assert ex.load_ledger(ledger_path)["experiments"][0]["measurements"]["14"]["verdict"] == "improved"
     assert URL in report_path.read_text(encoding="utf-8")
 

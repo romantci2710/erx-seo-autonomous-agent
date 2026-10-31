@@ -102,7 +102,7 @@ def test_evaluate_and_select_keywords_and_package():
     assert pkg["keyword"] == cand["keyword"]
     assert len(pkg["recommended_title"]) <= 65
     assert len(pkg["recommended_meta_description"]) <= 160
-    assert pkg["faq_jsonld"]["@type"] == "FAQPage"
+    assert pkg["faq_jsonld"] is None  # FAQPage is opt-in (Google dropped FAQ rich results on 2026-05-07)
     assert "<table" in pkg["pillar_html_snippet"]
 
 

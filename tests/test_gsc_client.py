@@ -183,3 +183,46 @@ def test_default_http_post_error_message_includes_response_body(monkeypatch):
         assert False, "expected an error"
     except RuntimeError as exc:
         assert "403" in str(exc) and "API disabled" in str(exc)
+
+
+# ---- real demand outranks the heuristic score; FAQPage is opt-in ----
+
+def _select(discovered, real_queries=None, overrides=None, top_n=2):
+    platform = load_config()["platforms"][0]
+    pages = [{"url": platform["base_url"], "title": "", "meta_description": "", "h1": [], "h2": []}]
+    return evaluate_and_select_keywords(
+        platform=platform, discovered_keywords=discovered, live_platform_pages=pages, competitor_signals=[],
+        seo_state={"optimized_keywords": {}}, top_n=top_n, real_queries=real_queries, target_overrides=overrides)
+
+
+def test_proven_demand_beats_a_higher_heuristic_score():
+    # "phần mềm ..." scores higher by intent; the other keyword has real impressions in Search Console
+    plain = _select(["phần mềm lập kế hoạch dự án", "cách quản lý chi phí dự án"])
+    assert plain[0]["keyword"] == "phần mềm lập kế hoạch dự án"
+    boosted = _select(["phần mềm lập kế hoạch dự án", "cách quản lý chi phí dự án"],
+                      real_queries={"cách quản lý chi phí dự án": 120})
+    assert boosted[0]["keyword"] == "cách quản lý chi phí dự án"
+    assert boosted[0]["gsc_impressions"] == 120
+
+
+def test_tiny_impressions_do_not_override_the_score():
+    out = _select(["phần mềm lập kế hoạch dự án", "cách quản lý chi phí dự án"],
+                  real_queries={"cách quản lý chi phí dự án": 5})
+    assert out[0]["keyword"] == "phần mềm lập kế hoạch dự án"
+
+
+def test_target_override_points_to_the_page_that_already_ranks():
+    out = _select(["cách quản lý chi phí dự án"], overrides={"cách quản lý chi phí dự án": "https://x.erx.vn/page"}, top_n=1)
+    assert out[0]["target_url"] == "https://x.erx.vn/page"
+
+
+def test_faq_schema_is_off_by_default_and_opt_in(monkeypatch):
+    platform = load_config()["platforms"][0]
+    cand = {"keyword": "sơ đồ gantt online", "target_url": platform["base_url"], "intent": "x", "priority_score": 90,
+            "coverage_status": "UNCOVERED_HIGH_OPPORTUNITY", "target_outrank_words": 1500}
+    from muse_seo_daemon import build_keyword_seo_package
+
+    monkeypatch.delenv("SEO_GENERATE_FAQ_SCHEMA", raising=False)
+    assert build_keyword_seo_package(cand, platform, [])["faq_jsonld"] is None
+    monkeypatch.setenv("SEO_GENERATE_FAQ_SCHEMA", "1")
+    assert build_keyword_seo_package(cand, platform, [])["faq_jsonld"]["@type"] == "FAQPage"
