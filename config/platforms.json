@@ -38,7 +38,8 @@
         "fastwork.vn",
         "itgtechnology.vn",
         "dutoanxd.vn"
-      ]
+      ],
+      "gsc_property": "sc-domain:project-management.erx.vn"
     },
     {
       "id": "doc-translate",
@@ -75,7 +76,8 @@
         "supawork.ai",
         "otranslator.com",
         "doctranslator.com"
-      ]
+      ],
+      "gsc_property": "sc-domain:doc-translate.erx.vn"
     },
     {
       "id": "doc-builder",
@@ -110,7 +112,8 @@
         "1office.vn",
         "base.vn",
         "luatvietnam.vn"
-      ]
+      ],
+      "gsc_property": "sc-domain:doc-builder.erx.vn"
     },
     {
       "id": "community",
@@ -146,7 +149,8 @@
         "topcv.vn",
         "careerviet.vn",
         "1office.vn"
-      ]
+      ],
+      "gsc_property": "https://community.erx.vn/"
     },
     {
       "id": "erx-main",
@@ -183,7 +187,8 @@
         "unica.vn",
         "cellphones.com.vn",
         "base.vn"
-      ]
+      ],
+      "gsc_property": "sc-domain:erx.vn"
     },
     {
       "id": "khoahoc",
@@ -206,7 +211,8 @@
         "gitiho.com",
         "vilas.edu.vn",
         "datapot.edu.vn"
-      ]
+      ],
+      "gsc_property": "sc-domain:erx.vn"
     }
   ]
 }

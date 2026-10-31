@@ -57,6 +57,9 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+import gsc_client
+from gsc_client import real_query_impressions
+
 try:
     from bs4 import BeautifulSoup
 except ImportError:
@@ -611,9 +614,11 @@ def evaluate_and_select_keywords(
     competitor_signals: list[dict[str, Any]],
     seo_state: dict[str, Any],
     top_n: int = 1,
+    real_queries: dict[str, int] | None = None,
 ) -> list[dict[str, Any]]:
     """
     Scores all discovered keywords (0-100) and selects the top `top_n` unoptimized keywords.
+    `real_queries` (query -> impressions from Search Console) breaks ties between equal scores.
     """
     optimized_history: dict[str, str] = seo_state.get("optimized_keywords", {})
     now = now_vn()
@@ -715,10 +720,11 @@ def evaluate_and_select_keywords(
                 "target_outrank_words": max(1100, int(avg_comp_words * 1.25)),
                 "competitor_has_tables": comp_has_tables,
                 "competitor_has_faq": comp_has_faq,
+                "gsc_impressions": real_query_impressions(kw, real_queries or {}),
             }
         )
 
-    scored_candidates.sort(key=lambda x: (-x["priority_score"], len(x["keyword"])))
+    scored_candidates.sort(key=lambda x: (-x["priority_score"], -x["gsc_impressions"], len(x["keyword"])))
     selected: list[dict[str, Any]] = []
     selected_keys: set[tuple[str, ...]] = set()
     for cand in scored_candidates:
@@ -1044,6 +1050,23 @@ def apply_erx_cms_direct_update(patches: list[dict[str, Any]]) -> dict[str, Any]
     }
 
 
+def collect_gsc_for_cycle(config: dict[str, Any]) -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    """Search Console data per platform for the last 28 complete days; empty when not configured."""
+    creds = gsc_client.load_credentials()
+    if not creds:
+        return {}, {"status": "skipped_no_credentials"}
+    token = gsc_client.get_access_token(creds)
+    if not token:
+        return {}, {"status": "skipped_token_error"}
+    end = now_vn().date() - dt.timedelta(days=3)  # Search Console data lags by about 2-3 days
+    start = end - dt.timedelta(days=27)
+    data = gsc_client.collect_platform_data(
+        config.get("platforms", []), start.isoformat(), end.isoformat(), token,
+        quota_project=creds.get("quota_project_id"),
+    )
+    return data, {"status": "ok", "start": start.isoformat(), "end": end.isoformat(), "platforms": len(data)}
+
+
 def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
     """
     Executes the complete 07:00 AM Autonomous Keyword Discovery, Evaluation & SEO Optimization cycle.
@@ -1054,6 +1077,9 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
         {"last_daily_run": None, "optimized_keywords": {}, "history": []},
     )
     injections_state = load_json_state(INJECTIONS_FILE, {"injections": []})
+
+    gsc_data, gsc_status = collect_gsc_for_cycle(config)
+    logger.info("Search Console: %s", gsc_status)
 
     trending_vn = fetch_google_trends_vn_rss()
     logger.info("Fetched %d trending topics from Google Trends Vietnam RSS", len(trending_vn))
@@ -1111,6 +1137,7 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
             competitor_signals=comp_signals,
             seo_state=seo_state,
             top_n=keywords_per_platform,
+            real_queries=gsc_client.queries_by_impressions(gsc_data.get(pid, {})),
         )
 
         # 5. Build and execute SEO upgrade package for each selected keyword
@@ -1132,6 +1159,12 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
                 cand["priority_score"],
                 cand["target_url"],
             )
+
+    if gsc_data:
+        gsc_client.write_opportunity_report(
+            REPORTS_DIR / f"gsc_opportunities_{now_vn().date().isoformat()}.md",
+            gsc_data, gsc_status["start"], gsc_status["end"],
+        )
 
     # Keep last 200 injections in state file
     injections_state["injections"] = injections_state.get("injections", [])[-200:]
@@ -1159,6 +1192,7 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
         "keywords_optimized_count": len(cycle_results),
         "optimizations": cycle_results,
         "cms_patch_status": cms_result,
+        "gsc_status": gsc_status,
         "muse_hook_status": hook_status,
         "cache_and_indexnow": warm_result,
     }
