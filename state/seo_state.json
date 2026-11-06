@@ -1,5 +1,5 @@
 {
-  "last_daily_run": "2026-10-30",
+  "last_daily_run": "2026-11-06",
   "optimized_keywords": {
     "project-management::sơ đồ gantt online": "2026-10-28T22:38:03.336902+07:00",
     "doc-translate::công cụ dịch pdf chuyên ngành": "2026-10-28T22:38:15.589784+07:00",
@@ -18,7 +18,12 @@
     "doc-builder::viết báo cáo quản trị tự động": "2026-10-30T07:00:54.092323+07:00",
     "community::7 tiêu chí đánh giá nhà cung cấp": "2026-10-30T07:01:03.691941+07:00",
     "erx-main::phân tích dữ liệu power bi dax": "2026-10-30T07:01:15.953181+07:00",
-    "khoahoc::đào tạo mua hàng thực chiến hands on procurement": "2026-10-30T07:01:27.839107+07:00"
+    "khoahoc::đào tạo mua hàng thực chiến hands on procurement": "2026-10-30T07:01:27.839107+07:00",
+    "project-management::phần mềm quản lý dự án bim": "2026-11-06T21:52:54.926956+07:00",
+    "doc-translate::dịch file pdf sang tiếng anh giữ nguyên định dạng": "2026-11-06T21:53:05.211728+07:00",
+    "doc-builder::kiểm tra thể thức văn bản nghị định 30": "2026-11-06T21:53:16.875677+07:00",
+    "community::tiêu chí đánh giá nhà cung cấp mới": "2026-11-06T21:53:27.181737+07:00",
+    "erx-main::so sánh ms project và excel quản lý dự án": "2026-11-06T21:53:40.430374+07:00"
   },
   "history": [
     {
@@ -55,6 +60,17 @@
         "7 tiêu chí đánh giá nhà cung cấp",
         "phân tích dữ liệu power bi dax",
         "đào tạo mua hàng thực chiến hands on procurement"
+      ]
+    },
+    {
+      "executed_at": "2026-11-06T21:54:49.739208+07:00",
+      "keywords_optimized_count": 5,
+      "keywords": [
+        "phần mềm quản lý dự án bim",
+        "dịch file pdf sang tiếng anh giữ nguyên định dạng",
+        "kiểm tra thể thức văn bản nghị định 30",
+        "tiêu chí đánh giá nhà cung cấp mới",
+        "so sánh ms project và excel quản lý dự án"
       ]
     }
   ]

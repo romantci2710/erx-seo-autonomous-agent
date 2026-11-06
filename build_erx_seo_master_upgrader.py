@@ -41,8 +41,8 @@ MENU_SEO_MAP = {
     },
     "phan-mem": {
         "meta_title": "Phần mềm & công cụ tối ưu Chuỗi cung ứng, Quản trị dự án | ERX",
-        "meta_desc": "Hệ sinh thái phần mềm và Add-in thực chiến từ ERX Việt Nam: ERX Smart Tool, AI Project Gantt Planner (PMBOK 8), công cụ tối ưu hóa tuyến đường vận tải và kho vận.",
-        "meta_key": "phần mềm chuỗi cung ứng, addin excel erx smart tool, phần mềm quản lý dự án pmbok 8, tối ưu hóa tuyến đường"
+        "meta_desc": "Hệ sinh thái phần mềm và Add-in thực chiến từ ERX Việt Nam: ERX Smart Tool, AI Project Gantt Planner (PMBOK 8), dịch tài liệu AI, rà soát văn bản và kiểm tra đạo văn miễn phí.",
+        "meta_key": "phần mềm chuỗi cung ứng, addin excel erx smart tool, phần mềm quản lý dự án pmbok 8, phần mềm kiểm tra đạo văn miễn phí, tối ưu hóa tuyến đường"
     },
     "hop-tac-viec-lam": {
         "meta_title": "Hợp tác Giảng viên & Tuyển dụng Nhân sự Chuỗi cung ứng | ERX",
@@ -177,190 +177,190 @@ MENU_SEO_MAP = {
     }
 }
 
-# 2. All 42 Short-Title Blog Articles (<45 chars) + 7 Meta-Description Upgrades
+# 2. All 42 Short-Title Blog Articles (<45 chars) + 7 Meta-Description Upgrades (strictly 50-65 chars)
 ARTICLE_SEO_UPGRADES = {
     "7123869202": {
-        "title": "Giới thiệu Add-ins ERX Smart Tool: Công cụ tăng tốc xử lý Excel thực chiến",
+        "title": "Giới thiệu Add-ins ERX Smart Tool: Công cụ tăng tốc xử lý Excel",
         "meta_title": "Giới thiệu Add-ins ERX Smart Tool: Công cụ tăng tốc xử lý Excel"
     },
     "7123909199": {
-        "title": "Phân tích Pareto (Quy tắc 80/20) trong Power BI bằng hàm DAX thực chiến",
-        "meta_title": "Phân tích Pareto (Quy tắc 80/20) trong Power BI bằng công thức DAX"
+        "title": "Phân tích Pareto (Quy tắc 80/20) trong Power BI bằng hàm DAX",
+        "meta_title": "Phân tích Pareto (Quy tắc 80/20) trong Power BI bằng hàm DAX"
     },
     "7123374265": {
-        "title": "Phân biệt Calculated Columns và Measures trong ngôn ngữ DAX Power BI",
-        "meta_title": "Phân biệt Calculated Columns và Measures trong DAX Power BI chi tiết"
+        "title": "Phân biệt Calculated Columns và Measures trong DAX Power BI",
+        "meta_title": "Phân biệt Calculated Columns và Measures trong DAX Power BI"
     },
     "7123407300": {
-        "title": "Cách tạo bảng lịch (Date Table) tự động trong Power BI bằng DAX & M",
-        "meta_title": "Cách tạo Date Table (Calendar) tự động trong Power BI bằng DAX & M"
+        "title": "Cách tạo Date Table (Calendar) tự động trong Power BI bằng DAX",
+        "meta_title": "Cách tạo Date Table (Calendar) tự động trong Power BI bằng DAX"
     },
     "7122939679": {
         "title": "Chiến lược đàm phán mua hàng hiệu quả với những nhà cung cấp lớn",
         "meta_title": "Cách đàm phán với những nhà cung cấp lớn trong Quản trị Mua hàng"
     },
     "7122399614": {
-        "title": "Câu lệnh SQL SELECT trong Excel: Cú pháp truy vấn dữ liệu từ cơ bản đến nâng cao",
+        "title": "Câu lệnh SQL SELECT trong Excel: Cú pháp & Ví dụ truy vấn dữ liệu",
         "meta_title": "Câu lệnh SQL SELECT trong Excel: Cú pháp & Ví dụ truy vấn dữ liệu"
     },
     "7122169949": {
-        "title": "SQL trong Excel: Giải pháp truy vấn và tổng hợp dữ liệu lớn siêu tốc",
+        "title": "SQL trong Excel: Cách truy vấn & tổng hợp dữ liệu lớn bằng ADODB",
         "meta_title": "SQL trong Excel: Cách truy vấn & tổng hợp dữ liệu lớn bằng ADODB"
     },
     "7122144092": {
-        "title": "Strategic Sourcing là gì? Quy trình 7 bước tìm nguồn cung ứng chiến lược",
+        "title": "Strategic Sourcing là gì? Quy trình tìm nguồn cung ứng chiến lược",
         "meta_title": "Strategic Sourcing là gì? Quy trình tìm nguồn cung ứng chiến lược",
         "meta_desc": "Tìm nguồn cung ứng chiến lược (Strategic Sourcing) là gì? Phân tích quy trình 7 bước kết nối phân tích chi tiêu (Spend Analysis), đàm phán nhà cung cấp và tối ưu TCO."
     },
     "7122305017": {
-        "title": "Tối ưu hóa tuyến đường vận tải (Route Optimization) trong Logistics",
-        "meta_title": "Tối ưu hóa tuyến đường (Route Optimization) giảm chi phí Logistics"
+        "title": "Tối ưu hóa tuyến đường (Route Optimization) giảm chi phí vận tải",
+        "meta_title": "Tối ưu hóa tuyến đường (Route Optimization) giảm chi phí vận tải"
     },
     "7123893660": {
-        "title": "DAX là gì? Tổng quan ngôn ngữ DAX trong Power BI cho người mới bắt đầu",
+        "title": "DAX là gì? Hướng dẫn ngôn ngữ DAX trong Power BI cho người mới",
         "meta_title": "DAX là gì? Hướng dẫn ngôn ngữ DAX trong Power BI cho người mới"
     },
     "7123816032": {
-        "title": "Cách viết và ứng dụng hàm LAMBDA để tạo hàm tùy chỉnh trong Excel 365",
+        "title": "Cách viết và sử dụng hàm LAMBDA trong Excel 365 kèm ví dụ thực tế",
         "meta_title": "Cách viết và sử dụng hàm LAMBDA trong Excel 365 kèm ví dụ thực tế"
     },
     "7123716407": {
-        "title": "Tổng hợp các tính năng mới tuyệt vời nhất trên Microsoft Excel 365",
-        "meta_title": "Các tính năng mới tuyệt vời nhất trong Microsoft Excel 365 nên biết"
+        "title": "Tổng hợp các tính năng mới nổi bật nhất trên Microsoft Excel 365",
+        "meta_title": "Tổng hợp các tính năng mới nổi bật nhất trên Microsoft Excel 365"
     },
     "7123694822": {
-        "title": "Hàm FILTER trong Excel 365: Cú pháp và 6 ví dụ lọc dữ liệu tự động",
-        "meta_title": "Hàm FILTER trong Excel 365: Cú pháp & Cách lọc dữ liệu nhiều điều kiện"
+        "title": "Hàm FILTER trong Excel 365: Cú pháp & Cách lọc dữ liệu tự động",
+        "meta_title": "Hàm FILTER trong Excel 365: Cú pháp & Cách lọc dữ liệu tự động"
     },
     "7123554595": {
-        "title": "Hàm COUNTIFS trong Excel: Cú pháp và những lưu ý quan trọng cần biết",
-        "meta_title": "Hàm COUNTIFS trong Excel: Cú pháp đếm nhiều điều kiện & Lưu ý đặc biệt"
+        "title": "Hàm COUNTIFS trong Excel: Cú pháp đếm nhiều điều kiện & Lưu ý",
+        "meta_title": "Hàm COUNTIFS trong Excel: Cú pháp đếm nhiều điều kiện & Lưu ý"
     },
     "7122733141": {
-        "title": "Cách sử dụng tính năng Paste Special Skip Blanks trong Microsoft Excel",
-        "meta_title": "Cách sử dụng tính năng Skip Blanks trong Excel để dán bỏ qua ô trống"
+        "title": "Cách sử dụng tính năng Skip Blanks trong Excel để bỏ qua ô trống",
+        "meta_title": "Cách sử dụng tính năng Skip Blanks trong Excel để bỏ qua ô trống"
     },
     "7122722851": {
-        "title": "Hướng dẫn tạo danh sách tùy chỉnh (Custom List) để sắp xếp nhanh trong Excel",
-        "meta_title": "Hướng dẫn tạo Custom List trong Excel để điền và sắp xếp dữ liệu nhanh",
+        "title": "Hướng dẫn tạo Custom List trong Excel để sắp xếp dữ liệu nhanh",
+        "meta_title": "Hướng dẫn tạo Custom List trong Excel để sắp xếp dữ liệu nhanh",
         "meta_desc": "Hướng dẫn chi tiết cách tạo và quản lý danh sách tùy chỉnh (Custom List) trong Microsoft Excel, giúp tự động điền nhanh danh mục phòng ban và sắp xếp dữ liệu chuẩn xác."
     },
     "7122684703": {
-        "title": "Trọn bộ bí kíp sử dụng hàm VLOOKUP trong Excel từ cơ bản đến nâng cao",
+        "title": "Bí kíp sử dụng hàm VLOOKUP trong Excel từ cơ bản đến nâng cao",
         "meta_title": "Bí kíp sử dụng hàm VLOOKUP trong Excel từ cơ bản đến nâng cao"
     },
     "7123563926": {
         "title": "Lộ trình 11 bước làm chủ Microsoft Excel từ cơ bản đến chuyên gia",
-        "meta_title": "11 bước để làm chủ Microsoft Excel (Master Excel) cho người đi làm"
+        "meta_title": "11 bước làm chủ Microsoft Excel (Master Excel) cho người đi làm"
     },
     "7123388955": {
-        "title": "Cách dùng lệnh PIVOT, UNION và UNION ALL khi truy vấn SQL trong Excel",
+        "title": "Câu lệnh PIVOT, UNION và UNION ALL trong SQL Excel VBA kèm ví dụ",
         "meta_title": "Câu lệnh PIVOT, UNION và UNION ALL trong SQL Excel VBA kèm ví dụ"
     },
     "7123183520": {
-        "title": "Câu lệnh INSERT, UPDATE và DELETE khi thao tác dữ liệu SQL trong Excel",
+        "title": "Hướng dẫn câu lệnh INSERT, UPDATE, DELETE trong SQL Excel (ADODB)",
         "meta_title": "Hướng dẫn câu lệnh INSERT, UPDATE, DELETE trong SQL Excel (ADODB)"
     },
     "7123179255": {
-        "title": "Kỹ thuật dùng hàm IIF, Subquery và xác định dòng cuối (LastRow) trong SQL Excel",
-        "meta_title": "Cách dùng hàm IIF, Subquery và tìm dòng cuối LastRow trong SQL Excel"
+        "title": "Cách dùng hàm IIF, Subquery và tìm dòng cuối trong SQL Excel VBA",
+        "meta_title": "Cách dùng hàm IIF, Subquery và tìm dòng cuối trong SQL Excel VBA"
     },
     "7122913368": {
-        "title": "Lập trình VBA thao tác với đối tượng Workbook trong Excel (Phần 2)",
-        "meta_title": "Thao tác với đối tượng Workbook trong Excel VBA (Phần 2): Lưu & Đóng file"
+        "title": "Thao tác với đối tượng Workbook trong Excel VBA (Phần 2) | ERX",
+        "meta_title": "Thao tác với đối tượng Workbook trong Excel VBA (Phần 2) | ERX"
     },
     "7122847956": {
-        "title": "7 bước cơ bản thiết lập kết nối ADODB và câu lệnh SELECT trong SQL Excel",
-        "meta_title": "7 bước cơ bản thiết lập kết nối ADODB & Câu lệnh SELECT trong SQL Excel"
+        "title": "7 bước thiết lập kết nối ADODB & Câu lệnh SELECT trong SQL Excel",
+        "meta_title": "7 bước thiết lập kết nối ADODB & Câu lệnh SELECT trong SQL Excel"
     },
     "7122834639": {
-        "title": "Hướng dẫn thiết lập môi trường lập trình VBA căn bản trong Microsoft Excel",
-        "meta_title": "Thiết lập VBA căn bản trong Excel: Bật Developer, Macro & Cửa sổ VBE"
+        "title": "Thiết lập VBA căn bản trong Excel: Bật Developer & Cửa sổ VBE",
+        "meta_title": "Thiết lập VBA căn bản trong Excel: Bật Developer & Cửa sổ VBE"
     },
     "7122706843": {
-        "title": "Hướng dẫn tạo báo cáo tổng hợp siêu tốc bằng kết hợp SQL và VBA trong Excel",
+        "title": "Tạo báo cáo tự động siêu tốc bằng ngôn ngữ SQL và VBA trong Excel",
         "meta_title": "Tạo báo cáo tự động siêu tốc bằng ngôn ngữ SQL và VBA trong Excel",
         "meta_desc": "Nâng cấp kỹ năng tự động hóa báo cáo trên Excel bằng sự kết hợp giữa ngôn ngữ truy vấn SQL (ADODB) và lập trình VBA: trích xuất liên file và tổng hợp dữ liệu trong 1 giây."
     },
     "7121866391": {
-        "title": "Lập trình VBA trong Excel: Lộ trình tự động hóa báo cáo trong tầm tay",
-        "meta_title": "Lập trình VBA trong Excel: Hướng dẫn viết code Macro tự động hóa báo cáo"
+        "title": "Lập trình VBA trong Excel: Lộ trình tự động hóa báo cáo thực tế",
+        "meta_title": "Lập trình VBA trong Excel: Hướng dẫn viết Macro tự động báo cáo"
     },
     "7121832835": {
-        "title": "Tổng quan về lập trình VBA và các tính năng tự động hóa trong Excel",
+        "title": "VBA trong Excel là gì? Các tính năng hỗ trợ tự động hóa bảng tính",
         "meta_title": "VBA trong Excel là gì? Các tính năng hỗ trợ tự động hóa bảng tính"
     },
     "7123117353": {
-        "title": "Câu lệnh JOIN trong SQL Excel (INNER, LEFT, RIGHT JOIN) thay thế VLOOKUP",
-        "meta_title": "Câu lệnh JOIN trong SQL Excel: Cách kết nối nhiều bảng dữ liệu siêu tốc"
+        "title": "Câu lệnh JOIN trong SQL Excel: Kết nối nhiều bảng dữ liệu nhanh",
+        "meta_title": "Câu lệnh JOIN trong SQL Excel: Kết nối nhiều bảng dữ liệu nhanh"
     },
     "7123107285": {
-        "title": "Một số thao tác kỹ thuật cơ bản khi viết câu lệnh truy vấn SQL trong Excel",
-        "meta_title": "Một số thao tác cơ bản trong SQL Excel: Cắt chuỗi, nối dòng & Truyền biến"
+        "title": "Các thao tác cơ bản trong SQL Excel: Cắt chuỗi & Truyền biến VBA",
+        "meta_title": "Các thao tác cơ bản trong SQL Excel: Cắt chuỗi & Truyền biến VBA"
     },
     "7122985392": {
-        "title": "Cách sử dụng ký tự đại diện (Wildcard) và các toán tử lọc trong SQL Excel",
-        "meta_title": "Ký tự đại diện Wildcard (%, _) & Toán tử LIKE, BETWEEN, IN trong SQL Excel"
+        "title": "Ký tự đại diện Wildcard & Toán tử LIKE, BETWEEN trong SQL Excel",
+        "meta_title": "Ký tự đại diện Wildcard & Toán tử LIKE, BETWEEN trong SQL Excel"
     },
     "7122975038": {
-        "title": "Cách dùng mệnh đề WHERE, GROUP BY, HAVING và ORDER BY trong SQL Excel",
-        "meta_title": "Hướng dẫn mệnh đề WHERE, GROUP BY, HAVING, ORDER BY trong SQL Excel"
+        "title": "Cách dùng mệnh đề WHERE, GROUP BY, HAVING, ORDER BY ở SQL Excel",
+        "meta_title": "Cách dùng mệnh đề WHERE, GROUP BY, HAVING, ORDER BY ở SQL Excel"
     },
     "7122926210": {
-        "title": "Nghệ thuật thay đổi cách thuyết phục người khác trong môi trường doanh nghiệp",
-        "meta_title": "Thay đổi cách bạn thuyết phục người khác: 5 rào cản tâm lý cần tháo gỡ"
+        "title": "Nghệ thuật thuyết phục người khác: 5 rào cản tâm lý cần tháo gỡ",
+        "meta_title": "Nghệ thuật thuyết phục người khác: 5 rào cản tâm lý cần tháo gỡ"
     },
     "7122438204": {
-        "title": "Hướng dẫn sử dụng thư viện Pandas trong Python để khám phá dữ liệu (EDA)",
-        "meta_title": "Sử dụng thư viện Pandas trong Python để khám phá & phân tích dữ liệu"
+        "title": "Sử dụng thư viện Pandas trong Python để khám phá dữ liệu (EDA)",
+        "meta_title": "Sử dụng thư viện Pandas trong Python để khám phá dữ liệu (EDA)"
     },
     "7122425785": {
-        "title": "Giới thiệu phần mềm tối ưu hóa tuyến đường vận tải (Route Optimization) trên Excel",
-        "meta_title": "Giới thiệu phần mềm tối ưu hóa tuyến đường (Route Optimization) ERX"
+        "title": "Phần mềm tối ưu hóa tuyến đường vận tải (Route Optimization) ERX",
+        "meta_title": "Phần mềm tối ưu hóa tuyến đường vận tải (Route Optimization) ERX"
     },
     "7122518308": {
-        "title": "Giới thiệu Google Colab: Môi trường lập trình Python miễn phí trên đám mây",
-        "meta_title": "Google Colab là gì? Hướng dẫn sử dụng Google Colab lập trình Python từ A-Z"
+        "title": "Google Colab là gì? Hướng dẫn lập trình Python miễn phí đám mây",
+        "meta_title": "Google Colab là gì? Hướng dẫn lập trình Python miễn phí đám mây"
     },
     "7123986505": {
-        "title": "Tuyển dụng Procurement Specialist - Direct Material (Raw Materials & Energy)",
-        "meta_title": "Tuyển dụng Chuyên viên Mua hàng (Procurement Specialist - Direct Material)",
+        "title": "Tuyển dụng Chuyên viên Mua hàng (Direct Material Procurement)",
+        "meta_title": "Tuyển dụng Chuyên viên Mua hàng (Direct Material Procurement)",
         "meta_desc": "Thông tin tuyển dụng vị trí Chuyên viên Mua hàng Nguyên vật liệu trực tiếp (Procurement Specialist - Direct Material): mô tả công việc, yêu cầu năng lực và chế độ đãi ngộ."
     },
     "7123976602": {
-        "title": "Tuyển dụng Lead Logistics - Process Specialist (Chuyên gia Quy trình Logistics)",
-        "meta_title": "Tuyển dụng Lead Logistics - Process Specialist | Cơ hội nghề nghiệp SCM",
+        "title": "Tuyển dụng Lead Logistics - Process Specialist | Việc làm SCM",
+        "meta_title": "Tuyển dụng Lead Logistics - Process Specialist | Việc làm SCM",
         "meta_desc": "Cơ hội nghề nghiệp vị trí Lead Logistics - Process Specialist: Chịu trách nhiệm chuẩn hóa quy trình vận hành Logistics, tối ưu chi phí vận tải và phát triển hệ thống."
     },
     "7123968182": {
         "title": "Tuyển dụng Trưởng phòng Chuỗi cung ứng (Supply Chain Manager)",
-        "meta_title": "Tuyển dụng Supply Chain Manager (Trưởng phòng Quản lý Chuỗi cung ứng)",
+        "meta_title": "Tuyển dụng Trưởng phòng Chuỗi cung ứng (Supply Chain Manager)",
         "meta_desc": "Thông tin tuyển dụng vị trí Trưởng phòng Chuỗi cung ứng (Supply Chain Manager): Điều hành chiến lược kế hoạch, mua hàng, kho vận và tối ưu hiệu suất chuỗi cung ứng."
     },
     "7123946893": {
-        "title": "Tuyển dụng vị trí Trợ lý Kinh doanh (Sales Admin) ngành Thiết bị Công nghiệp",
-        "meta_title": "Tuyển dụng Trợ lý Kinh doanh (Sales Admin) - Cơ hội việc làm tại ERX"
+        "title": "Tuyển dụng Trợ lý Kinh doanh (Sales Admin) Thiết bị Công nghiệp",
+        "meta_title": "Tuyển dụng Trợ lý Kinh doanh (Sales Admin) Thiết bị Công nghiệp"
     },
     "7123956328": {
-        "title": "Tuyển dụng Deputy Purchasing and Logistics Team Leader ( Mua hàng & Logistics)",
-        "meta_title": "Tuyển dụng Deputy Purchasing & Logistics Team Leader | Việc làm SCM",
+        "title": "Tuyển dụng Deputy Purchasing & Logistics Team Leader | Việc SCM",
+        "meta_title": "Tuyển dụng Deputy Purchasing & Logistics Team Leader | Việc SCM",
         "meta_desc": "Tuyển dụng vị trí Phó nhóm Mua hàng Quốc tế & Logistics (Deputy Purchasing and Logistics Team Leader): Quản lý thu mua nhập khẩu, đàm phán nhà cung cấp và điều phối xuất nhập khẩu."
     },
     "7122675302": {
-        "title": "Làm thế nào để vẽ và thiết kế biểu đồ cột (Column Chart) chuyên nghiệp trong Excel?",
-        "meta_title": "Cách vẽ biểu đồ cột (Column Chart) chuyên nghiệp trong Microsoft Excel"
+        "title": "Cách vẽ và thiết kế biểu đồ cột (Column Chart) trong Excel | ERX",
+        "meta_title": "Cách vẽ và thiết kế biểu đồ cột (Column Chart) trong Excel | ERX"
     },
     "7122807028": {
-        "title": "Làm quen với Jupyter Notebook: Công cụ lập trình Python phân tích dữ liệu",
-        "meta_title": "Hướng dẫn sử dụng Jupyter Notebook cho người mới học Python & Data"
+        "title": "Hướng dẫn Jupyter Notebook cho người mới học Python & Data | ERX",
+        "meta_title": "Hướng dẫn Jupyter Notebook cho người mới học Python & Data | ERX"
     },
     "7122812051": {
-        "title": "Làm quen với thư viện Pandas và cấu trúc dữ liệu DataFrame trong Python",
+        "title": "Làm quen với thư viện Pandas và DataFrame trong Python từ cơ bản",
         "meta_title": "Làm quen với thư viện Pandas và DataFrame trong Python từ cơ bản"
     },
     "7123094250": {
-        "title": "Phân tích hành vi của người mua hàng công nghiệp (Industrial Buying Behavior)",
-        "meta_title": "Hành vi của người mua hàng công nghiệp trong Quản trị Mua sắm B2B"
+        "title": "Phân tích hành vi người mua hàng công nghiệp trong Mua sắm B2B",
+        "meta_title": "Phân tích hành vi người mua hàng công nghiệp trong Mua sắm B2B"
     }
 }
 
@@ -540,6 +540,7 @@ HEAD_SEO_AND_SCHEMA_SCRIPT = f"""
 <script id="erx-seo-schema-upgrader">
 (function() {{
   var menuSeo = {json.dumps(MENU_SEO_MAP, ensure_ascii=False)};
+  var articleSeo = {json.dumps(ARTICLE_SEO_UPGRADES, ensure_ascii=False)};
   var workshopSeo = {json.dumps(WORKSHOP_SEO_MAP, ensure_ascii=False)};
   var headOnlySeo = {json.dumps(HEAD_ONLY_SEO, ensure_ascii=False)};
   var noindexSlugs = {json.dumps(HEAD_NOINDEX_SLUGS)};
@@ -558,18 +559,34 @@ HEAD_SEO_AND_SCHEMA_SCRIPT = f"""
     el.setAttribute('content', content);
   }}
 
-  // 1. Check if current page is a Workshop detail page (-831*.html)
+  // 1. Check if current page is a Workshop detail page (-831*.html) or Blog Article (-712*.html)
   var wm = path.match(/-(\\d{{7}})\\.html$/);
   var wid = wm ? wm[1] : null;
+  var am = path.match(/-(712\\d{{7}})\\.html$/);
+  var aid = am ? am[1] : null;
   if (wid && workshopSeo[wid]) {{
     var w = workshopSeo[wid];
     document.title = w.meta_title;
     setMetaTag('name', 'description', w.meta_desc);
     setMetaTag('property', 'og:title', w.meta_title);
     setMetaTag('property', 'og:description', w.meta_desc);
+  }} else if (aid && articleSeo[aid]) {{
+    var a = articleSeo[aid];
+    document.title = a.meta_title || a.title;
+    setMetaTag('property', 'og:title', document.title);
+    if (a.meta_desc) {{
+      setMetaTag('name', 'description', a.meta_desc);
+      setMetaTag('property', 'og:description', a.meta_desc);
+    }}
+  }} else if (cleanSlug === '' || cleanSlug === 'index') {{
+    var homeTitle = 'ERX Việt Nam — Đào tạo Phân tích Dữ liệu & Chuỗi Cung ứng';
+    if (!document.title || document.title.length > 65 || document.title.length < 35) {{
+      document.title = homeTitle;
+      setMetaTag('property', 'og:title', homeTitle);
+    }}
   }} else if (menuSeo[cleanSlug] || headOnlySeo[cleanSlug]) {{
     var m = menuSeo[cleanSlug] || headOnlySeo[cleanSlug];
-    if (!document.title || document.title.length < 35) {{
+    if (!document.title || document.title.length < 35 || document.title.length > 65) {{
       document.title = m.meta_title;
     }}
     var curDescEl = document.querySelector('meta[name="description"]');
@@ -587,6 +604,22 @@ HEAD_SEO_AND_SCHEMA_SCRIPT = f"""
 
   // 2. Replace broken lowercase JSON-LD (@type: "article" / "website") with valid Schema.org Graph
   function injectValidSchema() {{
+    // Fix EMPTY_H1 on homepage logo H1 and missing img dimensions
+    var h1s = document.querySelectorAll('h1');
+    for (var h = 0; h < h1s.length; h++) {{
+      if (!(h1s[h].textContent || '').trim()) {{
+        var sr = document.createElement('span');
+        sr.style.cssText = 'position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0';
+        sr.textContent = 'ERX Việt Nam — Đào tạo Phân tích Dữ liệu & Quản lý Chuỗi Cung ứng Thực chiến';
+        h1s[h].appendChild(sr);
+      }}
+    }}
+    var imgs = document.querySelectorAll('img:not([width]):not([height])');
+    for (var im = 0; im < imgs.length; im++) {{
+      imgs[im].setAttribute('width', String(imgs[im].naturalWidth || 320));
+      imgs[im].setAttribute('height', String(imgs[im].naturalHeight || 180));
+    }}
+
     var oldScripts = document.querySelectorAll('script[type="application/ld+json"]');
     for (var i = 0; i < oldScripts.length; i++) {{
       var txt = oldScripts[i].textContent || '';

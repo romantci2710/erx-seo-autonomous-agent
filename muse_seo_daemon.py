@@ -397,6 +397,34 @@ def parse_sitemap_urls(xml_text: str) -> list[str]:
         return [m.strip() for m in re.findall(r"<loc>(.*?)</loc>", xml_text) if m.strip()]
 
 
+def fetch_sitemap_urls(sitemap_url: str, max_child_sitemaps: int = 8) -> list[str]:
+    """Fetch a sitemap or sitemapindex URL and return HTML page URLs (expanding child .xml sitemaps)."""
+    if not sitemap_url:
+        return []
+    s_res = http_get(sitemap_url, timeout=15)
+    if not s_res.get("ok"):
+        return []
+    raw_locs = parse_sitemap_urls(s_res.get("text", ""))
+    page_urls: list[str] = []
+    child_sitemaps: list[str] = []
+    for loc in raw_locs:
+        clean_path = urllib.parse.urlsplit(loc).path.lower()
+        if clean_path.endswith(".xml"):
+            child_sitemaps.append(loc)
+        else:
+            page_urls.append(loc)
+    for child_url in child_sitemaps[:max_child_sitemaps]:
+        c_res = http_get(child_url, timeout=15)
+        if not c_res.get("ok"):
+            continue
+        for sub_loc in parse_sitemap_urls(c_res.get("text", "")):
+            sub_path = urllib.parse.urlsplit(sub_loc).path.lower()
+            if not sub_path.endswith(".xml") and sub_loc not in page_urls:
+                page_urls.append(sub_loc)
+    return page_urls
+
+
+
 # ============================================================================
 # 3. LOOP 1: DAILY 07:00 AM HOT KEYWORD DISCOVERY, SCORING & AUTO-SEO
 # ============================================================================
@@ -1603,6 +1631,8 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
         {"last_watch_run": None, "url_registry": {}, "community_topics_seen": []},
     )
     url_registry: dict[str, dict[str, Any]] = watch_state.setdefault("url_registry", {})
+    for stale_u in [k for k in list(url_registry.keys()) if urllib.parse.urlsplit(k).path.lower().endswith(".xml")]:
+        url_registry.pop(stale_u, None)
     seen_topics: set[int] = set(watch_state.get("community_topics_seen", []))
 
     new_urls_found: list[dict[str, Any]] = []
@@ -1620,9 +1650,8 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
         base_url = platform["base_url"]
         sitemap_url = platform.get("sitemap_url", "")
 
-        # 1. Fetch sitemap URLs
-        s_res = http_get(sitemap_url, timeout=15) if sitemap_url else {"ok": False, "text": ""}
-        sitemap_locs = parse_sitemap_urls(s_res["text"]) if s_res.get("ok") else []
+        # 1. Fetch sitemap URLs (recursively expanding child sitemaps if sitemapindex)
+        sitemap_locs = fetch_sitemap_urls(sitemap_url) if sitemap_url else []
 
         # 1b. Site-level health (security headers, compression, soft 404, Googlebot parity), cached 6h
         health = site_health_state.get(pid)

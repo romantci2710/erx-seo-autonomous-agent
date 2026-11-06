@@ -67,6 +67,8 @@ def sync_injections_to_platform_repos() -> dict[str, Any]:
         if not target_manifest_dir.exists():
             target_manifest_dir = repo_dir / "frontend" / "public"
         if not target_manifest_dir.exists():
+            target_manifest_dir = repo_dir / "webapp-react" / "public"
+        if not target_manifest_dir.exists():
             target_manifest_dir = repo_dir / "reports"
         if not target_manifest_dir.exists():
             continue

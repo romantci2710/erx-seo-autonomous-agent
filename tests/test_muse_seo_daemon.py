@@ -211,3 +211,37 @@ def test_indexnow_posts_grouped_by_host_when_key_set(monkeypatch):
     }
     assert all(m == "POST" for m, _ in posted)
     assert out["indexnow"]["status"] == "submitted"
+
+
+def test_fetch_sitemap_urls_expands_child_xml_sitemaps(monkeypatch):
+    import muse_seo_daemon as d
+
+    responses = {
+        "https://khoahoc.erx.vn/sitemap.xml": """<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>https://khoahoc.erx.vn/sitemap-courses.xml</loc></sitemap>
+  <sitemap><loc>https://khoahoc.erx.vn/sitemap-pages.xml</loc></sitemap>
+</sitemapindex>""",
+        "https://khoahoc.erx.vn/sitemap-courses.xml": """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://khoahoc.erx.vn/courses</loc></url>
+  <url><loc>https://khoahoc.erx.vn/course/sql-excel</loc></url>
+</urlset>""",
+        "https://khoahoc.erx.vn/sitemap-pages.xml": """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://khoahoc.erx.vn/</loc></url>
+</urlset>""",
+    }
+    monkeypatch.setattr(
+        d,
+        "http_get",
+        lambda url, timeout=15, **k: {"ok": url in responses, "text": responses.get(url, "")},
+    )
+    urls = d.fetch_sitemap_urls("https://khoahoc.erx.vn/sitemap.xml")
+    assert urls == [
+        "https://khoahoc.erx.vn/courses",
+        "https://khoahoc.erx.vn/course/sql-excel",
+        "https://khoahoc.erx.vn/",
+    ]
+    assert all(not u.endswith(".xml") for u in urls)
+

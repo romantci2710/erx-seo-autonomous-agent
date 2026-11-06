@@ -60,8 +60,11 @@ def test_builder_runs_and_every_real_menu_slug_has_seo_entry():
 def test_all_titles_fit_in_65_chars():
     menu = _window_json("ERX_MENU_SEO_MAP")
     workshop = _window_json("ERX_WORKSHOP_SEO_MAP")
-    too_long = {k: len(v["meta_title"]) for k, v in {**menu, **workshop}.items() if len(v["meta_title"]) > 65}
+    articles = _window_json("ERX_ARTICLE_SEO_UPGRADES")
+    too_long = {k: len(v["meta_title"]) for k, v in {**menu, **workshop, **articles}.items() if len(v["meta_title"]) > 65}
+    too_long_h1 = {k: len(v["title"]) for k, v in articles.items() if "title" in v and len(v["title"]) > 65}
     assert too_long == {}
+    assert too_long_h1 == {}
 
 
 def test_master_sitemap_has_no_known_dead_hub_urls_and_lists_real_ones():
