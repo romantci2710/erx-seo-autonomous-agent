@@ -61,6 +61,21 @@ def load_credentials(path: str | None = None) -> dict[str, Any] | None:
     return data
 
 
+def resolve_quota_project(
+    creds: dict[str, Any] | None = None,
+    config: dict[str, Any] | None = None,
+) -> str | None:
+    """Resolve X-Goog-User-Project from GSC_QUOTA_PROJECT env, ADC quota_project_id, or config."""
+    for candidate in (
+        os.environ.get("GSC_QUOTA_PROJECT", ""),
+        (creds or {}).get("quota_project_id", ""),
+        (config or {}).get("gsc_quota_project", ""),
+    ):
+        if isinstance(candidate, str) and candidate.strip():
+            return candidate.strip()
+    return None
+
+
 def get_access_token(creds: dict[str, Any], http_post: HttpPost = default_http_post) -> str | None:
     body = urllib.parse.urlencode(
         {

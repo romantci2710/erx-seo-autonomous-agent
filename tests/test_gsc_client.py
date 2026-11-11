@@ -152,6 +152,15 @@ def test_fetch_rows_sends_quota_project_header_when_given():
     assert "X-Goog-User-Project" not in seen
 
 
+def test_resolve_quota_project_precedence(monkeypatch):
+    monkeypatch.delenv("GSC_QUOTA_PROJECT", raising=False)
+    assert g.resolve_quota_project(None, None) is None
+    assert g.resolve_quota_project({"quota_project_id": ""}, {"gsc_quota_project": "cfg-proj"}) == "cfg-proj"
+    assert g.resolve_quota_project({"quota_project_id": "adc-proj"}, {"gsc_quota_project": "cfg-proj"}) == "adc-proj"
+    monkeypatch.setenv("GSC_QUOTA_PROJECT", "env-proj")
+    assert g.resolve_quota_project({"quota_project_id": "adc-proj"}, {"gsc_quota_project": "cfg-proj"}) == "env-proj"
+
+
 def test_collect_platform_data_passes_quota_project_and_splits_by_host():
     calls = []
 

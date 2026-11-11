@@ -4,6 +4,7 @@
   "daily_schedule_time": "07:00",
   "watch_interval_seconds": 900,
   "keywords_per_platform_per_day": 1,
+  "gsc_quota_project": "seo-tool-513310",
   "platforms": [
     {
       "id": "project-management",

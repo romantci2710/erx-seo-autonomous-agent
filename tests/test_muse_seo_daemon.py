@@ -245,3 +245,56 @@ def test_fetch_sitemap_urls_expands_child_xml_sitemaps(monkeypatch):
     ]
     assert all(not u.endswith(".xml") for u in urls)
 
+
+def test_khoahoc_uses_googlebot_ua_and_flags_placeholder_tags():
+    import muse_seo_daemon as d
+
+    assert d.platform_fetch_user_agent("khoahoc.erx.vn") == d.GOOGLEBOT_UA
+    assert d.platform_fetch_user_agent("erx.vn") == d.USER_AGENT
+
+    undef_html = (
+        '<html><head><title>undefined</title>'
+        '<meta name="description" content="undefined" />'
+        '<script type="application/ld+json">{"@type":"WebPage"}</script></head>'
+        '<body><h1>undefined</h1></body></html>'
+    )
+    sig = d.extract_page_seo_signals(undef_html, "https://khoahoc.erx.vn/p/gift")
+    issues = d.audit_single_page_seo(sig, "khoahoc.erx.vn")
+    assert "PLACEHOLDER_TITLE (undefined)" in issues
+    assert "PLACEHOLDER_META_DESCRIPTION (undefined)" in issues
+
+    rem = d.synthesize_remediation_for_page(sig, "khoahoc.erx.vn", issues)
+    assert "undefined" not in rem["recommended_title"].lower()
+    assert "undefined" not in rem["recommended_meta_description"].lower()
+    assert 50 <= len(rem["recommended_title"]) <= 65
+
+
+def test_erx_menu_with_active_head_js_override_is_advisory_not_remediation():
+    import muse_seo_daemon as d
+
+    menu_map = {
+        "power-bi": {
+            "meta_title": "Tài liệu học Power BI & DAX thực chiến từ A-Z | ERX Việt Nam",
+            "meta_desc": "Chuyên mục hướng dẫn Microsoft Power BI chuyên sâu: Xây dựng Data Model chuẩn Star Schema, viết hàm DAX nâng cao và thiết kế Dashboard quản trị.",
+        }
+    }
+    html_with_js = (
+        "<html><head><title>Power BI</title>"
+        '<meta name="description" content="Hội thảo" />'
+        '<link rel="canonical" href="https://erx.vn/power-bi.html" />'
+        f'<script id="erx-seo-schema-upgrader">(function(){{ var menuSeo = {json.dumps(menu_map, ensure_ascii=False)}; }})();</script>'
+        '<script type="application/ld+json">{"@type":"WebSite"}</script>'
+        "</head><body><h1>Power BI</h1></body></html>"
+    )
+    sig = d.extract_page_seo_signals(html_with_js, "https://erx.vn/power-bi.html")
+    assert sig["title"] == "Power BI"  # raw server HTML preserved
+    assert len(sig["js_override_title"]) == 60
+    assert d.audit_single_page_seo(sig, "erx.vn") == []
+    assert "SSR_META_USES_HEAD_JS_FALLBACK" in d.audit_advisory_seo(sig, "erx.vn")
+
+    # If the head script disappears, SHORT_TITLE fires immediately
+    html_without_js = html_with_js.split('<script id="erx-seo-schema-upgrader">')[0] + '<script type="application/ld+json">{"@type":"WebSite"}</script></head><body></body></html>'
+    sig_broken = d.extract_page_seo_signals(html_without_js, "https://erx.vn/power-bi.html")
+    assert any("SHORT_TITLE" in x for x in d.audit_single_page_seo(sig_broken, "erx.vn"))
+
+

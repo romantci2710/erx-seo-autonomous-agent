@@ -25,6 +25,1561 @@
       "note": "Bài thử đầu tiên: title cũ 83 ký tự không có 'tách ký tự' (truy vấn lớn nhất). Chi tiết: seo-audits/ARTICLE-CHANGE-LOG.md",
       "status": "pending",
       "measurements": {}
+    },
+    {
+      "id": "exp-20261111-001",
+      "url": "https://erx.vn/gioi-thieu-addins-erx-smart-tool-7123869202.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Giới thiệu Add-ins ERX Smart Tool: Công cụ tăng tốc xử lý Excel thực chiến"
+      },
+      "new": {
+        "title": "Giới thiệu Add-ins ERX Smart Tool: Công cụ tăng tốc xử lý Excel"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 13.28
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-002",
+      "url": "https://erx.vn/phan-tich-pareto-trong-power-bi-7123909199.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Phân tích Pareto (Quy tắc 80/20) trong Power BI bằng hàm DAX thực chiến"
+      },
+      "new": {
+        "title": "Phân tích Pareto (Quy tắc 80/20) trong Power BI bằng hàm DAX"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 1,
+        "impressions": 48,
+        "ctr": 0.020833333333333332,
+        "position": 10.54
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-003",
+      "url": "https://erx.vn/calculated-columns-va-measures-trong-dax-7123374265.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Phân biệt Calculated Columns và Measures trong ngôn ngữ DAX Power BI"
+      },
+      "new": {
+        "title": "Phân biệt Calculated Columns và Measures trong DAX Power BI"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 2,
+        "impressions": 134,
+        "ctr": 0.014925373134328358,
+        "position": 5.76
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-004",
+      "url": "https://erx.vn/cach-tao-ra-1-datetable-trong-powerbi-7123407300.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Cách tạo bảng lịch (Date Table) tự động trong Power BI bằng DAX & M"
+      },
+      "new": {
+        "title": "Cách tạo Date Table (Calendar) tự động trong Power BI bằng DAX"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 83,
+        "ctr": 0.0,
+        "position": 6.55
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-005",
+      "url": "https://erx.vn/cach-dam-phan-voi-nhung-nha-cung-cap-lon-7122939679.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Chiến lược đàm phán mua hàng hiệu quả với những nhà cung cấp lớn"
+      },
+      "new": {
+        "title": "Cách đàm phán với những nhà cung cấp lớn trong Quản trị Mua hàng"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 5,
+        "impressions": 268,
+        "ctr": 0.018656716417910446,
+        "position": 7.0
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-006",
+      "url": "https://erx.vn/sql-select-7122399614.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Câu lệnh SQL SELECT trong Excel: Cú pháp truy vấn dữ liệu từ cơ bản đến nâng cao"
+      },
+      "new": {
+        "title": "Câu lệnh SQL SELECT trong Excel: Cú pháp & Ví dụ truy vấn dữ liệu"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 8.5
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-007",
+      "url": "https://erx.vn/sql-trong-excel-7122169949.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "SQL trong Excel: Giải pháp truy vấn và tổng hợp dữ liệu lớn siêu tốc"
+      },
+      "new": {
+        "title": "SQL trong Excel: Cách truy vấn & tổng hợp dữ liệu lớn bằng ADODB"
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-008",
+      "url": "https://erx.vn/strategic-sourcing-tim-nguon-cung-ung-chien-luoc-7122144092.html",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "Strategic Sourcing là gì? Quy trình 7 bước tìm nguồn cung ứng chiến lược",
+        "meta_description": ""
+      },
+      "new": {
+        "title": "Strategic Sourcing là gì? Quy trình tìm nguồn cung ứng chiến lược",
+        "meta_description": "Tìm nguồn cung ứng chiến lược (Strategic Sourcing) là gì? Phân tích quy trình 7 bước kết nối phân tích chi tiêu (Spend Analysis), đàm phán nhà cung cấp và tối ưu TCO."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 31,
+        "ctr": 0.0,
+        "position": 9.65
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-009",
+      "url": "https://erx.vn/route-optimization-7122305017.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Tối ưu hóa tuyến đường vận tải (Route Optimization) trong Logistics"
+      },
+      "new": {
+        "title": "Tối ưu hóa tuyến đường (Route Optimization) giảm chi phí vận tải"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 2,
+        "impressions": 221,
+        "ctr": 0.00904977375565611,
+        "position": 6.85
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-010",
+      "url": "https://erx.vn/dax-la-gi-7123893660.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "DAX là gì? Tổng quan ngôn ngữ DAX trong Power BI cho người mới bắt đầu"
+      },
+      "new": {
+        "title": "DAX là gì? Hướng dẫn ngôn ngữ DAX trong Power BI cho người mới"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 42,
+        "ctr": 0.0,
+        "position": 12.1
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-011",
+      "url": "https://erx.vn/lambda-excel-365-erx-vietnam-7123816032.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Cách viết và ứng dụng hàm LAMBDA để tạo hàm tùy chỉnh trong Excel 365"
+      },
+      "new": {
+        "title": "Cách viết và sử dụng hàm LAMBDA trong Excel 365 kèm ví dụ thực tế"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 14,
+        "impressions": 2391,
+        "ctr": 0.005855290673358427,
+        "position": 5.65
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-012",
+      "url": "https://erx.vn/cac-tinh-nang-moi-tuyet-voi-nhat-trong-excel-7123716407.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Tổng hợp các tính năng mới tuyệt vời nhất trên Microsoft Excel 365"
+      },
+      "new": {
+        "title": "Tổng hợp các tính năng mới nổi bật nhất trên Microsoft Excel 365"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-013",
+      "url": "https://erx.vn/ham-filter-trong-excel-7123694822.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Hàm FILTER trong Excel 365: Cú pháp và 6 ví dụ lọc dữ liệu tự động"
+      },
+      "new": {
+        "title": "Hàm FILTER trong Excel 365: Cú pháp & Cách lọc dữ liệu tự động"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 2,
+        "impressions": 244,
+        "ctr": 0.00819672131147541,
+        "position": 10.66
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-014",
+      "url": "https://erx.vn/ham-countifs-va-co-the-ban-chua-biet-7123554595.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Hàm COUNTIFS trong Excel: Cú pháp và những lưu ý quan trọng cần biết"
+      },
+      "new": {
+        "title": "Hàm COUNTIFS trong Excel: Cú pháp đếm nhiều điều kiện & Lưu ý"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 35.12
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-015",
+      "url": "https://erx.vn/su-dung-tinh-nang-skip-blanks-cua-excel-7122733141.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Cách sử dụng tính năng Paste Special Skip Blanks trong Microsoft Excel"
+      },
+      "new": {
+        "title": "Cách sử dụng tính năng Skip Blanks trong Excel để bỏ qua ô trống"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 8,
+        "impressions": 200,
+        "ctr": 0.04,
+        "position": 3.79
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-016",
+      "url": "https://erx.vn/huong-dan-tao-custom-list-trong-excel-7122722851.html",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "Hướng dẫn tạo danh sách tùy chỉnh (Custom List) để sắp xếp nhanh trong Excel",
+        "meta_description": ""
+      },
+      "new": {
+        "title": "Hướng dẫn tạo Custom List trong Excel để sắp xếp dữ liệu nhanh",
+        "meta_description": "Hướng dẫn chi tiết cách tạo và quản lý danh sách tùy chỉnh (Custom List) trong Microsoft Excel, giúp tự động điền nhanh danh mục phòng ban và sắp xếp dữ liệu chuẩn xác."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 2,
+        "impressions": 102,
+        "ctr": 0.0196078431372549,
+        "position": 4.02
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-017",
+      "url": "https://erx.vn/bi-kip-su-dung-ham-vlookup-trong-excel-7122684703.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Trọn bộ bí kíp sử dụng hàm VLOOKUP trong Excel từ cơ bản đến nâng cao"
+      },
+      "new": {
+        "title": "Bí kíp sử dụng hàm VLOOKUP trong Excel từ cơ bản đến nâng cao"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 5,
+        "impressions": 344,
+        "ctr": 0.014534883720930232,
+        "position": 5.52
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-018",
+      "url": "https://erx.vn/11-buoc-de-master-excel-7123563926.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Lộ trình 11 bước làm chủ Microsoft Excel từ cơ bản đến chuyên gia"
+      },
+      "new": {
+        "title": "11 bước làm chủ Microsoft Excel (Master Excel) cho người đi làm"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 9,
+        "impressions": 149,
+        "ctr": 0.06040268456375839,
+        "position": 3.01
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-019",
+      "url": "https://erx.vn/pivot-union-union-all-7123388955.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Cách dùng lệnh PIVOT, UNION và UNION ALL khi truy vấn SQL trong Excel"
+      },
+      "new": {
+        "title": "Câu lệnh PIVOT, UNION và UNION ALL trong SQL Excel VBA kèm ví dụ"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 1,
+        "impressions": 17,
+        "ctr": 0.058823529411764705,
+        "position": 6.82
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-020",
+      "url": "https://erx.vn/insert-update-delete-7123183520.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Câu lệnh INSERT, UPDATE và DELETE khi thao tác dữ liệu SQL trong Excel"
+      },
+      "new": {
+        "title": "Hướng dẫn câu lệnh INSERT, UPDATE, DELETE trong SQL Excel (ADODB)"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 35,
+        "ctr": 0.0,
+        "position": 6.43
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-021",
+      "url": "https://erx.vn/iif-subquery-lastrow-7123179255.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Kỹ thuật dùng hàm IIF, Subquery và xác định dòng cuối (LastRow) trong SQL Excel"
+      },
+      "new": {
+        "title": "Cách dùng hàm IIF, Subquery và tìm dòng cuối trong SQL Excel VBA"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-022",
+      "url": "https://erx.vn/thao-tac-voi-doi-tuong-workbook-phan-2-7122913368.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Lập trình VBA thao tác với đối tượng Workbook trong Excel (Phần 2)"
+      },
+      "new": {
+        "title": "Thao tác với đối tượng Workbook trong Excel VBA (Phần 2) | ERX"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0.0,
+        "position": 7.09
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-023",
+      "url": "https://erx.vn/7-buoc-co-ban-cau-len-select-7122847956.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "7 bước cơ bản thiết lập kết nối ADODB và câu lệnh SELECT trong SQL Excel"
+      },
+      "new": {
+        "title": "7 bước thiết lập kết nối ADODB & Câu lệnh SELECT trong SQL Excel"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 42,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-024",
+      "url": "https://erx.vn/thiet-lap-vba-can-ban-7122834639.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Hướng dẫn thiết lập môi trường lập trình VBA căn bản trong Microsoft Excel"
+      },
+      "new": {
+        "title": "Thiết lập VBA căn bản trong Excel: Bật Developer & Cửa sổ VBE"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 3.67
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-025",
+      "url": "https://erx.vn/tao-bao-cao-sieu-toc-bang-sql-va-vba-7122706843.html",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "Hướng dẫn tạo báo cáo tổng hợp siêu tốc bằng kết hợp SQL và VBA trong Excel",
+        "meta_description": ""
+      },
+      "new": {
+        "title": "Tạo báo cáo tự động siêu tốc bằng ngôn ngữ SQL và VBA trong Excel",
+        "meta_description": "Nâng cấp kỹ năng tự động hóa báo cáo trên Excel bằng sự kết hợp giữa ngôn ngữ truy vấn SQL (ADODB) và lập trình VBA: trích xuất liên file và tổng hợp dữ liệu trong 1 giây."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 5.38
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-026",
+      "url": "https://erx.vn/lap-trinh-vba-viet-code-trong-tam-tay-7121866391.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Lập trình VBA trong Excel: Lộ trình tự động hóa báo cáo trong tầm tay"
+      },
+      "new": {
+        "title": "Lập trình VBA trong Excel: Hướng dẫn viết Macro tự động báo cáo"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 23,
+        "ctr": 0.0,
+        "position": 38.39
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-027",
+      "url": "https://erx.vn/vba-cac-tinh-nang-ho-tro-trong-excel-7121832835.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Tổng quan về lập trình VBA và các tính năng tự động hóa trong Excel"
+      },
+      "new": {
+        "title": "VBA trong Excel là gì? Các tính năng hỗ trợ tự động hóa bảng tính"
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-028",
+      "url": "https://erx.vn/join-statement-7123117353.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Câu lệnh JOIN trong SQL Excel (INNER, LEFT, RIGHT JOIN) thay thế VLOOKUP"
+      },
+      "new": {
+        "title": "Câu lệnh JOIN trong SQL Excel: Kết nối nhiều bảng dữ liệu nhanh"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 334,
+        "ctr": 0.0,
+        "position": 7.04
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-029",
+      "url": "https://erx.vn/mot-so-thao-tac-co-ban-trong-sql-7123107285.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Một số thao tác kỹ thuật cơ bản khi viết câu lệnh truy vấn SQL trong Excel"
+      },
+      "new": {
+        "title": "Các thao tác cơ bản trong SQL Excel: Cắt chuỗi & Truyền biến VBA"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 1,
+        "impressions": 51,
+        "ctr": 0.0196078431372549,
+        "position": 6.96
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-030",
+      "url": "https://erx.vn/wildcard-toan-tu-7122985392.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Cách sử dụng ký tự đại diện (Wildcard) và các toán tử lọc trong SQL Excel"
+      },
+      "new": {
+        "title": "Ký tự đại diện Wildcard & Toán tử LIKE, BETWEEN trong SQL Excel"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 152,
+        "ctr": 0.0,
+        "position": 4.62
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-031",
+      "url": "https://erx.vn/whrere-group-by-having-order-by-7122975038.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Cách dùng mệnh đề WHERE, GROUP BY, HAVING và ORDER BY trong SQL Excel"
+      },
+      "new": {
+        "title": "Cách dùng mệnh đề WHERE, GROUP BY, HAVING, ORDER BY ở SQL Excel"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 2,
+        "impressions": 180,
+        "ctr": 0.011111111111111112,
+        "position": 5.71
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-032",
+      "url": "https://erx.vn/thay-doi-cach-ban-thuyet-phuc-nguoi-khac-7122926210.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Nghệ thuật thay đổi cách thuyết phục người khác trong môi trường doanh nghiệp"
+      },
+      "new": {
+        "title": "Nghệ thuật thuyết phục người khác: 5 rào cản tâm lý cần tháo gỡ"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 40,
+        "ctr": 0.0,
+        "position": 12.6
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-033",
+      "url": "https://erx.vn/su-dung-thu-vien-pandas-de-kham-pha-du-lieu-7122438204.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Hướng dẫn sử dụng thư viện Pandas trong Python để khám phá dữ liệu (EDA)"
+      },
+      "new": {
+        "title": "Sử dụng thư viện Pandas trong Python để khám phá dữ liệu (EDA)"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 93,
+        "ctr": 0.0,
+        "position": 8.76
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-034",
+      "url": "https://erx.vn/gioi-thieu-phan-mem-toi-uu-hoa-tuyen-duong-7122425785.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Giới thiệu phần mềm tối ưu hóa tuyến đường vận tải (Route Optimization) trên Excel"
+      },
+      "new": {
+        "title": "Phần mềm tối ưu hóa tuyến đường vận tải (Route Optimization) ERX"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 38,
+        "ctr": 0.0,
+        "position": 5.76
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-035",
+      "url": "https://erx.vn/gioi-thieu-google-colab-7122518308.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Giới thiệu Google Colab: Môi trường lập trình Python miễn phí trên đám mây"
+      },
+      "new": {
+        "title": "Google Colab là gì? Hướng dẫn lập trình Python miễn phí đám mây"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 39,
+        "ctr": 0.0,
+        "position": 17.92
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-036",
+      "url": "https://erx.vn/procurement-specialist-direct-material-raw-materials-energy-goods-7123986505.html",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "Tuyển dụng Procurement Specialist - Direct Material (Raw Materials & Energy)",
+        "meta_description": ""
+      },
+      "new": {
+        "title": "Tuyển dụng Chuyên viên Mua hàng (Direct Material Procurement)",
+        "meta_description": "Thông tin tuyển dụng vị trí Chuyên viên Mua hàng Nguyên vật liệu trực tiếp (Procurement Specialist - Direct Material): mô tả công việc, yêu cầu năng lực và chế độ đãi ngộ."
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-037",
+      "url": "https://erx.vn/lead-logistics-process-specialist-7123976602.html",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "Tuyển dụng Lead Logistics - Process Specialist (Chuyên gia Quy trình Logistics)",
+        "meta_description": ""
+      },
+      "new": {
+        "title": "Tuyển dụng Lead Logistics - Process Specialist | Việc làm SCM",
+        "meta_description": "Cơ hội nghề nghiệp vị trí Lead Logistics - Process Specialist: Chịu trách nhiệm chuẩn hóa quy trình vận hành Logistics, tối ưu chi phí vận tải và phát triển hệ thống."
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-038",
+      "url": "https://erx.vn/supply-chain-manager-7123968182.html",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "Tuyển dụng Trưởng phòng Chuỗi cung ứng (Supply Chain Manager)",
+        "meta_description": ""
+      },
+      "new": {
+        "title": "Tuyển dụng Trưởng phòng Chuỗi cung ứng (Supply Chain Manager)",
+        "meta_description": "Thông tin tuyển dụng vị trí Trưởng phòng Chuỗi cung ứng (Supply Chain Manager): Điều hành chiến lược kế hoạch, mua hàng, kho vận và tối ưu hiệu suất chuỗi cung ứng."
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-039",
+      "url": "https://erx.vn/tuyen-dung-tro-ly-kinh-doanh-t6-2024-7123946893.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Tuyển dụng vị trí Trợ lý Kinh doanh (Sales Admin) ngành Thiết bị Công nghiệp"
+      },
+      "new": {
+        "title": "Tuyển dụng Trợ lý Kinh doanh (Sales Admin) Thiết bị Công nghiệp"
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-040",
+      "url": "https://erx.vn/deputy-purchasing-and-logistics-team-leader-7123956328.html",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "Tuyển dụng Deputy Purchasing and Logistics Team Leader ( Mua hàng & Logistics)",
+        "meta_description": ""
+      },
+      "new": {
+        "title": "Tuyển dụng Deputy Purchasing & Logistics Team Leader | Việc SCM",
+        "meta_description": "Tuyển dụng vị trí Phó nhóm Mua hàng Quốc tế & Logistics (Deputy Purchasing and Logistics Team Leader): Quản lý thu mua nhập khẩu, đàm phán nhà cung cấp và điều phối xuất nhập khẩu."
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-041",
+      "url": "https://erx.vn/lam-the-nao-de-ve-bieu-do-cot-trong-excel-7122675302.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Làm thế nào để vẽ và thiết kế biểu đồ cột (Column Chart) chuyên nghiệp trong Excel?"
+      },
+      "new": {
+        "title": "Cách vẽ và thiết kế biểu đồ cột (Column Chart) trong Excel | ERX"
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 9,
+        "impressions": 1477,
+        "ctr": 0.006093432633716994,
+        "position": 10.05
+      },
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-042",
+      "url": "https://erx.vn/lam-quen-voi-jupyter-notebook-7122807028.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Làm quen với Jupyter Notebook: Công cụ lập trình Python phân tích dữ liệu"
+      },
+      "new": {
+        "title": "Hướng dẫn Jupyter Notebook cho người mới học Python & Data | ERX"
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-043",
+      "url": "https://erx.vn/lam-quen-voi-thu-vien-pandas-va-dataframe-7122812051.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Làm quen với thư viện Pandas và cấu trúc dữ liệu DataFrame trong Python"
+      },
+      "new": {
+        "title": "Làm quen với thư viện Pandas và DataFrame trong Python từ cơ bản"
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-044",
+      "url": "https://erx.vn/hanh-vi-cua-nguoi-mua-hang-cong-nghiep-7123094250.html",
+      "date": "2026-11-11",
+      "kind": "title",
+      "old": {
+        "title": "Phân tích hành vi của người mua hàng công nghiệp (Industrial Buying Behavior)"
+      },
+      "new": {
+        "title": "Phân tích hành vi người mua hàng công nghiệp trong Mua sắm B2B"
+      },
+      "baseline": null,
+      "note": "Live CMS batch upgrade via erx_seo_master_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-045",
+      "url": "https://khoahoc.erx.vn/",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "ERX E-Learning | Khóa học Phân tích Dữ liệu, Excel, Power BI, SQL & Supply Chain"
+      },
+      "new": {
+        "title": "ERX E-Learning — Khóa học Excel 365, Power BI, SQL & SCM",
+        "meta_description": "Học viện trực tuyến ERX E-Learning: đào tạo thực chiến Excel 365, VBA, Power Query, Power BI, SQL, Python và Quản trị Chuỗi cung ứng cho doanh nghiệp."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 9,
+        "impressions": 540,
+        "ctr": 0.016666666666666666,
+        "position": 9.28
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-046",
+      "url": "https://khoahoc.erx.vn/course/python-for-supply-chain",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "python-for-supply-chain"
+      },
+      "new": {
+        "title": "Python cho Chuỗi cung ứng (Supply Chain) Thực chiến | ERX",
+        "meta_description": "Khóa học Python cho Supply Chain thực chiến tại ERX: xử lý dữ liệu lớn bằng Pandas, tự động hóa báo cáo tồn kho, dự báo nhu cầu và tối ưu hóa vận hành."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-047",
+      "url": "https://khoahoc.erx.vn/course/python-crash-course",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "python-crash-course"
+      },
+      "new": {
+        "title": "Python cơ bản thực chiến cho Phân tích dữ liệu mới bắt đầu",
+        "meta_description": "Khóa học Python cơ bản miễn phí cho người mới bắt đầu tại ERX: nắm vững cú pháp, cấu trúc dữ liệu, hàm xử lý bảng biểu và nền tảng phân tích dữ liệu."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-048",
+      "url": "https://khoahoc.erx.vn/course/master-power-query",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "master-power-query"
+      },
+      "new": {
+        "title": "Master Power Query: Tự động hóa làm sạch & gộp dữ liệu | ERX",
+        "meta_description": "Làm chủ Power Query trong Excel & Power BI: tự động kết nối nhiều file/folder, chuẩn hóa bảng tính lộn xộn và làm mới báo cáo quản trị chỉ với 1 cú nhấp."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-049",
+      "url": "https://khoahoc.erx.vn/course/lam-quen-voi-power-query-trong-excel",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "lam-quen-voi-power-query-trong-excel"
+      },
+      "new": {
+        "title": "Làm quen Power Query trong Excel: Chuẩn hóa dữ liệu tự động",
+        "meta_description": "Khóa học nhập môn Power Query trong Microsoft Excel miễn phí từ ERX: hướng dẫn gộp file, tách cột, Unpivot và tự động hóa quy trình làm sạch dữ liệu."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-050",
+      "url": "https://khoahoc.erx.vn/course/finance-bi-mastery-bctc-powerbi",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "finance-bi-mastery-bctc-powerbi"
+      },
+      "new": {
+        "title": "Finance BI Mastery: Báo cáo tài chính trên Power BI | ERX",
+        "meta_description": "Xây dựng hệ thống Báo cáo tài chính (P&L, Balance Sheet, Cash Flow) tự động trên Power BI: thiết kế Data Model chuẩn, DAX tài chính và phân tích biến động."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-051",
+      "url": "https://khoahoc.erx.vn/course/import-xay-dung-data-model-dashboard-bctc-power-bi",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "import-xay-dung-data-model-dashboard-bctc-power-bi"
+      },
+      "new": {
+        "title": "Xây dựng Data Model & Dashboard Báo cáo tài chính Power BI",
+        "meta_description": "Hướng dẫn thực hành Import dữ liệu, thiết kế Star Schema Data Model và trực quan hóa Dashboard Báo cáo tài chính chuyên nghiệp trên Microsoft Power BI."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 7.28
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-052",
+      "url": "https://khoahoc.erx.vn/course/data-analyst-learning-path",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "data-analyst-learning-path"
+      },
+      "new": {
+        "title": "Lộ trình Data Analyst thực chiến: Excel, SQL, Power BI | ERX",
+        "meta_description": "Lộ trình đào tạo Phân tích dữ liệu (Data Analyst) toàn diện tại ERX Việt Nam: kết hợp Excel 365, Power Query, SQL, Power BI DAX và Python cho doanh nghiệp."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-053",
+      "url": "https://khoahoc.erx.vn/course/master-excel-from-a-to-z",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "master-excel-from-a-to-z"
+      },
+      "new": {
+        "title": "Master Excel từ A đến Z: Hàm tra cứu, Pivot & Báo cáo | ERX",
+        "meta_description": "Làm chủ Microsoft Excel từ nền tảng đến chuyên sâu: hệ thống hàm tính toán, dò tìm nâng cao, PivotTable và thiết kế Dashboard báo cáo quản trị tự động."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-054",
+      "url": "https://khoahoc.erx.vn/course/master-excel-365",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "master-excel-365"
+      },
+      "new": {
+        "title": "Master Excel 365: Hàm mảng động XLOOKUP, FILTER, LAMBDA | ERX",
+        "meta_description": "Bứt phá hiệu suất với các hàm mảng động thế hệ mới trên Excel 365 (XLOOKUP, FILTER, SORT, UNIQUE, LET, LAMBDA, GROUPBY) tự động hóa bảng tính doanh nghiệp."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-055",
+      "url": "https://khoahoc.erx.vn/course/master-vba",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "master-vba"
+      },
+      "new": {
+        "title": "Master Excel VBA: Tự động hóa báo cáo, UserForm & SQL | ERX",
+        "meta_description": "Khóa học lập trình VBA trong Excel thực chiến: tự động hóa xử lý file hàng loạt, kết nối SQL qua ADODB, gửi email Outlook và xây dựng ứng dụng UserForm."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-056",
+      "url": "https://khoahoc.erx.vn/course/fast-track-to-power-bi",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "fast-track-to-power-bi"
+      },
+      "new": {
+        "title": "Fast Track to Power BI: Thiết kế Dashboard & DAX nhanh | ERX",
+        "meta_description": "Khóa học Power BI tăng tốc cho người đi làm: chuẩn hóa dữ liệu với Power Query, xây dựng Data Model, viết hàm DAX cốt lõi và xuất bản Dashboard quản trị."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-057",
+      "url": "https://khoahoc.erx.vn/course/master-new-excel-365-function",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "master-new-excel-365-function"
+      },
+      "new": {
+        "title": "Làm chủ hệ thống hàm mới trên Microsoft Excel 365 | ERX",
+        "meta_description": "Thực hành chuyên sâu nhóm hàm mảng động và xử lý văn bản mới trên Excel 365 (TEXTSPLIT, VSTACK, HSTACK, CHOOSECOLS, WRAPROWS) giải quyết bài toán thực tế."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-058",
+      "url": "https://khoahoc.erx.vn/course/khoa-hoc-chuyen-vien-mua-hang-hands-on-procurement",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "khoa-hoc-chuyen-vien-mua-hang-hands-on-procurement"
+      },
+      "new": {
+        "title": "Khóa học Chuyên viên Mua hàng thực chiến (Procurement) | ERX",
+        "meta_description": "Đào tạo nghiệp vụ Mua hàng B2B (Hands-on Procurement) thực chiến: tìm nguồn cung, chấm điểm nhà cung cấp, phân tích chi phí TCO, đàm phán và quản lý hợp đồng."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 4,
+        "impressions": 80,
+        "ctr": 0.05,
+        "position": 6.97
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-059",
+      "url": "https://khoahoc.erx.vn/course/how-to-become-a-procurement-manager",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "how-to-become-a-procurement-manager"
+      },
+      "new": {
+        "title": "How to Become a Procurement Manager — Quản trị Mua hàng | ERX",
+        "meta_description": "Chương trình phát triển năng lực Quản lý Mua sắm (Procurement Manager): chiến lược Category Management, Strategic Sourcing, quản trị rủi ro và tối ưu Saving."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 2,
+        "impressions": 26,
+        "ctr": 0.07692307692307693,
+        "position": 8.77
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-060",
+      "url": "https://khoahoc.erx.vn/course/operation-research-show-case-day-04",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "operation-research-show-case-day-04"
+      },
+      "new": {
+        "title": "Operations Research Showcase Day 04: Tối ưu hóa chuỗi cung ứng",
+        "meta_description": "Chuyên đề Operations Research ứng dụng trong Chuỗi cung ứng & Logistics: mô hình quy hoạch tuyến tính, bài toán phân bổ nguồn lực và tối ưu chi phí vận tải."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 9.33
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-061",
+      "url": "https://khoahoc.erx.vn/p/giang-vien",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Đội ngũ Giảng viên Chuyên gia Phân tích Dữ liệu & SCM | ERX",
+        "meta_description": "Đội ngũ giảng viên thực chiến tại ERX E-Learning: các chuyên gia quản lý dữ liệu, tài chính và chuỗi cung ứng giàu kinh nghiệm tại tập đoàn đa quốc gia."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-062",
+      "url": "https://khoahoc.erx.vn/p/chinh-sach-bao-mat",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Chính sách bảo mật thông tin học viên — Học viện ERX Việt Nam",
+        "meta_description": "Quy định thu thập, lưu trữ và bảo mật thông tin cá nhân của học viên khi đăng ký và tham gia các khóa học trực tuyến trên nền tảng khoahoc.erx.vn của ERX."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-063",
+      "url": "https://khoahoc.erx.vn/p/dieu-khoan-dich-vu",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Điều khoản dịch vụ & Quy chế sử dụng nền tảng ERX E-Learning",
+        "meta_description": "Điều khoản dịch vụ, quyền lợi và trách nhiệm của học viên khi truy cập tài liệu, video bài giảng và hệ thống thực hành trực tuyến tại học viện khoahoc.erx.vn."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-064",
+      "url": "https://khoahoc.erx.vn/p/quy-dinh-ve-thanh-toan",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Quy định thanh toán học phí & Kích hoạt khóa học | ERX Academy",
+        "meta_description": "Hướng dẫn các phương thức thanh toán học phí chuyển khoản, xuất hóa đơn doanh nghiệp và quy trình kích hoạt tài khoản học trực tuyến tự động tại ERX Việt Nam."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-065",
+      "url": "https://khoahoc.erx.vn/p/tro-giup",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Trung tâm Trợ giúp & Hướng dẫn học trực tuyến | ERX E-Learning",
+        "meta_description": "Giải đáp câu hỏi thường gặp, hướng dẫn đăng nhập, tải file bài tập Excel/Power BI và kênh hỗ trợ kỹ thuật trực tiếp cho học viên trên hệ thống khoahoc.erx.vn."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-066",
+      "url": "https://khoahoc.erx.vn/p/trang-chu",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Giới thiệu hệ thống đào tạo trực tuyến thực chiến ERX Academy",
+        "meta_description": "Tổng quan nền tảng học trực tuyến ERX E-Learning: lộ trình học tập cá nhân hóa về Excel 365, Power BI, SQL, Python và Quản trị Chuỗi cung ứng thực chiến."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-067",
+      "url": "https://khoahoc.erx.vn/p/gift",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Quà tặng Tài liệu & Khóa học miễn phí từ Học viện ERX Việt Nam",
+        "meta_description": "Nhận bộ quà tặng biểu mẫu Excel quản trị, tài liệu hướng dẫn Power BI, SQL và các khóa học nền tảng miễn phí dành riêng cho cộng đồng học viên ERX Việt Nam."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-068",
+      "url": "https://khoahoc.erx.vn/p/landingpage",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Chương trình Đào tạo Phân tích Dữ liệu & Chuỗi cung ứng | ERX",
+        "meta_description": "Đăng ký lộ trình nâng cao năng lực Phân tích dữ liệu kinh doanh và Quản trị chuỗi cung ứng thực chiến cùng đội ngũ chuyên gia tại Học viện ERX Việt Nam."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-069",
+      "url": "https://khoahoc.erx.vn/p/workshop",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Chuỗi Workshop Thực chiến Data Analytics & Supply Chain | ERX",
+        "meta_description": "Tổng hợp lịch sự kiện và tài liệu chuỗi Workshop trực tuyến chuyên sâu về Excel 365, Power Query, Power BI, Python và Tối ưu hóa Chuỗi cung ứng tại ERX."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 37,
+        "ctr": 0.0,
+        "position": 59.76
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-070",
+      "url": "https://khoahoc.erx.vn/p/operations-research-showcase-day-02",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "undefined"
+      },
+      "new": {
+        "title": "Workshop Operations Research Showcase Day 02: Tối ưu vận hành",
+        "meta_description": "Tài liệu và video Workshop Operations Research Showcase Day 02 tại ERX: giải quyết bài toán tối ưu hóa kế hoạch sản xuất, tồn kho và mạng lưới phân phối."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-071",
+      "url": "https://khoahoc.erx.vn/instructor/hoang-trung",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "hoang-trung"
+      },
+      "new": {
+        "title": "Giảng viên Hoàng Trung — Chuyên gia Data Analytics & BI | ERX",
+        "meta_description": "Giảng viên Hoàng Trung tại ERX E-Learning: chuyên gia đào tạo thực chiến Excel 365, Power Query, Power BI và xây dựng hệ thống báo cáo quản trị doanh nghiệp."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-072",
+      "url": "https://khoahoc.erx.vn/instructor/nguyen-minh-ngoc",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "nguyen-minh-ngoc"
+      },
+      "new": {
+        "title": "Giảng viên Nguyễn Minh Ngọc — Chuyên gia Supply Chain & Data",
+        "meta_description": "Giảng viên Nguyễn Minh Ngọc tại ERX Việt Nam: chuyên gia Quản trị Chuỗi cung ứng, Mua sắm chiến lược (Procurement), tối ưu hóa vận hành và phân tích dữ liệu."
+      },
+      "baseline": {
+        "start": "2026-10-12",
+        "end": "2026-11-08",
+        "days": 28,
+        "clicks": 1,
+        "impressions": 5,
+        "ctr": 0.2,
+        "position": 3.0
+      },
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
+    },
+    {
+      "id": "exp-20261111-073",
+      "url": "https://khoahoc.erx.vn/instructor/giang-vien-operation-research",
+      "date": "2026-11-11",
+      "kind": "title+meta",
+      "old": {
+        "title": "giang-vien-operation-research"
+      },
+      "new": {
+        "title": "Đội ngũ Giảng viên Operations Research & Tối ưu hóa | ERX",
+        "meta_description": "Nhóm chuyên gia giảng dạy Operations Research tại ERX Việt Nam: ứng dụng mô hình toán tối ưu và Python giải quyết bài toán Logistics, kho vận và sản xuất."
+      },
+      "baseline": null,
+      "note": "Live Hoola Admin batch upgrade via khoahoc_seo_upgrader.js",
+      "status": "pending",
+      "measurements": {}
     }
   ]
 }

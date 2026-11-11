@@ -84,6 +84,15 @@ USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 )
+GOOGLEBOT_UA = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+
+
+def platform_fetch_user_agent(domain: str) -> str:
+    """khoahoc.erx.vn (Hoola LMS) serves a UA-gated prerender only to Googlebot; check_site_health
+    separately compares USER_AGENT vs GOOGLEBOT_UA so UA_CONTENT_MISMATCH stays flagged."""
+    if domain == "khoahoc.erx.vn":
+        return GOOGLEBOT_UA
+    return USER_AGENT
 
 
 def build_ssl_context(insecure: bool | None = None) -> ssl.SSLContext:
@@ -193,13 +202,13 @@ def now_vn(tz_name: str = "Asia/Ho_Chi_Minh") -> dt.datetime:
 # 2. HTTP & HTML/SEO EXTRACTION UTILITIES
 # ============================================================================
 
-def http_get(url: str, timeout: int = 18, retries: int = 2) -> dict[str, Any]:
+def http_get(url: str, timeout: int = 18, retries: int = 2, user_agent: str = USER_AGENT) -> dict[str, Any]:
     for attempt in range(retries + 1):
         t0 = time.perf_counter()
         req = urllib.request.Request(
             url,
             headers={
-                "User-Agent": USER_AGENT,
+                "User-Agent": user_agent,
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
                 "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
                 # Request compressed responses: the erx.vn sitemap served as plain
@@ -364,6 +373,8 @@ def extract_page_seo_signals(html_text: str, url: str = "") -> dict[str, Any]:
     )
     fingerprint = hashlib.sha256(fingerprint_raw.encode("utf-8")).hexdigest()[:16]
 
+    js_override_title, js_override_desc = _extract_erx_head_js_override(html_text, url)
+
     return {
         "url": url,
         "title": title,
@@ -381,8 +392,54 @@ def extract_page_seo_signals(html_text: str, url: str = "") -> dict[str, Any]:
         "schema_types": schema_types,
         "png_base64_kb": png_b64_kb,
         "word_count": word_count,
+        "js_override_title": js_override_title,
+        "js_override_desc": js_override_desc,
         "fingerprint": fingerprint,
     }
+
+
+def _extract_erx_head_js_override(html_text: str, url: str) -> tuple[str, str]:
+    """Extracts synchronous <head> SEO overrides from #erx-seo-schema-upgrader on erx.vn if present.
+    Raw server HTML tags remain untouched in `title`/`meta_description` so fingerprinting stays honest."""
+    if not url or "erx-seo-schema-upgrader" not in html_text:
+        return "", ""
+    m = re.search(r'<script[^>]+id=["\']erx-seo-schema-upgrader["\'][^>]*>(.*?)</script>', html_text, re.I | re.S)
+    if not m:
+        return "", ""
+    script_body = m.group(1)
+    path = urllib.parse.urlsplit(url).path or "/"
+    clean_slug = path.lstrip("/")
+    if clean_slug.lower().endswith(".html"):
+        clean_slug = clean_slug[:-5]
+    if not clean_slug or clean_slug.lower() == "index":
+        return "", ""
+
+    def _load_var(var_name: str) -> dict[str, Any]:
+        vm = re.search(rf"var\s+{var_name}\s*=\s*(\{{.*?\}});", script_body)
+        if not vm:
+            return {}
+        try:
+            data = json.loads(vm.group(1))
+            return data if isinstance(data, dict) else {}
+        except Exception:
+            return {}
+
+    wm = re.search(r"-(\d{7})\.html$", path, re.I)
+    if wm:
+        entry = _load_var("workshopSeo").get(wm.group(1), {})
+        if isinstance(entry, dict):
+            return str(entry.get("meta_title") or "").strip(), str(entry.get("meta_desc") or "").strip()
+
+    am = re.search(r"-(712\d{7})\.html$", path, re.I)
+    if am:
+        entry = _load_var("articleSeo").get(am.group(1), {})
+        if isinstance(entry, dict):
+            return str(entry.get("meta_title") or entry.get("title") or "").strip(), str(entry.get("meta_desc") or "").strip()
+
+    entry = _load_var("menuSeo").get(clean_slug) or _load_var("headOnlySeo").get(clean_slug)
+    if isinstance(entry, dict):
+        return str(entry.get("meta_title") or "").strip(), str(entry.get("meta_desc") or "").strip()
+    return "", ""
 
 
 def parse_sitemap_urls(xml_text: str) -> list[str]:
@@ -1129,7 +1186,7 @@ def collect_gsc_for_cycle(config: dict[str, Any]) -> tuple[dict[str, dict[str, A
     start = end - dt.timedelta(days=27)
     data = gsc_client.collect_platform_data(
         config.get("platforms", []), start.isoformat(), end.isoformat(), token,
-        quota_project=creds.get("quota_project_id"),
+        quota_project=gsc_client.resolve_quota_project(creds, config),
     )
     return data, {"status": "ok", "start": start.isoformat(), "end": end.isoformat(), "platforms": len(data)}
 
@@ -1210,8 +1267,9 @@ def run_daily_keyword_seo_cycle(config: dict[str, Any]) -> dict[str, Any]:
 
         # 2. Crawl our live primary target URLs on this platform
         live_pages: list[dict[str, Any]] = []
+        fetch_ua = platform_fetch_user_agent(platform["domain"])
         for t_url in platform.get("primary_target_urls", [])[:6]:
-            res = http_get(t_url, timeout=15)
+            res = http_get(t_url, timeout=15, user_agent=fetch_ua)
             if res["ok"] and res["status"] == 200:
                 live_pages.append(extract_page_seo_signals(res["text"], t_url))
 
@@ -1363,44 +1421,61 @@ def write_daily_keyword_report_md(path: Path, summary: dict[str, Any]) -> None:
 # 4. LOOP 2: CONTINUOUS PLATFORM CONTENT & TAG WATCHER
 # ============================================================================
 
+SITE_HEALTH_TTL_HOURS = 6
+HTML_COMPRESSION_MIN_BYTES = 100_000
+_PLACEHOLDER_VALUES = {"undefined", "null", "nan", "[object object]"}
+
+
+def _is_placeholder_text(val: str) -> bool:
+    s = (val or "").strip()
+    return bool(s) and (s.lower() in _PLACEHOLDER_VALUES or "[object Object]" in s)
+
+
 def audit_single_page_seo(sig: dict[str, Any], domain: str) -> list[str]:
     """Checks a page's extracted SEO signals for any defects or regressions."""
     issues: list[str] = []
     title = sig.get("title", "")
     desc = sig.get("meta_description", "")
     canon = sig.get("canonical", "")
+    js_title = sig.get("js_override_title", "")
+    js_desc = sig.get("js_override_desc", "")
+    has_valid_js_title = domain == "erx.vn" and 35 <= len(js_title) <= 65 and not _is_placeholder_text(js_title)
+    has_valid_js_desc = domain == "erx.vn" and len(js_desc) >= 70 and not _is_placeholder_text(js_desc)
 
     if not title:
         issues.append("MISSING_TITLE")
+    elif _is_placeholder_text(title):
+        issues.append(f"PLACEHOLDER_TITLE ({title.strip()})")
     elif len(title) < 35:
-        issues.append(f"SHORT_TITLE ({len(title)} chars)")
+        if not has_valid_js_title:
+            issues.append(f"SHORT_TITLE ({len(title)} chars)")
     elif title.isupper() and len(title) > 15:
         issues.append("ALL_CAPS_TITLE")
 
-    if domain != "khoahoc.erx.vn":
-        if not desc:
+    if not desc:
+        if not has_valid_js_desc:
             issues.append("MISSING_META_DESCRIPTION")
-        elif len(desc) < 70:
+    elif _is_placeholder_text(desc):
+        issues.append(f"PLACEHOLDER_META_DESCRIPTION ({desc.strip()})")
+    elif len(desc) < 70:
+        if not has_valid_js_desc:
             issues.append(f"SHORT_META_DESCRIPTION ({len(desc)} chars)")
-        elif desc.strip() == title.strip():
+    elif desc.strip() == title.strip():
+        if not has_valid_js_desc:
             issues.append("DUPLICATE_TITLE_AS_META_DESCRIPTION")
 
-        if not canon:
-            issues.append("MISSING_CANONICAL")
+    # Hoola LMS (khoahoc.erx.vn) omits <link rel="canonical"> across all SPA prerender templates;
+    # report that platform template omission in advisory rather than duplicating across every page.
+    if domain != "khoahoc.erx.vn" and not canon:
+        issues.append("MISSING_CANONICAL")
 
-        if sig.get("jsonld_count", 0) == 0:
-            issues.append("MISSING_JSONLD_SCHEMA")
+    if sig.get("jsonld_count", 0) == 0:
+        issues.append("MISSING_JSONLD_SCHEMA")
 
     if sig.get("png_base64_kb", 0) > 250:
         issues.append(f"HEAVY_INLINE_PNG_BASE64 ({sig['png_base64_kb']} KB)")
 
     return issues
-
-
-GOOGLEBOT_UA = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-SITE_HEALTH_TTL_HOURS = 6
-HTML_COMPRESSION_MIN_BYTES = 100_000
-_PLACEHOLDER_VALUES = {"undefined", "null", "nan", "[object object]"}
 
 
 def fetch_with_headers(url: str, user_agent: str = USER_AGENT, timeout: int = 15) -> dict[str, Any]:
@@ -1553,8 +1628,16 @@ def audit_advisory_seo(sig: dict[str, Any], domain: str) -> list[str]:
         advisories.append(f"UNDEFINED_PLACEHOLDER ({', '.join(placeholder_fields)})")
 
     title = sig.get("title", "")
+    desc = sig.get("meta_description", "")
+    js_title = sig.get("js_override_title", "")
     if len(title) > 65:
         advisories.append(f"LONG_TITLE ({len(title)} chars)")
+    if domain == "erx.vn" and len(title) < 35 and 35 <= len(js_title) <= 65:
+        advisories.append("SSR_META_USES_HEAD_JS_FALLBACK")
+    if len(desc) > 165:
+        advisories.append(f"LONG_META_DESCRIPTION ({len(desc)} chars)")
+    if domain == "khoahoc.erx.vn" and not sig.get("canonical"):
+        advisories.append("MISSING_CANONICAL")
 
     h1_raw = sig.get("h1_raw_count")
     if h1_raw is not None:
@@ -1574,18 +1657,62 @@ def audit_advisory_seo(sig: dict[str, Any], domain: str) -> list[str]:
     return advisories
 
 
+def _humanize_slug_title(url: str, domain: str) -> str:
+    path = urllib.parse.urlsplit(url).path.strip("/")
+    if not path:
+        return f"Trang chủ hệ thống đào tạo & công cụ thực chiến | ERX"
+    slug = path.rsplit("/", 1)[-1]
+    slug = re.sub(r"-\d{7,12}\.html$", "", slug, flags=re.I)
+    slug = re.sub(r"\.html$", "", slug, flags=re.I)
+    words = [w for w in re.split(r"[-_]+", slug) if w]
+    label = " ".join(words).strip()
+    if not label:
+        return f"Tài liệu & Công cụ Thực chiến trên {domain} | ERX"
+    return label[:1].upper() + label[1:]
+
+
 def synthesize_remediation_for_page(sig: dict[str, Any], domain: str, issues: list[str]) -> dict[str, Any]:
     """Generates immediate auto-fix metadata for a new or degraded page."""
-    raw_title = sig.get("title", "") or (sig.get("h1", [""])[0] if sig.get("h1") else domain)
+    url = sig.get("url", "")
+    if domain == "khoahoc.erx.vn" and url:
+        try:
+            from build_khoahoc_seo_upgrader import lookup_khoahoc_curated_seo
+
+            curated = lookup_khoahoc_curated_seo(url)
+            if curated:
+                return {
+                    "target_url": url,
+                    "domain": domain,
+                    "detected_issues": issues,
+                    "recommended_title": curated["title"],
+                    "recommended_meta_description": fit_meta_description(curated["meta_desc"]),
+                    "recommended_canonical": sig.get("canonical") or url,
+                }
+        except Exception:
+            pass
+
+    cand_titles = [
+        sig.get("title", ""),
+        sig.get("h1", [""])[0] if sig.get("h1") else "",
+        _humanize_slug_title(url, domain),
+    ]
+    raw_title = next((t for t in cand_titles if t and not _is_placeholder_text(t)), domain)
     clean_title = raw_title.strip()
     if clean_title.isupper():
         clean_title = clean_title.capitalize()
     if len(clean_title) < 42 and "| ERX" not in clean_title:
-        clean_title = f"{clean_title} — Hướng dẫn & Công cụ Thực chiến | ERX"
+        suffix = " — Hướng dẫn & Công cụ Thực chiến | ERX"
+        if len(clean_title) + len(suffix) <= 65:
+            clean_title = f"{clean_title}{suffix}"
+        else:
+            clean_title = fit_title(f"{clean_title} — Thực chiến | ERX")
+    elif len(clean_title) > 65:
+        clean_title = fit_title(clean_title)
 
     raw_desc = sig.get("meta_description", "").strip()
-    if not raw_desc or len(raw_desc) < 70 or raw_desc == raw_title:
-        h2_preview = ", ".join(sig.get("h2", [])[:3])
+    if not raw_desc or _is_placeholder_text(raw_desc) or len(raw_desc) < 70 or raw_desc == sig.get("title", "").strip():
+        h2_clean = [h for h in sig.get("h2", [])[:3] if h and not _is_placeholder_text(h)]
+        h2_preview = ", ".join(h2_clean)
         if h2_preview:
             raw_desc = f"{clean_title}: Phân tích chi tiết về {h2_preview} kèm biểu mẫu và hướng dẫn thực chiến tại {domain}."
         else:
@@ -1593,12 +1720,12 @@ def synthesize_remediation_for_page(sig: dict[str, Any], domain: str, issues: li
     raw_desc = fit_meta_description(raw_desc)
 
     return {
-        "target_url": sig.get("url", ""),
+        "target_url": url,
         "domain": domain,
         "detected_issues": issues,
         "recommended_title": clean_title,
         "recommended_meta_description": raw_desc,
-        "recommended_canonical": sig.get("canonical") or sig.get("url", ""),
+        "recommended_canonical": sig.get("canonical") or url,
     }
 
 
@@ -1617,7 +1744,7 @@ def watch_community_api_topics() -> list[dict[str, Any]]:
         return []
 
 
-def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
+def run_platform_watcher_cycle(config: dict[str, Any], force_site_health: bool = False) -> dict[str, Any]:
     """
     Scans all 6 platforms for:
       - Newly published pages/articles/topics (`NEW_URL`)
@@ -1655,7 +1782,7 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
 
         # 1b. Site-level health (security headers, compression, soft 404, Googlebot parity), cached 6h
         health = site_health_state.get(pid)
-        if site_health_due(health, now_vn()):
+        if force_site_health or site_health_due(health, now_vn()):
             previous_health[pid] = health  # None on the first observation
             health = check_site_health(platform, parity_urls=sitemap_locs[:2])
             site_health_state[pid] = health
@@ -1669,8 +1796,10 @@ def run_platform_watcher_cycle(config: dict[str, Any]) -> dict[str, Any]:
             if u and u not in urls_to_inspect:
                 urls_to_inspect.append(u)
 
-        def _inspect_url(u: str) -> dict[str, Any] | None:
-            r = http_get(u, timeout=15, retries=1)
+        fetch_ua = platform_fetch_user_agent(domain)
+
+        def _inspect_url(u: str, _ua: str = fetch_ua) -> dict[str, Any] | None:
+            r = http_get(u, timeout=15, retries=1, user_agent=_ua)
             if not r["ok"] or r["status"] != 200:
                 return {"url": u, "ok": False, "status": r["status"]}
             sig = extract_page_seo_signals(r["text"], u)
@@ -1984,6 +2113,11 @@ def main() -> int:
         default=int(os.environ.get("SEO_WATCH_INTERVAL", "900")),
         help="Interval in seconds between Platform Content & Tag Watcher cycles (default: 900 = 15m)",
     )
+    parser.add_argument(
+        "--refresh-site-health",
+        action="store_true",
+        help="Force immediate site-level health checks ignoring the 6-hour cache TTL",
+    )
     args = parser.parse_args()
 
     config = load_config()
@@ -1991,10 +2125,10 @@ def main() -> int:
     if args.mode == "keyword-only":
         run_daily_keyword_seo_cycle(config)
     elif args.mode == "watch-only":
-        run_platform_watcher_cycle(config)
+        run_platform_watcher_cycle(config, force_site_health=args.refresh_site_health)
     elif args.mode == "once":
         run_daily_keyword_seo_cycle(config)
-        run_platform_watcher_cycle(config)
+        run_platform_watcher_cycle(config, force_site_health=args.refresh_site_health)
     elif args.mode == "daemon":
         run_daemon_loop(
             config=config,

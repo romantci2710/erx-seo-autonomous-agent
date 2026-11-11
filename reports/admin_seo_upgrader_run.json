@@ -1,0 +1,50 @@
+{
+  "ws_url": "ws://127.0.0.1:9222/devtools/browser/4a1a30a9-8460-4550-abe8-020da17e32fa",
+  "khoahoc": {
+    "ok": true,
+    "auth_state": {
+      "url": "https://khoahoc.erx.vn/manage",
+      "hasMeteor": true,
+      "loggingIn": false,
+      "userId": "JBzPt4hpygrh7nsfC"
+    },
+    "result": {
+      "pages": {
+        "updated": [
+          "landingpage",
+          "chinh-sach-bao-mat",
+          "giang-vien",
+          "tro-giup",
+          "gift",
+          "quy-dinh-ve-thanh-toan",
+          "dieu-khoan-dich-vu",
+          "trang-chu",
+          "workshop",
+          "operations-research-showcase-day-02"
+        ],
+        "skipped": [
+          {
+            "slug": "home",
+            "itemId": "jhPEBrkF5AD8MuSre"
+          }
+        ],
+        "errors": []
+      },
+      "ssr_check": {
+        "workshop": "Chuỗi Workshop Thực chiến Data Analytics & Supply Chain | ERX",
+        "giang-vien": "Đội ngũ Giảng viên Chuyên gia Phân tích Dữ liệu & SCM | ERX",
+        "chinh-sach-bao-mat": "Chính sách bảo mật thông tin học viên — Học viện ERX Việt Nam",
+        "dieu-khoan-dich-vu": "Điều khoản dịch vụ & Quy chế sử dụng nền tảng ERX E-Learning",
+        "quy-dinh-ve-thanh-toan": "Quy định thanh toán học phí & Kích hoạt khóa học | ERX Academy",
+        "tro-giup": "Trung tâm Trợ giúp & Hướng dẫn học trực tuyến | ERX E-Learning",
+        "trang-chu": "Giới thiệu hệ thống đào tạo trực tuyến thực chiến ERX Academy",
+        "gift": "Quà tặng Tài liệu & Khóa học miễn phí từ Học viện ERX Việt Nam",
+        "landingpage": "Chương trình Đào tạo Phân tích Dữ liệu & Chuỗi cung ứng | ERX"
+      }
+    }
+  },
+  "erx": {
+    "ok": true,
+    "skipped": "already_completed_44_of_44"
+  }
+}

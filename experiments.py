@@ -256,13 +256,17 @@ def property_resolver(config_path: Path = CONFIG_PATH) -> ResolveProperty:
     return lambda url: by_domain.get(urllib.parse.urlparse(url).netloc.lower())
 
 
-def default_gsc_fetcher() -> FetchRows | None:
+def default_gsc_fetcher(config_path: Path = CONFIG_PATH) -> FetchRows | None:
     """Fetch page-level Search Console rows, or None when credentials are not available."""
     creds = gsc_client.load_credentials()
     token = gsc_client.get_access_token(creds) if creds else None
     if not token:
         return None
-    quota = creds.get("quota_project_id")
+    try:
+        cfg = json.loads(Path(config_path).read_text(encoding="utf-8"))
+    except Exception:
+        cfg = {}
+    quota = gsc_client.resolve_quota_project(creds, cfg)
     return lambda prop, start, end: gsc_client.fetch_rows(prop, start, end, ["page"], token, quota_project=quota)
 
 
