@@ -1,50 +1,41 @@
 {
-  "ws_url": "ws://127.0.0.1:9222/devtools/browser/4a1a30a9-8460-4550-abe8-020da17e32fa",
+  "ws_url": "ws://127.0.0.1:9222/devtools/browser/2677923d-3d89-49e6-b17e-f77074b8ab00",
   "khoahoc": {
     "ok": true,
-    "auth_state": {
-      "url": "https://khoahoc.erx.vn/manage",
-      "hasMeteor": true,
-      "loggingIn": false,
-      "userId": "JBzPt4hpygrh7nsfC"
-    },
-    "result": {
-      "pages": {
-        "updated": [
-          "landingpage",
-          "chinh-sach-bao-mat",
-          "giang-vien",
-          "tro-giup",
-          "gift",
-          "quy-dinh-ve-thanh-toan",
-          "dieu-khoan-dich-vu",
-          "trang-chu",
-          "workshop",
-          "operations-research-showcase-day-02"
-        ],
-        "skipped": [
-          {
-            "slug": "home",
-            "itemId": "jhPEBrkF5AD8MuSre"
-          }
-        ],
-        "errors": []
-      },
-      "ssr_check": {
-        "workshop": "Chuỗi Workshop Thực chiến Data Analytics & Supply Chain | ERX",
-        "giang-vien": "Đội ngũ Giảng viên Chuyên gia Phân tích Dữ liệu & SCM | ERX",
-        "chinh-sach-bao-mat": "Chính sách bảo mật thông tin học viên — Học viện ERX Việt Nam",
-        "dieu-khoan-dich-vu": "Điều khoản dịch vụ & Quy chế sử dụng nền tảng ERX E-Learning",
-        "quy-dinh-ve-thanh-toan": "Quy định thanh toán học phí & Kích hoạt khóa học | ERX Academy",
-        "tro-giup": "Trung tâm Trợ giúp & Hướng dẫn học trực tuyến | ERX E-Learning",
-        "trang-chu": "Giới thiệu hệ thống đào tạo trực tuyến thực chiến ERX Academy",
-        "gift": "Quà tặng Tài liệu & Khóa học miễn phí từ Học viện ERX Việt Nam",
-        "landingpage": "Chương trình Đào tạo Phân tích Dữ liệu & Chuỗi cung ứng | ERX"
-      }
-    }
+    "skipped": "erx_only_requested"
   },
   "erx": {
     "ok": true,
-    "skipped": "already_completed_44_of_44"
+    "check": {
+      "url": "https://erx.vn/administrator",
+      "hasPasswordInput": false,
+      "probeStatus": 200,
+      "probeUrl": "https://erx.vn/administrator/globalconfiguration/site?from=3&divid=100",
+      "probeHasForm": true,
+      "alreadyUpgradedHeader": true
+    },
+    "result": {
+      "mode": "targeted_articles",
+      "requested": 11,
+      "missing": [],
+      "articles": {
+        "updated": 11,
+        "sampleKeys": [
+          "CONTENTS[0].TITLE",
+          "CONTENTS[0].META_DESC",
+          "CONTENTS[0].META_KEY"
+        ],
+        "errors": []
+      },
+      "sitemap": {
+        "ok": true,
+        "url": "https://erx.vn/Media/files/sitemap-erx-master.txt",
+        "respPreview": "\r\n<!DOCTYPE html>\r\n\r\n\r\n<html lang=\"vi\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <title>Nội dung không tìm thấy</title>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=d"
+      },
+      "header": {
+        "siteOk": true,
+        "sysHomeRestored": true
+      }
+    }
   }
 }

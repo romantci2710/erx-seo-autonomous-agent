@@ -1038,3 +1038,168 @@
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | 14 ngày | chưa đến hạn | | | | | | | |
 | 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-001 — https://erx.vn/dinh-dang-o-trong-excel-format-cells-phan-1-7122786696.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR rewrite (2026-11-15): format cells là gì / định dạng ô trong excel
+- title cũ: Định dạng ô trong Excel (Format Cells) Phần 1: Căn lề, Số, Ngày tháng & Phím tắt
+- title mới: Format Cells là gì? Cách định dạng ô trong Excel (Ctrl+1)
+- meta_description cũ: Cẩm nang toàn diện về hộp thoại Format Cells (Ctrl + 1) trong Excel: cách định dạng số, tiền tệ, ngày tháng, Custom Format nâng cao và căn chỉnh bảng tính chuyên nghiệp.
+- meta_description mới: Giải thích Format Cells là gì và hướng dẫn chi tiết cách định dạng ô trong Excel (Ctrl+1): căn lề, định dạng số, tiền tệ, ngày tháng và Custom Format chuẩn đẹp.
+- Số liệu nền (2026-10-16 → 2026-11-12): 44 click, 3355 hiển thị, CTR 1.31%, vị trí 4.7
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-002 — https://erx.vn/lambda-excel-365-erx-vietnam-7123816032.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR follow-up rewrite (2026-11-15): adds 'LAMBDA là gì' & replaces truncated meta_desc (after exp-20261111-011)
+- title cũ: Cách viết và sử dụng hàm LAMBDA trong Excel 365 kèm ví dụ thực tế
+- title mới: Hàm LAMBDA là gì? Cách viết hàm LAMBDA trong Excel 365 | ERX
+- meta_description cũ: Hướng dẫn này giải thích hàm LAMBDA trong Excel bằng một ngôn ngữ đơn giản và trình bày một vài ví dụ thực tế về cách sử dụng, hành vi và những cạm bẫy có...
+- meta_description mới: Hàm LAMBDA là gì? Hướng dẫn cú pháp và cách viết hàm tự định nghĩa LAMBDA trong Excel 365 không cần VBA, kèm ví dụ thực tế tính toán nhanh và lỗi thường gặp.
+- Số liệu nền (2026-10-16 → 2026-11-12): 14 click, 2470 hiển thị, CTR 0.57%, vị trí 5.66
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-003 — https://erx.vn/cau-truc-phan-ra-cong-viec-wbs-va-tu-dien-wbs-trong-quan-ly-du-an-7124054453.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR rewrite (2026-11-15): wbs / wbs là gì / phân rã nhiệm vụ
+- title cũ: Cấu trúc Phân rã Công việc (WBS) & Từ điển WBS: Cách chia nhỏ Dự án chuẩn PMBOK 8
+- title mới: WBS là gì? Cấu trúc phân rã công việc & Mẫu bảng WBS PMBOK 8
+- meta_description cũ: Hướng dẫn thiết kế Cấu trúc Phân rã Công việc (WBS) 4 cấp độ theo Quy tắc 100%, lập Từ điển WBS chuẩn PMBOK 8 và vẽ Gantt tự động trên project-management.erx.vn.
+- meta_description mới: WBS (Work Breakdown Structure) là gì? Hướng dẫn lập Cấu trúc Phân rã Công việc 4 cấp chuẩn Quy tắc 100%, Từ điển WBS PMBOK 8 và vẽ sơ đồ Gantt tự động.
+- Số liệu nền (2026-10-16 → 2026-11-12): 21 click, 1338 hiển thị, CTR 1.57%, vị trí 5.85
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-004 — https://erx.vn/ham-excel-textbefore-trich-xuat-van-ban-truoc-ky-tu-dau-phan-cach-7123734453.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR rewrite (2026-11-15): hàm textbefore / lấy ký tự trước dấu
+- title cũ: Hàm Excel TEXTBEFORE - trích xuất văn bản trước ký tự (dấu phân cách)
+- title mới: Hàm TEXTBEFORE trong Excel: Lấy ký tự trước dấu phân cách
+- meta_description cũ: Trong hướng dẫn này, chúng ta sẽ khám phá hàm TEXTBEFORE của Excel và cách hàm này có thể giúp bạn trích xuất nhanh văn bản trước bất kỳ ký tự hoặc chuỗi...
+- meta_description mới: Cách dùng hàm TEXTBEFORE trong Excel 365 kèm ví dụ thực tế: trích xuất chuỗi, lấy ký tự trước dấu gạch ngang hoặc ký tự đặc biệt nhanh gọn chỉ với 1 công thức.
+- Số liệu nền (2026-10-16 → 2026-11-12): 21 click, 1267 hiển thị, CTR 1.66%, vị trí 3.06
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-005 — https://erx.vn/nhung-khai-niem-de-gay-nham-lan-trong-procurement-7123995135.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR rewrite (2026-11-15): indirect procurement / pr vs po / tender vs bidding
+- title cũ: Những khái niệm dễ gây nhầm lẫn trong Procurement
+- title mới: Khái niệm Procurement: Phân biệt Indirect, PR, PO & Tender
+- meta_description cũ: Trong bài viết này, chúng ta sẽ thảo luận về một số thuật ngữ hay gây nhầm lẫn trong lĩnh vực Procurement và định nghĩa của chúng để làm sáng tỏ ý nghĩa...
+- meta_description mới: Giải thích chuẩn xác thuật ngữ Procurement dễ nhầm lẫn: Direct và Indirect Procurement là gì, phân biệt PR vs PO, Tender vs Bidding và Tender Defense thực tế.
+- Số liệu nền (2026-10-16 → 2026-11-12): 4 click, 779 hiển thị, CTR 0.51%, vị trí 5.99
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-006 — https://erx.vn/thao-tac-voi-worksheet-trang-tinh-trong-excel-phan-1-7122997491.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR rewrite (2026-11-15): fixes ALL-CAPS title + duplicate short meta for 'worksheet là gì'
+- title cũ: THAO TÁC VỚI WORKSHEET (TRANG TÍNH) TRONG EXCEL (PHẦN 1)
+- title mới: Worksheet là gì? Cách tạo & thao tác trang tính Excel cơ bản
+- meta_description cũ: THAO TÁC VỚI WORKSHEET (TRANG TÍNH) TRONG EXCEL (PHẦN 1)
+- meta_description mới: Giải thích Worksheet là gì, phân biệt với Workbook và hướng dẫn chi tiết cách tạo, đổi tên, sao chép, ẩn hoặc bảo vệ trang tính trong Microsoft Excel hiệu quả.
+- Số liệu nền (2026-10-16 → 2026-11-12): 7 click, 845 hiển thị, CTR 0.83%, vị trí 6.27
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-007 — https://erx.vn/tinh-nang-flash-fill-trong-excel-7122744542.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR rewrite (2026-11-15): fixes 32c ALL-CAPS title + duplicate meta for 'flash fill trong excel'
+- title cũ: TÍNH NĂNG FLASH FILL TRONG EXCEL
+- title mới: Flash Fill trong Excel là gì? Cách dùng & Phím tắt Ctrl + E
+- meta_description cũ: TÍNH NĂNG FLASH FILL TRONG EXCEL
+- meta_description mới: Flash Fill trong Excel là gì? Hướng dẫn cách dùng và phím tắt Ctrl + E để tự động tách họ tên, gộp chuỗi và chuẩn hóa dữ liệu hàng loạt không cần viết hàm.
+- Số liệu nền (2026-10-16 → 2026-11-12): 3 click, 714 hiển thị, CTR 0.42%, vị trí 6.64
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-008 — https://erx.vn/huong-dan-cho-nguoi-moi-bat-dau-voi-power-query-power-pivot-va-power-bi-7122657559.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR rewrite (2026-11-15): cách mở & dùng Power Query, Power Pivot trong Excel
+- title cũ: Hướng dẫn cho người mới bắt đầu với Power Query, Power Pivot và Power BI
+- title mới: Cách mở & dùng Power Query, Power Pivot trong Excel & Power BI
+- meta_description cũ: Giải thích dễ hiểu sự khác biệt và cách kết hợp bộ 3 công cụ Power Query (ETL dữ liệu), Power Pivot (Data Model & DAX) và Power BI để tự động hóa báo cáo doanh nghiệp.
+- meta_description mới: Hướng dẫn cho người mới cách mở Power Query, kích hoạt Power Pivot trong Excel và kết hợp cùng Power BI để ETL dữ liệu, dựng Data Model báo cáo tự động.
+- Số liệu nền (2026-10-16 → 2026-11-12): 16 click, 1002 hiển thị, CTR 1.60%, vị trí 6.55
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-009 — https://erx.vn/huong-dan-tinh-tong-doanh-thu-trong-vong-n-thang-7123673148.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC low-CTR rewrite (2026-11-15): công thức tính tổng doanh thu trong Excel
+- title cũ: Hướng dẫn tính tổng doanh thu trong vòng N tháng
+- title mới: Công thức tính tổng doanh thu trong Excel theo N tháng gần nhất
+- meta_description cũ: Trong bài viết này mình sẽ chia sẻ cách làm sao để tính tổng doanh thu trong vòng N tháng trong Excel. Trong bài toán này chúng ta đang có khối dữ liệu...
+- meta_description mới: Hướng dẫn công thức tính tổng doanh thu trong Excel tự động theo N tháng (Rolling Sum) kết hợp SUMIFS, OFFSET/INDEX linh hoạt cho báo cáo tài chính, bán hàng.
+- Số liệu nền (2026-10-16 → 2026-11-12): 7 click, 704 hiển thị, CTR 0.99%, vị trí 6.74
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-010 — https://erx.vn/huong-dan-cach-cai-addin-doi-so-thanh-chu-trong-excel-7123612988.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC striking-distance rewrite (2026-11-15): targets 'doiso.xla' / 'tải doiso.xla'
+- title cũ: Hướng dẫn cách cài Add-in Đổi số thành chữ trong Excel miễn phí (File .xlam)
+- title mới: Tải doiso.xla & Cách cài Add-in Đổi số thành chữ trong Excel
+- meta_description cũ: Tải miễn phí Add-in đọc số thành chữ tiếng Việt (VND, USD) trong Excel 2016, 2019, 2021 và Office 365 kèm hướng dẫn cài đặt chi tiết và cách sửa lỗi bị chặn Macro.
+- meta_description mới: Link tải file doiso.xla (.xlam) miễn phí và hướng dẫn cài Add-in đổi số thành chữ (VND, USD) trong Excel 2016–365 kèm cách mở khóa lỗi chặn Macro nhanh nhất.
+- Số liệu nền (2026-10-16 → 2026-11-12): 220 click, 2887 hiển thị, CTR 7.62%, vị trí 5.07
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
+
+## exp-20261115-011 — https://erx.vn/project-charter-la-gi-cach-lap-dieu-le-du-an-va-business-case-chuan-pmbok-8-7124088613.html
+
+- Ngày đổi: **2026-11-15**, loại: `title+meta`, trạng thái: `pending`
+- Ghi chú: GSC striking-distance rewrite (2026-11-15): targets 'project charter là gì'
+- title cũ: Project Charter là gì? Cách lập Điều lệ Dự án & Business Case chuẩn PMBOK 8
+- title mới: Project Charter là gì? Mẫu Điều lệ Dự án chuẩn PMBOK 8 | ERX
+- meta_description cũ: Hướng dẫn lập Project Charter (Điều lệ Dự án), phân biệt Business Case và Benefits Management Plan chuẩn PMBOK 8 kèm mẫu thực tế trên project-management.erx.vn.
+- meta_description mới: Project Charter là gì? Hướng dẫn lập Điều lệ Dự án, phân biệt Business Case chuẩn PMBOK 8 kèm mẫu biểu thực tế tải dùng ngay trên project-management.erx.vn.
+- Số liệu nền (2026-10-16 → 2026-11-12): 9 click, 424 hiển thị, CTR 2.12%, vị trí 4.05
+
+| Sau | Cửa sổ | Click/ngày | Hiển thị/ngày | CTR | Vị trí | Δ click/ngày | Δ vị trí | Nhận xét |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 14 ngày | chưa đến hạn | | | | | | | |
+| 21 ngày | chưa đến hạn | | | | | | | |
