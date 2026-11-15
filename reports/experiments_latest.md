@@ -1,5 +1,5 @@
 # Sổ thí nghiệm SEO
-- **Cập nhật:** `2026-11-11`
+- **Cập nhật:** `2026-11-15`
 - So sánh theo **tốc độ mỗi ngày** (click, hiển thị) giữa 28 ngày trước khi đổi và cửa sổ sau khi đổi.
 - Kết quả chỉ là tương quan, không phải bằng chứng nhân quả: cập nhật thuật toán của Google, mùa vụ hay thay đổi khác có thể trùng thời gian.
 

@@ -2,11 +2,11 @@
 """
 Builds:
 1. D:\\GIT\\SEO Tool\\pm_assets\\sitemap-erx-master.txt
-   Complete, canonical 161-URL sitemap for https://erx.vn/ (Homepage + 21 Category/Menu Hubs + 119 Blog Articles 712* + 20 Workshop Pages 831*).
+   Complete, canonical sitemap for https://erx.vn/ (Homepage + Category/Menu Hubs + Blog Articles 712* + Workshop Pages 831*).
 2. D:\\GIT\\SEO Tool\\pm_assets\\erx_seo_master_upgrader.js
    Comprehensive SEO upgrader for https://erx.vn/administrator:
    - Updates MENU.META_TITLE, MENU.META_DESC, MENU.META_KEY across all Category/Menu pages (skipping Menu 578 'Trang chủ' to preserve '/' routing, and standardizing Menu 1477 title to 'Mẫu file quản lý Excel').
-   - Updates TITLE, META_TITLE, META_DESC, and META_KEY for all 42 short-title blog articles (<45 chars) and 7 short/generic meta-description blog articles.
+   - Updates TITLE, META_TITLE, META_DESC, and META_KEY for short-title, short/generic meta-description, and GSC low-CTR / striking-distance blog articles.
    - Updates Workshop items (831*) in backend + injects synchronous <head> SEO Meta, Canonical, OpenGraph, and valid PascalCase Schema.org JSON-LD (Organization, WebSite, BreadcrumbList, TechArticle, EducationEvent, FAQPage) in META.SCRIPT_HEADER, followed by restoring SYS.MENU_DEFAULT=578 & SYS.MENU_HOME=578.
 """
 import json
@@ -221,8 +221,9 @@ ARTICLE_SEO_UPGRADES = {
         "meta_title": "DAX là gì? Hướng dẫn ngôn ngữ DAX trong Power BI cho người mới"
     },
     "7123816032": {
-        "title": "Cách viết và sử dụng hàm LAMBDA trong Excel 365 kèm ví dụ thực tế",
-        "meta_title": "Cách viết và sử dụng hàm LAMBDA trong Excel 365 kèm ví dụ thực tế"
+        "title": "Hàm LAMBDA là gì? Cách viết hàm LAMBDA trong Excel 365 | ERX",
+        "meta_title": "Hàm LAMBDA là gì? Cách viết hàm LAMBDA trong Excel 365 | ERX",
+        "meta_desc": "Hàm LAMBDA là gì? Hướng dẫn cú pháp và cách viết hàm tự định nghĩa LAMBDA trong Excel 365 không cần VBA, kèm ví dụ thực tế tính toán nhanh và lỗi thường gặp."
     },
     "7123716407": {
         "title": "Tổng hợp các tính năng mới nổi bật nhất trên Microsoft Excel 365",
@@ -361,6 +362,57 @@ ARTICLE_SEO_UPGRADES = {
     "7123094250": {
         "title": "Phân tích hành vi người mua hàng công nghiệp trong Mua sắm B2B",
         "meta_title": "Phân tích hành vi người mua hàng công nghiệp trong Mua sắm B2B"
+    },
+    # GSC 2026-10-16..2026-11-12 Low-CTR & Striking-Distance Opportunity Upgrades
+    "7122786696": {
+        "title": "Format Cells là gì? Cách định dạng ô trong Excel (Ctrl+1)",
+        "meta_title": "Format Cells là gì? Cách định dạng ô trong Excel (Ctrl+1)",
+        "meta_desc": "Giải thích Format Cells là gì và hướng dẫn chi tiết cách định dạng ô trong Excel (Ctrl+1): căn lề, định dạng số, tiền tệ, ngày tháng và Custom Format chuẩn đẹp."
+    },
+    "7124054453": {
+        "title": "WBS là gì? Cấu trúc phân rã công việc & Mẫu bảng WBS PMBOK 8",
+        "meta_title": "WBS là gì? Cấu trúc phân rã công việc & Mẫu bảng WBS PMBOK 8",
+        "meta_desc": "WBS (Work Breakdown Structure) là gì? Hướng dẫn lập Cấu trúc Phân rã Công việc 4 cấp chuẩn Quy tắc 100%, Từ điển WBS PMBOK 8 và vẽ sơ đồ Gantt tự động."
+    },
+    "7123734453": {
+        "title": "Hàm TEXTBEFORE trong Excel: Lấy ký tự trước dấu phân cách",
+        "meta_title": "Hàm TEXTBEFORE trong Excel: Lấy ký tự trước dấu phân cách",
+        "meta_desc": "Cách dùng hàm TEXTBEFORE trong Excel 365 kèm ví dụ thực tế: trích xuất chuỗi, lấy ký tự trước dấu gạch ngang hoặc ký tự đặc biệt nhanh gọn chỉ với 1 công thức."
+    },
+    "7123995135": {
+        "title": "Khái niệm Procurement: Phân biệt Indirect, PR, PO & Tender",
+        "meta_title": "Khái niệm Procurement: Phân biệt Indirect, PR, PO & Tender",
+        "meta_desc": "Giải thích chuẩn xác thuật ngữ Procurement dễ nhầm lẫn: Direct và Indirect Procurement là gì, phân biệt PR vs PO, Tender vs Bidding và Tender Defense thực tế."
+    },
+    "7122997491": {
+        "title": "Worksheet là gì? Cách tạo & thao tác trang tính Excel cơ bản",
+        "meta_title": "Worksheet là gì? Cách tạo & thao tác trang tính Excel cơ bản",
+        "meta_desc": "Giải thích Worksheet là gì, phân biệt với Workbook và hướng dẫn chi tiết cách tạo, đổi tên, sao chép, ẩn hoặc bảo vệ trang tính trong Microsoft Excel hiệu quả."
+    },
+    "7122744542": {
+        "title": "Flash Fill trong Excel là gì? Cách dùng & Phím tắt Ctrl + E",
+        "meta_title": "Flash Fill trong Excel là gì? Cách dùng & Phím tắt Ctrl + E",
+        "meta_desc": "Flash Fill trong Excel là gì? Hướng dẫn cách dùng và phím tắt Ctrl + E để tự động tách họ tên, gộp chuỗi và chuẩn hóa dữ liệu hàng loạt không cần viết hàm."
+    },
+    "7122657559": {
+        "title": "Cách mở & dùng Power Query, Power Pivot trong Excel & Power BI",
+        "meta_title": "Cách mở & dùng Power Query, Power Pivot trong Excel & Power BI",
+        "meta_desc": "Hướng dẫn cho người mới cách mở Power Query, kích hoạt Power Pivot trong Excel và kết hợp cùng Power BI để ETL dữ liệu, dựng Data Model báo cáo tự động."
+    },
+    "7123673148": {
+        "title": "Công thức tính tổng doanh thu trong Excel theo N tháng gần nhất",
+        "meta_title": "Công thức tính tổng doanh thu trong Excel theo N tháng gần nhất",
+        "meta_desc": "Hướng dẫn công thức tính tổng doanh thu trong Excel tự động theo N tháng (Rolling Sum) kết hợp SUMIFS, OFFSET/INDEX linh hoạt cho báo cáo tài chính, bán hàng."
+    },
+    "7123612988": {
+        "title": "Tải doiso.xla & Cách cài Add-in Đổi số thành chữ trong Excel",
+        "meta_title": "Tải doiso.xla & Cách cài Add-in Đổi số thành chữ trong Excel",
+        "meta_desc": "Link tải file doiso.xla (.xlam) miễn phí và hướng dẫn cài Add-in đổi số thành chữ (VND, USD) trong Excel 2016–365 kèm cách mở khóa lỗi chặn Macro nhanh nhất."
+    },
+    "7124088613": {
+        "title": "Project Charter là gì? Mẫu Điều lệ Dự án chuẩn PMBOK 8 | ERX",
+        "meta_title": "Project Charter là gì? Mẫu Điều lệ Dự án chuẩn PMBOK 8 | ERX",
+        "meta_desc": "Project Charter là gì? Hướng dẫn lập Điều lệ Dự án, phân biệt Business Case chuẩn PMBOK 8 kèm mẫu biểu thực tế tải dùng ngay trên project-management.erx.vn."
     }
 }
 
@@ -515,10 +567,16 @@ canonical_hub_urls = [
     "https://erx.vn/project-management.html",
 ]
 
+extra_article_urls = [
+    "https://erx.vn/dinh-dang-o-trong-excel-format-cells-phan-1-7122786696.html",
+    "https://erx.vn/thao-tac-voi-worksheet-trang-tinh-trong-excel-phan-1-7122997491.html",
+    "https://erx.vn/tinh-nang-flash-fill-trong-excel-7122744542.html",
+]
+
 workshop_urls = [v["url"] for v in WORKSHOP_SEO_MAP.values()]
 
 all_sitemap_urls = []
-for u in canonical_hub_urls + article_urls + workshop_urls:
+for u in canonical_hub_urls + article_urls + extra_article_urls + workshop_urls:
     if u not in all_sitemap_urls:
         all_sitemap_urls.append(u)
 

@@ -78,3 +78,19 @@ def test_head_script_handles_noindex_and_lien_he0():
     head = _head_script()
     assert "danh-sach-ua-thich" in head and "noindex" in head
     assert '"lien-he0"' in head
+
+
+def test_gsc_low_ctr_articles_have_valid_seo_and_sitemap_entries():
+    low_ctr_ids = [
+        "7122786696", "7123816032", "7124054453", "7123734453", "7123995135",
+        "7122997491", "7122744542", "7122657559", "7123673148", "7123612988", "7124088613",
+    ]
+    articles = _window_json("ERX_ARTICLE_SEO_UPGRADES")
+    for aid in low_ctr_ids:
+        entry = articles[aid]
+        assert 45 <= len(entry["meta_title"]) <= 65, (aid, entry["meta_title"])
+        assert 140 <= len(entry["meta_desc"]) <= 160, (aid, len(entry["meta_desc"]))
+        assert "..." not in entry["meta_desc"] and "…" not in entry["meta_desc"]
+    sitemap_text = OUT_SITEMAP.read_text(encoding="utf-8")
+    for aid in ("7122786696", "7122997491", "7122744542"):
+        assert aid in sitemap_text

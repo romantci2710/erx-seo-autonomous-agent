@@ -103,7 +103,7 @@ def run_khoahoc_upgrade(page: Page, courses_only: bool = False, pages_only: bool
     return {"ok": True, "auth_state": auth_state, "result": result}
 
 
-def run_erx_upgrade(page: Page) -> dict[str, Any]:
+def run_erx_upgrade(page: Page, article_ids: list[str] | None = None) -> dict[str, Any]:
     if "/administrator" not in page.url.lower():
         page.goto("https://erx.vn/administrator", wait_until="domcontentloaded", timeout=45000)
     page.wait_for_load_state("domcontentloaded", timeout=30000)
@@ -124,15 +124,29 @@ def run_erx_upgrade(page: Page) -> dict[str, Any]:
 
     js_code = ERX_JS_PATH.read_text(encoding="utf-8")
     page.evaluate("() => {\n" + js_code + "\nreturn true;\n}")
-    if check.get("alreadyUpgradedHeader"):
-        # Only patch the single remaining article 7122807028 if full upgrade already ran
+    if article_ids:
         result = page.evaluate(
-            """async () => {
-                window.ERX_ARTICLE_SEO_UPGRADES = { "7122807028": window.ERX_ARTICLE_SEO_UPGRADES["7122807028"] };
+            """async (ids) => {
+                const subset = {};
+                const missing = [];
+                for (const id of ids) {
+                    if (window.ERX_ARTICLE_SEO_UPGRADES[id]) {
+                        subset[id] = window.ERX_ARTICLE_SEO_UPGRADES[id];
+                    } else {
+                        missing.push(id);
+                    }
+                }
+                window.ERX_ARTICLE_SEO_UPGRADES = subset;
                 const articles = await window.erxUpgradeArticlesSeo();
-                return { mode: "retry_7122807028_only", articles };
-            }"""
+                const sitemap = await window.erxUploadMasterSitemap();
+                const header = await window.erxUpgradeHeaderAndRestoreHome();
+                return { mode: "targeted_articles", requested: ids.length, missing, articles, sitemap, header };
+            }""",
+            article_ids,
         )
+    elif check.get("alreadyUpgradedHeader"):
+        # Full upgrade already applied; skip re-posting all 44 older articles unless explicit --erx-ids are given
+        result = page.evaluate("async () => ({ mode: 'header_and_sitemap_refresh', sitemap: await window.erxUploadMasterSitemap(), header: await window.erxUpgradeHeaderAndRestoreHome() })")
     else:
         result = page.evaluate("async () => await window.erxRunAllSeoUpgrades()")
     return {"ok": True, "check": check, "result": result}
@@ -143,6 +157,16 @@ def main() -> int:
 
     courses_only = "--khoahoc-courses-only" in sys.argv
     pages_only = "--khoahoc-pages-only" in sys.argv
+    erx_only = "--erx-only" in sys.argv
+    erx_ids: list[str] | None = None
+    for idx, arg in enumerate(sys.argv):
+        if arg.startswith("--erx-ids="):
+            erx_ids = [x.strip() for x in arg.split("=", 1)[1].split(",") if x.strip()]
+        elif arg == "--erx-ids" and idx + 1 < len(sys.argv):
+            erx_ids = [x.strip() for x in sys.argv[idx + 1].split(",") if x.strip()]
+    if erx_ids:
+        erx_only = True
+
     ws_url = read_devtools_ws_url()
     print(f"Connecting over CDP to {ws_url} (waiting up to 5 min for Chrome 'Allow' click)...", flush=True)
     summary: dict[str, Any] = {"ws_url": ws_url, "khoahoc": None, "erx": None}
@@ -161,18 +185,21 @@ def main() -> int:
         if base_ctx is None:
             raise RuntimeError("No browser context available in Chrome.")
 
-        if kh_page is None:
-            kh_page = base_ctx.new_page()
-            kh_page.goto("https://khoahoc.erx.vn/manage", wait_until="domcontentloaded", timeout=45000)
+        if erx_only:
+            summary["khoahoc"] = {"ok": True, "skipped": "erx_only_requested"}
+        else:
+            if kh_page is None:
+                kh_page = base_ctx.new_page()
+                kh_page.goto("https://khoahoc.erx.vn/manage", wait_until="domcontentloaded", timeout=45000)
 
-        print("Running khoahoc_seo_upgrader.js on https://khoahoc.erx.vn/manage ...", flush=True)
-        try:
-            summary["khoahoc"] = run_khoahoc_upgrade(kh_page, courses_only=courses_only, pages_only=pages_only)
-        except Exception as exc:
-            summary["khoahoc"] = {"ok": False, "error": str(exc), "trace": traceback.format_exc()}
-        print("khoahoc result:", json.dumps(summary["khoahoc"], ensure_ascii=False)[:800], flush=True)
+            print("Running khoahoc_seo_upgrader.js on https://khoahoc.erx.vn/manage ...", flush=True)
+            try:
+                summary["khoahoc"] = run_khoahoc_upgrade(kh_page, courses_only=courses_only, pages_only=pages_only)
+            except Exception as exc:
+                summary["khoahoc"] = {"ok": False, "error": str(exc), "trace": traceback.format_exc()}
+            print("khoahoc result:", json.dumps(summary["khoahoc"], ensure_ascii=False)[:800], flush=True)
 
-        if courses_only or pages_only:
+        if (courses_only or pages_only) and not erx_only:
             summary["erx"] = {"ok": True, "skipped": "already_completed_44_of_44"}
         else:
             if erx_page is None:
@@ -180,10 +207,10 @@ def main() -> int:
                 erx_page.goto("https://erx.vn/administrator", wait_until="domcontentloaded", timeout=45000)
             print("Running erx_seo_master_upgrader.js on https://erx.vn/administrator ...", flush=True)
             try:
-                summary["erx"] = run_erx_upgrade(erx_page)
+                summary["erx"] = run_erx_upgrade(erx_page, article_ids=erx_ids)
             except Exception as exc:
                 summary["erx"] = {"ok": False, "error": str(exc), "trace": traceback.format_exc()}
-            print("erx result:", json.dumps(summary["erx"], ensure_ascii=False)[:600], flush=True)
+            print("erx result:", json.dumps(summary["erx"], ensure_ascii=False)[:800], flush=True)
 
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

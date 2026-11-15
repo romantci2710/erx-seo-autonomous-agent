@@ -140,6 +140,9 @@ https://erx.vn/case-study-quan-tri-du-an-chuoi-cung-ung-procure-to-pay-p2p-20-bu
 https://erx.vn/can-bang-nguon-luc-resource-leveling-va-phuong-trinh-work-duration-units-pmbok-8-7124137669.html
 https://erx.vn/tai-sao-quan-ly-du-an-bang-excel-de-vo-tien-do-so-sanh-ms-project-va-ai-gantt-7124123731.html
 https://erx.vn/phuong-phap-duong-gang-cpm-critical-path-free-slack-va-total-slack-trong-du-an-7124114916.html
+https://erx.vn/dinh-dang-o-trong-excel-format-cells-phan-1-7122786696.html
+https://erx.vn/thao-tac-voi-worksheet-trang-tinh-trong-excel-phan-1-7122997491.html
+https://erx.vn/tinh-nang-flash-fill-trong-excel-7122744542.html
 https://erx.vn/tai-sao-and-or-khong-spill-4-giai-phap-thay-the-trong-excel-moi-8315644.html
 https://erx.vn/groupby-trong-excel-tong-hop-du-lieu-theo-thang-fiscal-year-chuan-xac-8318776.html
 https://erx.vn/xlookup-vs-filter-dung-ham-nao-trong-tinh-huong-nao-8313513.html
