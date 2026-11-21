@@ -23,8 +23,29 @@
         "position": 5.18
       },
       "note": "Bài thử đầu tiên: title cũ 83 ký tự không có 'tách ký tự' (truy vấn lớn nhất). Chi tiết: seo-audits/ARTICLE-CHANGE-LOG.md",
-      "status": "pending",
-      "measurements": {}
+      "status": "partial",
+      "measurements": {
+        "14": {
+          "post_clicks_per_day": 2.93,
+          "post_impressions_per_day": 178.1,
+          "post_ctr": 0.016446048937023665,
+          "post_position": 4.0,
+          "baseline_clicks_per_day": 3.18,
+          "baseline_impressions_per_day": 339.8,
+          "baseline_ctr": 0.009355618627141807,
+          "baseline_position": 5.18,
+          "clicks_per_day_change_pct": -7.8,
+          "impressions_per_day_change_pct": -47.6,
+          "ctr_change_pct": 75.8,
+          "position_delta": -1.18,
+          "verdict": "neutral",
+          "measured_on": "2026-11-21",
+          "window": [
+            "2026-11-01",
+            "2026-11-14"
+          ]
+        }
+      }
     },
     {
       "id": "exp-20261111-001",
